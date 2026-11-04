@@ -1,0 +1,83 @@
+.underlineButton.component,
+.underlineButton .component {
+  display: block;
+}
+
+.underlineButton.root {
+  align-content: center;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 2px;
+  height: min-content;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  text-decoration: none;
+  width: min-content;
+}
+
+.underlineButton .label {
+  -webkit-user-select: none;
+  flex: none;
+  height: auto;
+  position: relative;
+  user-select: none;
+  white-space: pre;
+  width: auto;
+  --df-link-text-color: rgb(0, 153, 255);
+  --df-link-text-decoration: underline;
+}
+
+.underlineButton .underlineWrapper {
+  align-self: stretch;
+  flex: none;
+  height: 1px;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
+
+.underlineButton .line {
+  bottom: 0px;
+  flex: none;
+  left: -3px;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  width: 1%;
+}
+
+@supports (background: -webkit-named-image(i)) and (not (font-palette:dark)) {
+  .underlineButton.root {
+    gap: 0px;
+  }
+
+  .underlineButton.root > * {
+    margin: 0px;
+    margin-bottom: calc(2px / 2);
+    margin-top: calc(2px / 2);
+  }
+
+  .underlineButton.root > :first-child {
+    margin-top: 0px;
+  }
+
+  .underlineButton.root > :last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.underlineButton.lineIn .line {
+  left: unset;
+  right: 0px;
+  width: 102%;
+}
+
+.underlineButton.lineOut .line {
+  left: unset;
+  right: -3px;
+}

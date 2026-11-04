@@ -1,0 +1,205 @@
+.articleCard.root {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 0px 0px 20px 0px;
+  position: relative;
+  width: 390px;
+}
+
+.articleCard .container,
+.articleCard .details {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 15px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.articleCard .imageWrapper {
+  align-content: center;
+  align-items: center;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: var(--df-aspect-ratio-supported, 390px);
+  justify-content: center;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+  will-change: var(--df-will-change-override, transform);
+}
+
+.articleCard .image {
+  flex: none;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.articleCard .lineWrapper {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: min-content;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.articleCard .line {
+  flex: 1 0 0px;
+  height: 1px;
+  overflow: hidden;
+  position: relative;
+  width: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.articleCard .line2 {
+  bottom: 0px;
+  flex: none;
+  left: -10px;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  width: 1%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.articleCard .heading {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 5px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.articleCard .aLetter {
+  flex: none;
+  height: auto;
+  position: relative;
+  white-space: pre-wrap;
+  width: 100%;
+  word-break: break-word;
+  word-wrap: break-word;
+  --df-paragraph-spacing: 0px;
+}
+
+.articleCard .text {
+  flex: none;
+  height: auto;
+  max-width: 340px;
+  position: relative;
+  white-space: pre-wrap;
+  width: 90%;
+  word-break: break-word;
+  word-wrap: break-word;
+  --df-paragraph-spacing: 0px;
+}
+
+@supports (background: -webkit-named-image(i)) and (not (font-palette:dark)) {
+  .articleCard.root,
+  .articleCard .container,
+  .articleCard .imageWrapper,
+  .articleCard .details,
+  .articleCard .lineWrapper,
+  .articleCard .heading {
+    gap: 0px;
+  }
+
+  .articleCard.root > * {
+    margin: 0px;
+    margin-bottom: calc(10px / 2);
+    margin-top: calc(10px / 2);
+  }
+
+  .articleCard.root > :first-child,
+  .articleCard .container > :first-child,
+  .articleCard .details > :first-child,
+  .articleCard .heading > :first-child {
+    margin-top: 0px;
+  }
+
+  .articleCard.root > :last-child,
+  .articleCard .container > :last-child,
+  .articleCard .details > :last-child,
+  .articleCard .heading > :last-child {
+    margin-bottom: 0px;
+  }
+
+  .articleCard .container > *,
+  .articleCard .details > * {
+    margin: 0px;
+    margin-bottom: calc(15px / 2);
+    margin-top: calc(15px / 2);
+  }
+
+  .articleCard .imageWrapper > *,
+  .articleCard .lineWrapper > * {
+    margin: 0px;
+    margin-left: calc(10px / 2);
+    margin-right: calc(10px / 2);
+  }
+
+  .articleCard .imageWrapper > :first-child,
+  .articleCard .lineWrapper > :first-child {
+    margin-left: 0px;
+  }
+
+  .articleCard .imageWrapper > :last-child,
+  .articleCard .lineWrapper > :last-child {
+    margin-right: 0px;
+  }
+
+  .articleCard .heading > * {
+    margin: 0px;
+    margin-bottom: calc(5px / 2);
+    margin-top: calc(5px / 2);
+  }
+}
+
+.articleCard.articleCard1x1Hover .line2,
+.articleCard.articleCardWideHover .line2 {
+  left: 0px;
+  width: 100%;
+}
+
+.articleCard.articleCardWide .imageWrapper,
+.articleCard.articleCardWideHover .imageWrapper {
+  aspect-ratio: 1.5 / 1;
+  height: var(--df-aspect-ratio-supported, 260px);
+}

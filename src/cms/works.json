@@ -1,0 +1,655 @@
+[
+  {
+    "id": "ONbFe_Zn1",
+    "title": "Halv",
+    "subtitle": "A concept TV that divides space",
+    "worksSlug": "halv",
+    "sortingNumber": 1,
+    "thumbnailPortrait": {
+      "src": "https://framerusercontent.com/images/1OOWUTPyjJgedAlidbvrgxMLUjU.jpg?width=5131&height=6842",
+      "srcSet": "https://framerusercontent.com/images/1OOWUTPyjJgedAlidbvrgxMLUjU.jpg?scale-down-to=1024&width=5131&height=6842 767w,https://framerusercontent.com/images/1OOWUTPyjJgedAlidbvrgxMLUjU.jpg?scale-down-to=2048&width=5131&height=6842 1535w,https://framerusercontent.com/images/1OOWUTPyjJgedAlidbvrgxMLUjU.jpg?scale-down-to=4096&width=5131&height=6842 3071w,https://framerusercontent.com/images/1OOWUTPyjJgedAlidbvrgxMLUjU.jpg?width=5131&height=6842 5131w",
+      "pixelWidth": 5131,
+      "pixelHeight": 6842
+    },
+    "thumbnailWide": {
+      "src": "https://framerusercontent.com/images/I7mCQbQB792wkaxlUvC2MVMU.jpg?width=7606&height=5071",
+      "srcSet": "https://framerusercontent.com/images/I7mCQbQB792wkaxlUvC2MVMU.jpg?scale-down-to=512&width=7606&height=5071 512w,https://framerusercontent.com/images/I7mCQbQB792wkaxlUvC2MVMU.jpg?scale-down-to=1024&width=7606&height=5071 1024w,https://framerusercontent.com/images/I7mCQbQB792wkaxlUvC2MVMU.jpg?scale-down-to=2048&width=7606&height=5071 2048w,https://framerusercontent.com/images/I7mCQbQB792wkaxlUvC2MVMU.jpg?scale-down-to=4096&width=7606&height=5071 4096w,https://framerusercontent.com/images/I7mCQbQB792wkaxlUvC2MVMU.jpg?width=7606&height=5071 7606w",
+      "pixelWidth": 7606,
+      "pixelHeight": 5071
+    },
+    "thumbnailSquare": {
+      "src": "https://framerusercontent.com/images/I7mCQbQB792wkaxlUvC2MVMU.jpg?width=7606&height=5071",
+      "srcSet": "https://framerusercontent.com/images/I7mCQbQB792wkaxlUvC2MVMU.jpg?scale-down-to=512&width=7606&height=5071 512w,https://framerusercontent.com/images/I7mCQbQB792wkaxlUvC2MVMU.jpg?scale-down-to=1024&width=7606&height=5071 1024w,https://framerusercontent.com/images/I7mCQbQB792wkaxlUvC2MVMU.jpg?scale-down-to=2048&width=7606&height=5071 2048w,https://framerusercontent.com/images/I7mCQbQB792wkaxlUvC2MVMU.jpg?scale-down-to=4096&width=7606&height=5071 4096w,https://framerusercontent.com/images/I7mCQbQB792wkaxlUvC2MVMU.jpg?width=7606&height=5071 7606w",
+      "pixelWidth": 7606,
+      "pixelHeight": 5071
+    },
+    "client": "SCAD",
+    "year": "2025",
+    "sector": "Industrial Design",
+    "category": "Home Furniture",
+    "description": [
+      {
+        "type": "p",
+        "dir": "auto",
+        "children": [
+          "Halv is a freestanding television and bookshelf that shapes the space around it. Designed for open interiors, it brings the television away from the wall, dividing a room while creating space for books, objects, and everyday life on the other side. A sculptural denim Micarta frame and transparent shelving balance material presence with visual openness."
+        ]
+      },
+      { "type": "p", "dir": "auto", "children": [{ "type": "br", "className": "trailing-break" }] },
+      {
+        "type": "p",
+        "dir": "auto",
+        "children": [
+          "The project grew from a question: how can a single object influence the way we inhabit a room? Six months of research, material exploration, and fabrication led to a full-scale working prototype."
+        ]
+      }
+    ],
+    "projectsLiveSite": "www.ena.supply",
+    "imageHeader": {
+      "src": "https://framerusercontent.com/images/FVvX2w81uDzueBe3o4p46RZ0H4.jpg?width=1440&height=900",
+      "srcSet": "https://framerusercontent.com/images/FVvX2w81uDzueBe3o4p46RZ0H4.jpg?scale-down-to=512&width=1440&height=900 512w,https://framerusercontent.com/images/FVvX2w81uDzueBe3o4p46RZ0H4.jpg?scale-down-to=1024&width=1440&height=900 1024w,https://framerusercontent.com/images/FVvX2w81uDzueBe3o4p46RZ0H4.jpg?width=1440&height=900 1440w",
+      "pixelWidth": 1440,
+      "pixelHeight": 900
+    },
+    "image1": {
+      "src": "https://framerusercontent.com/images/I7mCQbQB792wkaxlUvC2MVMU.jpg?width=7606&height=5071",
+      "srcSet": "https://framerusercontent.com/images/I7mCQbQB792wkaxlUvC2MVMU.jpg?scale-down-to=512&width=7606&height=5071 512w,https://framerusercontent.com/images/I7mCQbQB792wkaxlUvC2MVMU.jpg?scale-down-to=1024&width=7606&height=5071 1024w,https://framerusercontent.com/images/I7mCQbQB792wkaxlUvC2MVMU.jpg?scale-down-to=2048&width=7606&height=5071 2048w,https://framerusercontent.com/images/I7mCQbQB792wkaxlUvC2MVMU.jpg?scale-down-to=4096&width=7606&height=5071 4096w,https://framerusercontent.com/images/I7mCQbQB792wkaxlUvC2MVMU.jpg?width=7606&height=5071 7606w",
+      "pixelWidth": 7606,
+      "pixelHeight": 5071,
+      "alt": "Here comes the alt text"
+    },
+    "image2": {
+      "src": "https://framerusercontent.com/images/1OOWUTPyjJgedAlidbvrgxMLUjU.jpg?width=5131&height=6842",
+      "srcSet": "https://framerusercontent.com/images/1OOWUTPyjJgedAlidbvrgxMLUjU.jpg?scale-down-to=1024&width=5131&height=6842 767w,https://framerusercontent.com/images/1OOWUTPyjJgedAlidbvrgxMLUjU.jpg?scale-down-to=2048&width=5131&height=6842 1535w,https://framerusercontent.com/images/1OOWUTPyjJgedAlidbvrgxMLUjU.jpg?scale-down-to=4096&width=5131&height=6842 3071w,https://framerusercontent.com/images/1OOWUTPyjJgedAlidbvrgxMLUjU.jpg?width=5131&height=6842 5131w",
+      "pixelWidth": 5131,
+      "pixelHeight": 6842,
+      "alt": "Here comes the alt text"
+    },
+    "video1": "https://framerusercontent.com/assets/iL3y1OBAg1MSpzjtAGxhiITaBE.mp4",
+    "video1Poster": {
+      "src": "https://framerusercontent.com/images/cZ3pTclkmP2L2kH0dYl7Olg0E.jpg?width=1600&height=2000",
+      "srcSet": "https://framerusercontent.com/images/cZ3pTclkmP2L2kH0dYl7Olg0E.jpg?scale-down-to=1024&width=1600&height=2000 819w,https://framerusercontent.com/images/cZ3pTclkmP2L2kH0dYl7Olg0E.jpg?width=1600&height=2000 1600w",
+      "pixelWidth": 1600,
+      "pixelHeight": 2000
+    },
+    "image3": {
+      "src": "https://framerusercontent.com/images/oHywPcSzcUqSURKQSiZ7FTAe0.jpg?width=2000&height=1124",
+      "srcSet": "https://framerusercontent.com/images/oHywPcSzcUqSURKQSiZ7FTAe0.jpg?scale-down-to=512&width=2000&height=1124 512w,https://framerusercontent.com/images/oHywPcSzcUqSURKQSiZ7FTAe0.jpg?scale-down-to=1024&width=2000&height=1124 1024w,https://framerusercontent.com/images/oHywPcSzcUqSURKQSiZ7FTAe0.jpg?width=2000&height=1124 2000w",
+      "pixelWidth": 2000,
+      "pixelHeight": 1124,
+      "alt": "Here comes the alt text"
+    },
+    "image4": {
+      "src": "https://framerusercontent.com/images/OGN25FGFWU7nWxFBgwO0skWvflw.jpg?width=2000&height=2000",
+      "srcSet": "https://framerusercontent.com/images/OGN25FGFWU7nWxFBgwO0skWvflw.jpg?scale-down-to=512&width=2000&height=2000 512w,https://framerusercontent.com/images/OGN25FGFWU7nWxFBgwO0skWvflw.jpg?scale-down-to=1024&width=2000&height=2000 1024w,https://framerusercontent.com/images/OGN25FGFWU7nWxFBgwO0skWvflw.jpg?width=2000&height=2000 2000w",
+      "pixelWidth": 2000,
+      "pixelHeight": 2000,
+      "alt": "Here comes the alt text"
+    },
+    "video2": "https://framerusercontent.com/assets/4e5qj9h8EXAxGmQS5l6koQfdo.mp4",
+    "video2Poster": {
+      "src": "https://framerusercontent.com/images/Y3PkeQ9okVAMrGjpaWkvo352mE.jpg?width=1920&height=1920",
+      "srcSet": "https://framerusercontent.com/images/Y3PkeQ9okVAMrGjpaWkvo352mE.jpg?scale-down-to=512&width=1920&height=1920 512w,https://framerusercontent.com/images/Y3PkeQ9okVAMrGjpaWkvo352mE.jpg?scale-down-to=1024&width=1920&height=1920 1024w,https://framerusercontent.com/images/Y3PkeQ9okVAMrGjpaWkvo352mE.jpg?width=1920&height=1920 1920w",
+      "pixelWidth": 1920,
+      "pixelHeight": 1920
+    },
+    "image5": {
+      "src": "https://framerusercontent.com/images/VrlFs2ROcrFCmWs7GxT05UQyBA.jpg?width=2000&height=1124",
+      "srcSet": "https://framerusercontent.com/images/VrlFs2ROcrFCmWs7GxT05UQyBA.jpg?scale-down-to=512&width=2000&height=1124 512w,https://framerusercontent.com/images/VrlFs2ROcrFCmWs7GxT05UQyBA.jpg?scale-down-to=1024&width=2000&height=1124 1024w,https://framerusercontent.com/images/VrlFs2ROcrFCmWs7GxT05UQyBA.jpg?width=2000&height=1124 2000w",
+      "pixelWidth": 2000,
+      "pixelHeight": 1124
+    },
+    "nextProject1": 2,
+    "nextProject2": 3,
+    "nextProject3": 4,
+    "testimonial": "“The team’s ability to transform ideas into stunning visuals is unmatched on many levels. Every project feels like a work of art with purpose.”",
+    "author": "— Liam Carter, Creative Director",
+    "updatedAt": "2026-10-13T03:01:16.117Z",
+    "nextItemId": "um0145DbO"
+  },
+  {
+    "id": "um0145DbO",
+    "title": "Aether",
+    "subtitle": "Reignite the Thrill of Driving",
+    "worksSlug": "aether",
+    "sortingNumber": 2,
+    "thumbnailPortrait": {
+      "src": "https://framerusercontent.com/images/8eS8HMtJuhStQZXjy8ri9FKQ.jpeg?width=2304&height=1728",
+      "srcSet": "https://framerusercontent.com/images/8eS8HMtJuhStQZXjy8ri9FKQ.jpeg?scale-down-to=512&width=2304&height=1728 512w,https://framerusercontent.com/images/8eS8HMtJuhStQZXjy8ri9FKQ.jpeg?scale-down-to=1024&width=2304&height=1728 1024w,https://framerusercontent.com/images/8eS8HMtJuhStQZXjy8ri9FKQ.jpeg?scale-down-to=2048&width=2304&height=1728 2048w,https://framerusercontent.com/images/8eS8HMtJuhStQZXjy8ri9FKQ.jpeg?width=2304&height=1728 2304w",
+      "pixelWidth": 2304,
+      "pixelHeight": 1728
+    },
+    "thumbnailWide": {
+      "src": "https://framerusercontent.com/images/8eS8HMtJuhStQZXjy8ri9FKQ.jpeg?width=2304&height=1728",
+      "srcSet": "https://framerusercontent.com/images/8eS8HMtJuhStQZXjy8ri9FKQ.jpeg?scale-down-to=512&width=2304&height=1728 512w,https://framerusercontent.com/images/8eS8HMtJuhStQZXjy8ri9FKQ.jpeg?scale-down-to=1024&width=2304&height=1728 1024w,https://framerusercontent.com/images/8eS8HMtJuhStQZXjy8ri9FKQ.jpeg?scale-down-to=2048&width=2304&height=1728 2048w,https://framerusercontent.com/images/8eS8HMtJuhStQZXjy8ri9FKQ.jpeg?width=2304&height=1728 2304w",
+      "pixelWidth": 2304,
+      "pixelHeight": 1728
+    },
+    "thumbnailSquare": {
+      "src": "https://framerusercontent.com/images/8eS8HMtJuhStQZXjy8ri9FKQ.jpeg?width=2304&height=1728",
+      "srcSet": "https://framerusercontent.com/images/8eS8HMtJuhStQZXjy8ri9FKQ.jpeg?scale-down-to=512&width=2304&height=1728 512w,https://framerusercontent.com/images/8eS8HMtJuhStQZXjy8ri9FKQ.jpeg?scale-down-to=1024&width=2304&height=1728 1024w,https://framerusercontent.com/images/8eS8HMtJuhStQZXjy8ri9FKQ.jpeg?scale-down-to=2048&width=2304&height=1728 2048w,https://framerusercontent.com/images/8eS8HMtJuhStQZXjy8ri9FKQ.jpeg?width=2304&height=1728 2304w",
+      "pixelWidth": 2304,
+      "pixelHeight": 1728
+    },
+    "client": "SCAD",
+    "year": "2024",
+    "sector": "Automotive",
+    "category": "Industrial Design + Branding",
+    "description": [
+      {
+        "type": "p",
+        "dir": "auto",
+        "children": [
+          "Aether is an electric vehicle concept developed at SCAD to reignite the thrill of driving for a new generation. Designed for spontaneous adventures, Aether challenges the passive future of autonomy with a bold vision for personal freedom and road expression."
+        ]
+      }
+    ],
+    "projectsLiveSite": "www.ena.supply",
+    "imageHeader": {
+      "src": "https://framerusercontent.com/images/8eS8HMtJuhStQZXjy8ri9FKQ.jpeg?width=2304&height=1728",
+      "srcSet": "https://framerusercontent.com/images/8eS8HMtJuhStQZXjy8ri9FKQ.jpeg?scale-down-to=512&width=2304&height=1728 512w,https://framerusercontent.com/images/8eS8HMtJuhStQZXjy8ri9FKQ.jpeg?scale-down-to=1024&width=2304&height=1728 1024w,https://framerusercontent.com/images/8eS8HMtJuhStQZXjy8ri9FKQ.jpeg?scale-down-to=2048&width=2304&height=1728 2048w,https://framerusercontent.com/images/8eS8HMtJuhStQZXjy8ri9FKQ.jpeg?width=2304&height=1728 2304w",
+      "pixelWidth": 2304,
+      "pixelHeight": 1728
+    },
+    "image1": {
+      "src": "https://framerusercontent.com/images/xi03o2raiyWtAuSwvU6Oa2TEeRs.jpeg?width=2304&height=1728",
+      "positionX": "49.7%",
+      "positionY": "74.8%",
+      "srcSet": "https://framerusercontent.com/images/xi03o2raiyWtAuSwvU6Oa2TEeRs.jpeg?scale-down-to=512&width=2304&height=1728 512w,https://framerusercontent.com/images/xi03o2raiyWtAuSwvU6Oa2TEeRs.jpeg?scale-down-to=1024&width=2304&height=1728 1024w,https://framerusercontent.com/images/xi03o2raiyWtAuSwvU6Oa2TEeRs.jpeg?scale-down-to=2048&width=2304&height=1728 2048w,https://framerusercontent.com/images/xi03o2raiyWtAuSwvU6Oa2TEeRs.jpeg?width=2304&height=1728 2304w",
+      "pixelWidth": 2304,
+      "pixelHeight": 1728,
+      "alt": "Here comes the alt text"
+    },
+    "image2": {
+      "src": "https://framerusercontent.com/images/unz2UKC1pxlovdPnB7sS1loPBTc.jpeg?width=2304&height=1728",
+      "srcSet": "https://framerusercontent.com/images/unz2UKC1pxlovdPnB7sS1loPBTc.jpeg?scale-down-to=512&width=2304&height=1728 512w,https://framerusercontent.com/images/unz2UKC1pxlovdPnB7sS1loPBTc.jpeg?scale-down-to=1024&width=2304&height=1728 1024w,https://framerusercontent.com/images/unz2UKC1pxlovdPnB7sS1loPBTc.jpeg?scale-down-to=2048&width=2304&height=1728 2048w,https://framerusercontent.com/images/unz2UKC1pxlovdPnB7sS1loPBTc.jpeg?width=2304&height=1728 2304w",
+      "pixelWidth": 2304,
+      "pixelHeight": 1728,
+      "alt": "Here comes the alt text"
+    },
+    "video1": "https://framerusercontent.com/assets/iL3y1OBAg1MSpzjtAGxhiITaBE.mp4",
+    "video1Poster": {
+      "src": "https://framerusercontent.com/images/cZ3pTclkmP2L2kH0dYl7Olg0E.jpg?width=1600&height=2000",
+      "srcSet": "https://framerusercontent.com/images/cZ3pTclkmP2L2kH0dYl7Olg0E.jpg?scale-down-to=1024&width=1600&height=2000 819w,https://framerusercontent.com/images/cZ3pTclkmP2L2kH0dYl7Olg0E.jpg?width=1600&height=2000 1600w",
+      "pixelWidth": 1600,
+      "pixelHeight": 2000
+    },
+    "image3": {
+      "src": "https://framerusercontent.com/images/bci7WnKgMF0MqCcL3Fq09NbBc9s.jpeg?width=2304&height=1728",
+      "srcSet": "https://framerusercontent.com/images/bci7WnKgMF0MqCcL3Fq09NbBc9s.jpeg?scale-down-to=512&width=2304&height=1728 512w,https://framerusercontent.com/images/bci7WnKgMF0MqCcL3Fq09NbBc9s.jpeg?scale-down-to=1024&width=2304&height=1728 1024w,https://framerusercontent.com/images/bci7WnKgMF0MqCcL3Fq09NbBc9s.jpeg?scale-down-to=2048&width=2304&height=1728 2048w,https://framerusercontent.com/images/bci7WnKgMF0MqCcL3Fq09NbBc9s.jpeg?width=2304&height=1728 2304w",
+      "pixelWidth": 2304,
+      "pixelHeight": 1728,
+      "alt": "Here comes the alt text"
+    },
+    "image4": {
+      "src": "https://framerusercontent.com/images/OGN25FGFWU7nWxFBgwO0skWvflw.jpg?width=2000&height=2000",
+      "srcSet": "https://framerusercontent.com/images/OGN25FGFWU7nWxFBgwO0skWvflw.jpg?scale-down-to=512&width=2000&height=2000 512w,https://framerusercontent.com/images/OGN25FGFWU7nWxFBgwO0skWvflw.jpg?scale-down-to=1024&width=2000&height=2000 1024w,https://framerusercontent.com/images/OGN25FGFWU7nWxFBgwO0skWvflw.jpg?width=2000&height=2000 2000w",
+      "pixelWidth": 2000,
+      "pixelHeight": 2000,
+      "alt": "Here comes the alt text"
+    },
+    "video2": "https://framerusercontent.com/assets/4e5qj9h8EXAxGmQS5l6koQfdo.mp4",
+    "video2Poster": {
+      "src": "https://framerusercontent.com/images/Y3PkeQ9okVAMrGjpaWkvo352mE.jpg?width=1920&height=1920",
+      "srcSet": "https://framerusercontent.com/images/Y3PkeQ9okVAMrGjpaWkvo352mE.jpg?scale-down-to=512&width=1920&height=1920 512w,https://framerusercontent.com/images/Y3PkeQ9okVAMrGjpaWkvo352mE.jpg?scale-down-to=1024&width=1920&height=1920 1024w,https://framerusercontent.com/images/Y3PkeQ9okVAMrGjpaWkvo352mE.jpg?width=1920&height=1920 1920w",
+      "pixelWidth": 1920,
+      "pixelHeight": 1920
+    },
+    "image5": {
+      "src": "https://framerusercontent.com/images/VrlFs2ROcrFCmWs7GxT05UQyBA.jpg?width=2000&height=1124",
+      "srcSet": "https://framerusercontent.com/images/VrlFs2ROcrFCmWs7GxT05UQyBA.jpg?scale-down-to=512&width=2000&height=1124 512w,https://framerusercontent.com/images/VrlFs2ROcrFCmWs7GxT05UQyBA.jpg?scale-down-to=1024&width=2000&height=1124 1024w,https://framerusercontent.com/images/VrlFs2ROcrFCmWs7GxT05UQyBA.jpg?width=2000&height=1124 2000w",
+      "pixelWidth": 2000,
+      "pixelHeight": 1124
+    },
+    "nextProject1": 3,
+    "nextProject2": 4,
+    "nextProject3": 5,
+    "testimonial": "“Their innovative approach brings a fresh perspective to every campaign, creating engaging experiences that truly connect with audiences.”",
+    "author": "— Sophia Martinez, Head of Design",
+    "updatedAt": "2026-10-21T22:13:12.921Z",
+    "previousItemId": "ONbFe_Zn1",
+    "nextItemId": "wEJaA6Gdi"
+  },
+  {
+    "id": "wEJaA6Gdi",
+    "title": "ReviMo Niko",
+    "subtitle": "Revival of Motion",
+    "worksSlug": "revimo",
+    "sortingNumber": 3,
+    "thumbnailPortrait": {
+      "src": "https://framerusercontent.com/images/us6NMasSCdcVzr9AN8gILRve8.png?width=971&height=1080",
+      "srcSet": "https://framerusercontent.com/images/us6NMasSCdcVzr9AN8gILRve8.png?scale-down-to=1024&width=971&height=1080 920w,https://framerusercontent.com/images/us6NMasSCdcVzr9AN8gILRve8.png?width=971&height=1080 971w",
+      "pixelWidth": 971,
+      "pixelHeight": 1080
+    },
+    "thumbnailSquare": {
+      "src": "https://framerusercontent.com/images/x0GDb4JjD6e9DKV7Mm05jk6oqw.png?width=1080&height=1080",
+      "srcSet": "https://framerusercontent.com/images/x0GDb4JjD6e9DKV7Mm05jk6oqw.png?scale-down-to=512&width=1080&height=1080 512w,https://framerusercontent.com/images/x0GDb4JjD6e9DKV7Mm05jk6oqw.png?scale-down-to=1024&width=1080&height=1080 1024w,https://framerusercontent.com/images/x0GDb4JjD6e9DKV7Mm05jk6oqw.png?width=1080&height=1080 1080w",
+      "pixelWidth": 1080,
+      "pixelHeight": 1080
+    },
+    "client": "Revimo",
+    "year": "2025",
+    "sector": "Mobility Design",
+    "category": "Industrial Design",
+    "description": [
+      {
+        "type": "p",
+        "children": [
+          "In this project, we were approached by a startup called \"Green Wave\" to develop a brand identity that reflected their commitment to sustainability and environmental conservation."
+        ]
+      },
+      { "type": "p", "children": [{ "type": "br", "className": "trailing-break" }] },
+      {
+        "type": "p",
+        "children": [
+          "The client's goal was to create a brand identity that would resonate with environmentally conscious consumers and help position their business as a leader in sustainable practices. Objectives included increasing brand awareness and driving customer engagement."
+        ]
+      },
+      { "type": "p", "children": [{ "type": "br", "className": "trailing-break" }] },
+      {
+        "type": "p",
+        "children": [
+          "Our approach was to create a brand identity that communicated Green Wave's values of sustainability, innovation, and authenticity. We developed a brand strategy that focused on creating a unique and memorable visual identity that would differentiate the brand from its competitors."
+        ]
+      }
+    ],
+    "projectsLiveSite": "www.ena.supply",
+    "imageHeader": {
+      "src": "https://framerusercontent.com/images/5ULVrnqw4MUQwmFxZ4S3Gxjrk.jpg?width=1440&height=900",
+      "srcSet": "https://framerusercontent.com/images/5ULVrnqw4MUQwmFxZ4S3Gxjrk.jpg?scale-down-to=512&width=1440&height=900 512w,https://framerusercontent.com/images/5ULVrnqw4MUQwmFxZ4S3Gxjrk.jpg?scale-down-to=1024&width=1440&height=900 1024w,https://framerusercontent.com/images/5ULVrnqw4MUQwmFxZ4S3Gxjrk.jpg?width=1440&height=900 1440w",
+      "pixelWidth": 1440,
+      "pixelHeight": 900
+    },
+    "image1": {
+      "src": "https://framerusercontent.com/images/hlvBiO7t60JnrJELnKEGFka4.jpg?width=2000&height=1124",
+      "srcSet": "https://framerusercontent.com/images/hlvBiO7t60JnrJELnKEGFka4.jpg?scale-down-to=512&width=2000&height=1124 512w,https://framerusercontent.com/images/hlvBiO7t60JnrJELnKEGFka4.jpg?scale-down-to=1024&width=2000&height=1124 1024w,https://framerusercontent.com/images/hlvBiO7t60JnrJELnKEGFka4.jpg?width=2000&height=1124 2000w",
+      "pixelWidth": 2000,
+      "pixelHeight": 1124,
+      "alt": "Here comes the alt text"
+    },
+    "image2": {
+      "src": "https://framerusercontent.com/images/J0FqnMNaZYlU9eq4LXZwb6MNTEc.jpg?width=1600&height=2000",
+      "srcSet": "https://framerusercontent.com/images/J0FqnMNaZYlU9eq4LXZwb6MNTEc.jpg?scale-down-to=1024&width=1600&height=2000 819w,https://framerusercontent.com/images/J0FqnMNaZYlU9eq4LXZwb6MNTEc.jpg?width=1600&height=2000 1600w",
+      "pixelWidth": 1600,
+      "pixelHeight": 2000,
+      "alt": "Here comes the alt text"
+    },
+    "video1": "https://framerusercontent.com/assets/iL3y1OBAg1MSpzjtAGxhiITaBE.mp4",
+    "video1Poster": {
+      "src": "https://framerusercontent.com/images/cZ3pTclkmP2L2kH0dYl7Olg0E.jpg?width=1600&height=2000",
+      "srcSet": "https://framerusercontent.com/images/cZ3pTclkmP2L2kH0dYl7Olg0E.jpg?scale-down-to=1024&width=1600&height=2000 819w,https://framerusercontent.com/images/cZ3pTclkmP2L2kH0dYl7Olg0E.jpg?width=1600&height=2000 1600w",
+      "pixelWidth": 1600,
+      "pixelHeight": 2000
+    },
+    "image3": {
+      "src": "https://framerusercontent.com/images/oHywPcSzcUqSURKQSiZ7FTAe0.jpg?width=2000&height=1124",
+      "pixelWidth": 2000,
+      "pixelHeight": 1124,
+      "alt": "Here comes the alt text"
+    },
+    "image4": {
+      "src": "https://framerusercontent.com/images/OGN25FGFWU7nWxFBgwO0skWvflw.jpg?width=2000&height=2000",
+      "srcSet": "https://framerusercontent.com/images/OGN25FGFWU7nWxFBgwO0skWvflw.jpg?scale-down-to=512&width=2000&height=2000 512w,https://framerusercontent.com/images/OGN25FGFWU7nWxFBgwO0skWvflw.jpg?scale-down-to=1024&width=2000&height=2000 1024w,https://framerusercontent.com/images/OGN25FGFWU7nWxFBgwO0skWvflw.jpg?width=2000&height=2000 2000w",
+      "pixelWidth": 2000,
+      "pixelHeight": 2000,
+      "alt": "Here comes the alt text"
+    },
+    "video2": "https://framerusercontent.com/assets/4e5qj9h8EXAxGmQS5l6koQfdo.mp4",
+    "video2Poster": {
+      "src": "https://framerusercontent.com/images/Y3PkeQ9okVAMrGjpaWkvo352mE.jpg?width=1920&height=1920",
+      "srcSet": "https://framerusercontent.com/images/Y3PkeQ9okVAMrGjpaWkvo352mE.jpg?scale-down-to=512&width=1920&height=1920 512w,https://framerusercontent.com/images/Y3PkeQ9okVAMrGjpaWkvo352mE.jpg?scale-down-to=1024&width=1920&height=1920 1024w,https://framerusercontent.com/images/Y3PkeQ9okVAMrGjpaWkvo352mE.jpg?width=1920&height=1920 1920w",
+      "pixelWidth": 1920,
+      "pixelHeight": 1920
+    },
+    "image5": {
+      "src": "https://framerusercontent.com/images/VrlFs2ROcrFCmWs7GxT05UQyBA.jpg?width=2000&height=1124",
+      "srcSet": "https://framerusercontent.com/images/VrlFs2ROcrFCmWs7GxT05UQyBA.jpg?scale-down-to=512&width=2000&height=1124 512w,https://framerusercontent.com/images/VrlFs2ROcrFCmWs7GxT05UQyBA.jpg?scale-down-to=1024&width=2000&height=1124 1024w,https://framerusercontent.com/images/VrlFs2ROcrFCmWs7GxT05UQyBA.jpg?width=2000&height=1124 2000w",
+      "pixelWidth": 2000,
+      "pixelHeight": 1124
+    },
+    "nextProject1": 4,
+    "nextProject2": 5,
+    "nextProject3": 6,
+    "testimonial": "“A seamless blend of creativity and strategy, ensuring every design not only looks beautiful but also delivers impactful results.”",
+    "author": "— Ethan Reynolds, Marketing Consultant",
+    "updatedAt": "2026-10-21T22:13:05.591Z",
+    "previousItemId": "um0145DbO",
+    "nextItemId": "raItn4Ok_"
+  },
+  {
+    "id": "raItn4Ok_",
+    "title": "Rivited",
+    "subtitle": "The precision and elegance of aviation design",
+    "worksSlug": "rivited",
+    "sortingNumber": 4,
+    "thumbnailPortrait": {
+      "src": "https://framerusercontent.com/images/G5hO2YYJmMw7Qickbtxs50E4OE.jpeg?width=3096&height=4128",
+      "srcSet": "https://framerusercontent.com/images/G5hO2YYJmMw7Qickbtxs50E4OE.jpeg?scale-down-to=1024&width=3096&height=4128 768w,https://framerusercontent.com/images/G5hO2YYJmMw7Qickbtxs50E4OE.jpeg?scale-down-to=2048&width=3096&height=4128 1536w,https://framerusercontent.com/images/G5hO2YYJmMw7Qickbtxs50E4OE.jpeg?scale-down-to=4096&width=3096&height=4128 3072w,https://framerusercontent.com/images/G5hO2YYJmMw7Qickbtxs50E4OE.jpeg?width=3096&height=4128 3096w",
+      "pixelWidth": 3096,
+      "pixelHeight": 4128
+    },
+    "thumbnailSquare": {
+      "src": "https://framerusercontent.com/images/fmIMC07WMDjGEfInNGTHLGLMs90.jpeg?lossless=1&width=3096&height=3096",
+      "srcSet": "https://framerusercontent.com/images/fmIMC07WMDjGEfInNGTHLGLMs90.jpeg?scale-down-to=512&lossless=1&width=3096&height=3096 512w,https://framerusercontent.com/images/fmIMC07WMDjGEfInNGTHLGLMs90.jpeg?scale-down-to=1024&lossless=1&width=3096&height=3096 1024w,https://framerusercontent.com/images/fmIMC07WMDjGEfInNGTHLGLMs90.jpeg?scale-down-to=2048&lossless=1&width=3096&height=3096 2048w,https://framerusercontent.com/images/fmIMC07WMDjGEfInNGTHLGLMs90.jpeg?lossless=1&width=3096&height=3096 3096w",
+      "pixelWidth": 3096,
+      "pixelHeight": 3096
+    },
+    "client": "Taya Everett",
+    "year": "2025",
+    "sector": "Fashion",
+    "category": "Accesory Design",
+    "description": [
+      {
+        "type": "p",
+        "dir": "auto",
+        "children": [
+          "In this project, we were approached by a startup called \"Green Wave\" to develop a brand identity that reflected their commitment to sustainability and environmental conservation."
+        ]
+      },
+      { "type": "p", "dir": "auto", "children": [{ "type": "br", "className": "trailing-break" }] },
+      {
+        "type": "p",
+        "dir": "auto",
+        "children": [
+          "The client's goal was to create a brand identity that would resonate with environmentally conscious consumers and help position their business as a leader in sustainable practices. Objectives included increasing brand awareness and driving customer engagement."
+        ]
+      },
+      { "type": "p", "dir": "auto", "children": [{ "type": "br", "className": "trailing-break" }] },
+      {
+        "type": "p",
+        "dir": "auto",
+        "children": [
+          "Our approach was to create a brand identity that communicated Green Wave's values of sustainability, innovation, and authenticity. We developed a brand strategy that focused on creating a unique and memorable visual identity that would differentiate the brand from its competitors."
+        ]
+      }
+    ],
+    "projectsLiveSite": "www.ena.supply",
+    "imageHeader": {
+      "src": "https://framerusercontent.com/images/jfF8EqRzDupj5J3HeO3bxHOEM.jpg?width=1440&height=900",
+      "srcSet": "https://framerusercontent.com/images/jfF8EqRzDupj5J3HeO3bxHOEM.jpg?scale-down-to=512&width=1440&height=900 512w,https://framerusercontent.com/images/jfF8EqRzDupj5J3HeO3bxHOEM.jpg?scale-down-to=1024&width=1440&height=900 1024w,https://framerusercontent.com/images/jfF8EqRzDupj5J3HeO3bxHOEM.jpg?width=1440&height=900 1440w",
+      "pixelWidth": 1440,
+      "pixelHeight": 900
+    },
+    "image1": {
+      "src": "https://framerusercontent.com/images/hlvBiO7t60JnrJELnKEGFka4.jpg?width=2000&height=1124",
+      "srcSet": "https://framerusercontent.com/images/hlvBiO7t60JnrJELnKEGFka4.jpg?scale-down-to=512&width=2000&height=1124 512w,https://framerusercontent.com/images/hlvBiO7t60JnrJELnKEGFka4.jpg?scale-down-to=1024&width=2000&height=1124 1024w,https://framerusercontent.com/images/hlvBiO7t60JnrJELnKEGFka4.jpg?width=2000&height=1124 2000w",
+      "pixelWidth": 2000,
+      "pixelHeight": 1124,
+      "alt": "Here comes the alt text"
+    },
+    "image2": {
+      "src": "https://framerusercontent.com/images/J0FqnMNaZYlU9eq4LXZwb6MNTEc.jpg?width=1600&height=2000",
+      "srcSet": "https://framerusercontent.com/images/J0FqnMNaZYlU9eq4LXZwb6MNTEc.jpg?scale-down-to=1024&width=1600&height=2000 819w,https://framerusercontent.com/images/J0FqnMNaZYlU9eq4LXZwb6MNTEc.jpg?width=1600&height=2000 1600w",
+      "pixelWidth": 1600,
+      "pixelHeight": 2000,
+      "alt": "Here comes the alt text"
+    },
+    "video1": "https://framerusercontent.com/assets/iL3y1OBAg1MSpzjtAGxhiITaBE.mp4",
+    "video1Poster": {
+      "src": "https://framerusercontent.com/images/cZ3pTclkmP2L2kH0dYl7Olg0E.jpg?width=1600&height=2000",
+      "srcSet": "https://framerusercontent.com/images/cZ3pTclkmP2L2kH0dYl7Olg0E.jpg?scale-down-to=1024&width=1600&height=2000 819w,https://framerusercontent.com/images/cZ3pTclkmP2L2kH0dYl7Olg0E.jpg?width=1600&height=2000 1600w",
+      "pixelWidth": 1600,
+      "pixelHeight": 2000
+    },
+    "image3": {
+      "src": "https://framerusercontent.com/images/oHywPcSzcUqSURKQSiZ7FTAe0.jpg?width=2000&height=1124",
+      "srcSet": "https://framerusercontent.com/images/oHywPcSzcUqSURKQSiZ7FTAe0.jpg?scale-down-to=512&width=2000&height=1124 512w,https://framerusercontent.com/images/oHywPcSzcUqSURKQSiZ7FTAe0.jpg?scale-down-to=1024&width=2000&height=1124 1024w,https://framerusercontent.com/images/oHywPcSzcUqSURKQSiZ7FTAe0.jpg?width=2000&height=1124 2000w",
+      "pixelWidth": 2000,
+      "pixelHeight": 1124,
+      "alt": "Here comes the alt text"
+    },
+    "image4": {
+      "src": "https://framerusercontent.com/images/OGN25FGFWU7nWxFBgwO0skWvflw.jpg?width=2000&height=2000",
+      "srcSet": "https://framerusercontent.com/images/OGN25FGFWU7nWxFBgwO0skWvflw.jpg?scale-down-to=512&width=2000&height=2000 512w,https://framerusercontent.com/images/OGN25FGFWU7nWxFBgwO0skWvflw.jpg?scale-down-to=1024&width=2000&height=2000 1024w,https://framerusercontent.com/images/OGN25FGFWU7nWxFBgwO0skWvflw.jpg?width=2000&height=2000 2000w",
+      "pixelWidth": 2000,
+      "pixelHeight": 2000,
+      "alt": "Here comes the alt text"
+    },
+    "video2": "https://framerusercontent.com/assets/4e5qj9h8EXAxGmQS5l6koQfdo.mp4",
+    "video2Poster": {
+      "src": "https://framerusercontent.com/images/Y3PkeQ9okVAMrGjpaWkvo352mE.jpg?width=1920&height=1920",
+      "srcSet": "https://framerusercontent.com/images/Y3PkeQ9okVAMrGjpaWkvo352mE.jpg?scale-down-to=512&width=1920&height=1920 512w,https://framerusercontent.com/images/Y3PkeQ9okVAMrGjpaWkvo352mE.jpg?scale-down-to=1024&width=1920&height=1920 1024w,https://framerusercontent.com/images/Y3PkeQ9okVAMrGjpaWkvo352mE.jpg?width=1920&height=1920 1920w",
+      "pixelWidth": 1920,
+      "pixelHeight": 1920
+    },
+    "image5": {
+      "src": "https://framerusercontent.com/images/VrlFs2ROcrFCmWs7GxT05UQyBA.jpg?width=2000&height=1124",
+      "srcSet": "https://framerusercontent.com/images/VrlFs2ROcrFCmWs7GxT05UQyBA.jpg?scale-down-to=512&width=2000&height=1124 512w,https://framerusercontent.com/images/VrlFs2ROcrFCmWs7GxT05UQyBA.jpg?scale-down-to=1024&width=2000&height=1124 1024w,https://framerusercontent.com/images/VrlFs2ROcrFCmWs7GxT05UQyBA.jpg?width=2000&height=1124 2000w",
+      "pixelWidth": 2000,
+      "pixelHeight": 1124
+    },
+    "nextProject1": 5,
+    "nextProject2": 6,
+    "nextProject3": 7,
+    "testimonial": "",
+    "author": "",
+    "updatedAt": "2026-10-21T22:13:20.554Z",
+    "previousItemId": "wEJaA6Gdi",
+    "nextItemId": "sAFU5iB5X"
+  },
+  {
+    "id": "sAFU5iB5X",
+    "title": "Creature",
+    "subtitle": "A home robot designed to feel at home.",
+    "worksSlug": "creature",
+    "sortingNumber": 5,
+    "thumbnailPortrait": {
+      "src": "https://framerusercontent.com/images/E9UQ9dj7s8ipOgSn4tRj3ic3kI4.jpg?width=2048&height=1143",
+      "srcSet": "https://framerusercontent.com/images/E9UQ9dj7s8ipOgSn4tRj3ic3kI4.jpg?scale-down-to=512&width=2048&height=1143 512w,https://framerusercontent.com/images/E9UQ9dj7s8ipOgSn4tRj3ic3kI4.jpg?scale-down-to=1024&width=2048&height=1143 1024w,https://framerusercontent.com/images/E9UQ9dj7s8ipOgSn4tRj3ic3kI4.jpg?width=2048&height=1143 2048w",
+      "pixelWidth": 2048,
+      "pixelHeight": 1143
+    },
+    "thumbnailWide": {
+      "src": "https://framerusercontent.com/images/I7mCQbQB792wkaxlUvC2MVMU.jpg?width=7606&height=5071",
+      "srcSet": "https://framerusercontent.com/images/I7mCQbQB792wkaxlUvC2MVMU.jpg?scale-down-to=512&width=7606&height=5071 512w,https://framerusercontent.com/images/I7mCQbQB792wkaxlUvC2MVMU.jpg?scale-down-to=1024&width=7606&height=5071 1024w,https://framerusercontent.com/images/I7mCQbQB792wkaxlUvC2MVMU.jpg?scale-down-to=2048&width=7606&height=5071 2048w,https://framerusercontent.com/images/I7mCQbQB792wkaxlUvC2MVMU.jpg?scale-down-to=4096&width=7606&height=5071 4096w,https://framerusercontent.com/images/I7mCQbQB792wkaxlUvC2MVMU.jpg?width=7606&height=5071 7606w",
+      "pixelWidth": 7606,
+      "pixelHeight": 5071
+    },
+    "thumbnailSquare": {
+      "src": "https://framerusercontent.com/images/1OOWUTPyjJgedAlidbvrgxMLUjU.jpg?width=5131&height=6842",
+      "srcSet": "https://framerusercontent.com/images/1OOWUTPyjJgedAlidbvrgxMLUjU.jpg?scale-down-to=1024&width=5131&height=6842 767w,https://framerusercontent.com/images/1OOWUTPyjJgedAlidbvrgxMLUjU.jpg?scale-down-to=2048&width=5131&height=6842 1535w,https://framerusercontent.com/images/1OOWUTPyjJgedAlidbvrgxMLUjU.jpg?scale-down-to=4096&width=5131&height=6842 3071w,https://framerusercontent.com/images/1OOWUTPyjJgedAlidbvrgxMLUjU.jpg?width=5131&height=6842 5131w",
+      "pixelWidth": 5131,
+      "pixelHeight": 6842
+    },
+    "client": "Creature Algorithm",
+    "year": "2026",
+    "sector": "Humanoid Robot",
+    "category": "Industrial Design",
+    "description": [
+      {
+        "type": "p",
+        "children": [
+          "In this project, we were approached by a startup called \"Green Wave\" to develop a brand identity that reflected their commitment to sustainability and environmental conservation."
+        ]
+      },
+      { "type": "p", "children": [{ "type": "br", "className": "trailing-break" }] },
+      {
+        "type": "p",
+        "children": [
+          "The client's goal was to create a brand identity that would resonate with environmentally conscious consumers and help position their business as a leader in sustainable practices. Objectives included increasing brand awareness and driving customer engagement."
+        ]
+      },
+      { "type": "p", "children": [{ "type": "br", "className": "trailing-break" }] },
+      {
+        "type": "p",
+        "children": [
+          "Our approach was to create a brand identity that communicated Green Wave's values of sustainability, innovation, and authenticity. We developed a brand strategy that focused on creating a unique and memorable visual identity that would differentiate the brand from its competitors."
+        ]
+      }
+    ],
+    "projectsLiveSite": "www.ena.supply",
+    "imageHeader": {
+      "src": "https://framerusercontent.com/images/I7mCQbQB792wkaxlUvC2MVMU.jpg?width=7606&height=5071",
+      "srcSet": "https://framerusercontent.com/images/I7mCQbQB792wkaxlUvC2MVMU.jpg?scale-down-to=512&width=7606&height=5071 512w,https://framerusercontent.com/images/I7mCQbQB792wkaxlUvC2MVMU.jpg?scale-down-to=1024&width=7606&height=5071 1024w,https://framerusercontent.com/images/I7mCQbQB792wkaxlUvC2MVMU.jpg?scale-down-to=2048&width=7606&height=5071 2048w,https://framerusercontent.com/images/I7mCQbQB792wkaxlUvC2MVMU.jpg?scale-down-to=4096&width=7606&height=5071 4096w,https://framerusercontent.com/images/I7mCQbQB792wkaxlUvC2MVMU.jpg?width=7606&height=5071 7606w",
+      "pixelWidth": 7606,
+      "pixelHeight": 5071
+    },
+    "image1": {
+      "src": "https://framerusercontent.com/images/I7mCQbQB792wkaxlUvC2MVMU.jpg?lossless=1&width=7606&height=5071",
+      "positionX": "49.6%",
+      "positionY": "30.7%",
+      "srcSet": "https://framerusercontent.com/images/I7mCQbQB792wkaxlUvC2MVMU.jpg?scale-down-to=512&lossless=1&width=7606&height=5071 512w,https://framerusercontent.com/images/I7mCQbQB792wkaxlUvC2MVMU.jpg?scale-down-to=1024&lossless=1&width=7606&height=5071 1024w,https://framerusercontent.com/images/I7mCQbQB792wkaxlUvC2MVMU.jpg?scale-down-to=2048&lossless=1&width=7606&height=5071 2048w,https://framerusercontent.com/images/I7mCQbQB792wkaxlUvC2MVMU.jpg?scale-down-to=4096&lossless=1&width=7606&height=5071 4096w,https://framerusercontent.com/images/I7mCQbQB792wkaxlUvC2MVMU.jpg?lossless=1&width=7606&height=5071 7606w",
+      "pixelWidth": 7606,
+      "pixelHeight": 5071,
+      "alt": "Here comes the alt text"
+    },
+    "image2": {
+      "src": "https://framerusercontent.com/images/sCmbcFOIeJRVrUQwP9ZWPs8.jpeg?width=3024&height=4032",
+      "srcSet": "https://framerusercontent.com/images/sCmbcFOIeJRVrUQwP9ZWPs8.jpeg?scale-down-to=1024&width=3024&height=4032 768w,https://framerusercontent.com/images/sCmbcFOIeJRVrUQwP9ZWPs8.jpeg?scale-down-to=2048&width=3024&height=4032 1536w,https://framerusercontent.com/images/sCmbcFOIeJRVrUQwP9ZWPs8.jpeg?width=3024&height=4032 3024w",
+      "pixelWidth": 3024,
+      "pixelHeight": 4032,
+      "alt": "Here comes the alt text"
+    },
+    "video1": "https://framerusercontent.com/assets/iL3y1OBAg1MSpzjtAGxhiITaBE.mp4",
+    "video1Poster": {
+      "src": "https://framerusercontent.com/images/cZ3pTclkmP2L2kH0dYl7Olg0E.jpg?width=1600&height=2000",
+      "srcSet": "https://framerusercontent.com/images/cZ3pTclkmP2L2kH0dYl7Olg0E.jpg?scale-down-to=1024&width=1600&height=2000 819w,https://framerusercontent.com/images/cZ3pTclkmP2L2kH0dYl7Olg0E.jpg?width=1600&height=2000 1600w",
+      "pixelWidth": 1600,
+      "pixelHeight": 2000
+    },
+    "image3": {
+      "src": "https://framerusercontent.com/images/oHywPcSzcUqSURKQSiZ7FTAe0.jpg?width=2000&height=1124",
+      "srcSet": "https://framerusercontent.com/images/oHywPcSzcUqSURKQSiZ7FTAe0.jpg?scale-down-to=512&width=2000&height=1124 512w,https://framerusercontent.com/images/oHywPcSzcUqSURKQSiZ7FTAe0.jpg?scale-down-to=1024&width=2000&height=1124 1024w,https://framerusercontent.com/images/oHywPcSzcUqSURKQSiZ7FTAe0.jpg?width=2000&height=1124 2000w",
+      "pixelWidth": 2000,
+      "pixelHeight": 1124,
+      "alt": "Here comes the alt text"
+    },
+    "image4": {
+      "src": "https://framerusercontent.com/images/OGN25FGFWU7nWxFBgwO0skWvflw.jpg?width=2000&height=2000",
+      "srcSet": "https://framerusercontent.com/images/OGN25FGFWU7nWxFBgwO0skWvflw.jpg?scale-down-to=512&width=2000&height=2000 512w,https://framerusercontent.com/images/OGN25FGFWU7nWxFBgwO0skWvflw.jpg?scale-down-to=1024&width=2000&height=2000 1024w,https://framerusercontent.com/images/OGN25FGFWU7nWxFBgwO0skWvflw.jpg?width=2000&height=2000 2000w",
+      "pixelWidth": 2000,
+      "pixelHeight": 2000,
+      "alt": "Here comes the alt text"
+    },
+    "video2": "https://framerusercontent.com/assets/4e5qj9h8EXAxGmQS5l6koQfdo.mp4",
+    "video2Poster": {
+      "src": "https://framerusercontent.com/images/Y3PkeQ9okVAMrGjpaWkvo352mE.jpg?width=1920&height=1920",
+      "srcSet": "https://framerusercontent.com/images/Y3PkeQ9okVAMrGjpaWkvo352mE.jpg?scale-down-to=512&width=1920&height=1920 512w,https://framerusercontent.com/images/Y3PkeQ9okVAMrGjpaWkvo352mE.jpg?scale-down-to=1024&width=1920&height=1920 1024w,https://framerusercontent.com/images/Y3PkeQ9okVAMrGjpaWkvo352mE.jpg?width=1920&height=1920 1920w",
+      "pixelWidth": 1920,
+      "pixelHeight": 1920
+    },
+    "image5": {
+      "src": "https://framerusercontent.com/images/VrlFs2ROcrFCmWs7GxT05UQyBA.jpg?width=2000&height=1124",
+      "srcSet": "https://framerusercontent.com/images/VrlFs2ROcrFCmWs7GxT05UQyBA.jpg?scale-down-to=512&width=2000&height=1124 512w,https://framerusercontent.com/images/VrlFs2ROcrFCmWs7GxT05UQyBA.jpg?scale-down-to=1024&width=2000&height=1124 1024w,https://framerusercontent.com/images/VrlFs2ROcrFCmWs7GxT05UQyBA.jpg?width=2000&height=1124 2000w",
+      "pixelWidth": 2000,
+      "pixelHeight": 1124
+    },
+    "nextProject1": 6,
+    "nextProject2": 7,
+    "nextProject3": 8,
+    "testimonial": "“From concept to execution, their attention to detail and artistic craftsmanship create compelling stories that leave a lasting impression.”",
+    "author": "— Noah Bennett, CEO",
+    "updatedAt": "2026-10-14T04:09:12.774Z",
+    "previousItemId": "raItn4Ok_",
+    "nextItemId": "VGsQ2EmmB"
+  },
+  {
+    "id": "VGsQ2EmmB",
+    "title": "Pelagostone",
+    "subtitle": "Cultivating life from sea to soil",
+    "worksSlug": "pelagostone",
+    "sortingNumber": 6,
+    "thumbnailPortrait": {
+      "src": "https://framerusercontent.com/images/Yg0nOMVsIva1a5yXec8Up06mc.png?width=1080&height=1080",
+      "srcSet": "https://framerusercontent.com/images/Yg0nOMVsIva1a5yXec8Up06mc.png?scale-down-to=512&width=1080&height=1080 512w,https://framerusercontent.com/images/Yg0nOMVsIva1a5yXec8Up06mc.png?scale-down-to=1024&width=1080&height=1080 1024w,https://framerusercontent.com/images/Yg0nOMVsIva1a5yXec8Up06mc.png?width=1080&height=1080 1080w",
+      "pixelWidth": 1080,
+      "pixelHeight": 1080
+    },
+    "thumbnailVideoSquare": "https://framerusercontent.com/assets/xJFdO0tFhUqwP9eWPYbETdg6ufE.mp4",
+    "thumbnailVideoSquarePoster": {
+      "src": "https://framerusercontent.com/images/m46Wt32GlabFSdWa8eLwjXcAYVU.jpg?width=1500&height=1500",
+      "srcSet": "https://framerusercontent.com/images/m46Wt32GlabFSdWa8eLwjXcAYVU.jpg?scale-down-to=512&width=1500&height=1500 512w,https://framerusercontent.com/images/m46Wt32GlabFSdWa8eLwjXcAYVU.jpg?scale-down-to=1024&width=1500&height=1500 1024w,https://framerusercontent.com/images/m46Wt32GlabFSdWa8eLwjXcAYVU.jpg?width=1500&height=1500 1500w",
+      "pixelWidth": 1500,
+      "pixelHeight": 1500
+    },
+    "client": "SCAD",
+    "year": "2024",
+    "sector": "Home Goods",
+    "category": "Industrial Design",
+    "description": [
+      {
+        "type": "p",
+        "children": [
+          "In this project, we were approached by a startup called \"Green Wave\" to develop a brand identity that reflected their commitment to sustainability and environmental conservation."
+        ]
+      },
+      { "type": "p", "children": [{ "type": "br", "className": "trailing-break" }] },
+      {
+        "type": "p",
+        "children": [
+          "The client's goal was to create a brand identity that would resonate with environmentally conscious consumers and help position their business as a leader in sustainable practices. Objectives included increasing brand awareness and driving customer engagement."
+        ]
+      },
+      { "type": "p", "children": [{ "type": "br", "className": "trailing-break" }] },
+      {
+        "type": "p",
+        "children": [
+          "Our approach was to create a brand identity that communicated Green Wave's values of sustainability, innovation, and authenticity. We developed a brand strategy that focused on creating a unique and memorable visual identity that would differentiate the brand from its competitors."
+        ]
+      }
+    ],
+    "projectsLiveSite": "www.ena.supply",
+    "imageHeader": {
+      "src": "https://framerusercontent.com/images/i6AHbiJ1xJ7rcObnAs0iAxwimY.jpg?width=1440&height=900",
+      "srcSet": "https://framerusercontent.com/images/i6AHbiJ1xJ7rcObnAs0iAxwimY.jpg?scale-down-to=512&width=1440&height=900 512w,https://framerusercontent.com/images/i6AHbiJ1xJ7rcObnAs0iAxwimY.jpg?scale-down-to=1024&width=1440&height=900 1024w,https://framerusercontent.com/images/i6AHbiJ1xJ7rcObnAs0iAxwimY.jpg?width=1440&height=900 1440w",
+      "pixelWidth": 1440,
+      "pixelHeight": 900
+    },
+    "image1": {
+      "src": "https://framerusercontent.com/images/hlvBiO7t60JnrJELnKEGFka4.jpg?width=2000&height=1124",
+      "srcSet": "https://framerusercontent.com/images/hlvBiO7t60JnrJELnKEGFka4.jpg?scale-down-to=512&width=2000&height=1124 512w,https://framerusercontent.com/images/hlvBiO7t60JnrJELnKEGFka4.jpg?scale-down-to=1024&width=2000&height=1124 1024w,https://framerusercontent.com/images/hlvBiO7t60JnrJELnKEGFka4.jpg?width=2000&height=1124 2000w",
+      "pixelWidth": 2000,
+      "pixelHeight": 1124,
+      "alt": "Here comes the alt text"
+    },
+    "image2": {
+      "src": "https://framerusercontent.com/images/J0FqnMNaZYlU9eq4LXZwb6MNTEc.jpg?width=1600&height=2000",
+      "srcSet": "https://framerusercontent.com/images/J0FqnMNaZYlU9eq4LXZwb6MNTEc.jpg?scale-down-to=1024&width=1600&height=2000 819w,https://framerusercontent.com/images/J0FqnMNaZYlU9eq4LXZwb6MNTEc.jpg?width=1600&height=2000 1600w",
+      "pixelWidth": 1600,
+      "pixelHeight": 2000,
+      "alt": "Here comes the alt text"
+    },
+    "video1": "https://framerusercontent.com/assets/iL3y1OBAg1MSpzjtAGxhiITaBE.mp4",
+    "video1Poster": {
+      "src": "https://framerusercontent.com/images/cZ3pTclkmP2L2kH0dYl7Olg0E.jpg?width=1600&height=2000",
+      "srcSet": "https://framerusercontent.com/images/cZ3pTclkmP2L2kH0dYl7Olg0E.jpg?scale-down-to=1024&width=1600&height=2000 819w,https://framerusercontent.com/images/cZ3pTclkmP2L2kH0dYl7Olg0E.jpg?width=1600&height=2000 1600w",
+      "pixelWidth": 1600,
+      "pixelHeight": 2000
+    },
+    "image3": {
+      "src": "https://framerusercontent.com/images/oHywPcSzcUqSURKQSiZ7FTAe0.jpg?width=2000&height=1124",
+      "srcSet": "https://framerusercontent.com/images/oHywPcSzcUqSURKQSiZ7FTAe0.jpg?scale-down-to=512&width=2000&height=1124 512w,https://framerusercontent.com/images/oHywPcSzcUqSURKQSiZ7FTAe0.jpg?scale-down-to=1024&width=2000&height=1124 1024w,https://framerusercontent.com/images/oHywPcSzcUqSURKQSiZ7FTAe0.jpg?width=2000&height=1124 2000w",
+      "pixelWidth": 2000,
+      "pixelHeight": 1124,
+      "alt": "Here comes the alt text"
+    },
+    "image4": {
+      "src": "https://framerusercontent.com/images/OGN25FGFWU7nWxFBgwO0skWvflw.jpg?width=2000&height=2000",
+      "srcSet": "https://framerusercontent.com/images/OGN25FGFWU7nWxFBgwO0skWvflw.jpg?scale-down-to=512&width=2000&height=2000 512w,https://framerusercontent.com/images/OGN25FGFWU7nWxFBgwO0skWvflw.jpg?scale-down-to=1024&width=2000&height=2000 1024w,https://framerusercontent.com/images/OGN25FGFWU7nWxFBgwO0skWvflw.jpg?width=2000&height=2000 2000w",
+      "pixelWidth": 2000,
+      "pixelHeight": 2000,
+      "alt": "Here comes the alt text"
+    },
+    "video2": "https://framerusercontent.com/assets/4e5qj9h8EXAxGmQS5l6koQfdo.mp4",
+    "video2Poster": {
+      "src": "https://framerusercontent.com/images/Y3PkeQ9okVAMrGjpaWkvo352mE.jpg?width=1920&height=1920",
+      "srcSet": "https://framerusercontent.com/images/Y3PkeQ9okVAMrGjpaWkvo352mE.jpg?scale-down-to=512&width=1920&height=1920 512w,https://framerusercontent.com/images/Y3PkeQ9okVAMrGjpaWkvo352mE.jpg?scale-down-to=1024&width=1920&height=1920 1024w,https://framerusercontent.com/images/Y3PkeQ9okVAMrGjpaWkvo352mE.jpg?width=1920&height=1920 1920w",
+      "pixelWidth": 1920,
+      "pixelHeight": 1920
+    },
+    "image5": {
+      "src": "https://framerusercontent.com/images/VrlFs2ROcrFCmWs7GxT05UQyBA.jpg?width=2000&height=1124",
+      "srcSet": "https://framerusercontent.com/images/VrlFs2ROcrFCmWs7GxT05UQyBA.jpg?scale-down-to=512&width=2000&height=1124 512w,https://framerusercontent.com/images/VrlFs2ROcrFCmWs7GxT05UQyBA.jpg?scale-down-to=1024&width=2000&height=1124 1024w,https://framerusercontent.com/images/VrlFs2ROcrFCmWs7GxT05UQyBA.jpg?width=2000&height=1124 2000w",
+      "pixelWidth": 2000,
+      "pixelHeight": 1124
+    },
+    "nextProject1": 7,
+    "nextProject2": 8,
+    "nextProject3": 9,
+    "testimonial": "",
+    "author": "",
+    "updatedAt": "2026-10-21T22:13:40.322Z",
+    "previousItemId": "sAFU5iB5X"
+  }
+]

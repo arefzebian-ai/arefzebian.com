@@ -1,0 +1,29 @@
+.scrollToViewMore.component,
+.scrollToViewMore .component {
+  display: block;
+}
+
+.scrollToViewMore.root {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: min-content;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  text-decoration: none;
+  width: min-content;
+}
+
+.scrollToViewMore .text {
+  flex: none;
+  height: auto;
+  position: relative;
+  white-space: pre;
+  width: auto;
+  --df-paragraph-spacing: 0px;
+}

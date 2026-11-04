@@ -1,0 +1,84 @@
+.textLink.component,
+.textLink .component {
+  display: block;
+}
+
+.textLink.root {
+  align-content: center;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 2px;
+  height: min-content;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  text-decoration: none;
+  width: min-content;
+}
+
+.textLink .frame {
+  align-content: center;
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0px;
+  height: 16px;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  width: auto;
+}
+
+.textLink .label,
+.textLink .label2 {
+  -webkit-user-select: none;
+  flex: none;
+  height: auto;
+  position: relative;
+  user-select: none;
+  white-space: pre;
+  width: auto;
+  --df-link-text-color: rgb(0, 153, 255);
+  --df-link-text-decoration: underline;
+}
+
+@supports (background: -webkit-named-image(i)) and (not (font-palette:dark)) {
+  .textLink.root,
+  .textLink .frame {
+    gap: 0px;
+  }
+
+  .textLink.root > * {
+    margin: 0px;
+    margin-bottom: calc(2px / 2);
+    margin-top: calc(2px / 2);
+  }
+
+  .textLink.root > :first-child,
+  .textLink .frame > :first-child {
+    margin-top: 0px;
+  }
+
+  .textLink.root > :last-child,
+  .textLink .frame > :last-child {
+    margin-bottom: 0px;
+  }
+
+  .textLink .frame > * {
+    margin: 0px;
+    margin-bottom: calc(0px / 2);
+    margin-top: calc(0px / 2);
+  }
+}
+
+.textLink.lineIn .frame {
+  justify-content: flex-end;
+}

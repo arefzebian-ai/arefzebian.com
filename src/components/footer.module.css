@@ -1,0 +1,218 @@
+.footer.root {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 15px;
+  height: min-content;
+  justify-content: flex-end;
+  overflow: hidden;
+  padding: 100px 0px 0px 0px;
+  position: relative;
+  width: 1200px;
+  background-color: rgb(0, 0, 0);
+}
+
+.footer .frame {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0px;
+  height: min-content;
+  justify-content: center;
+  overflow: hidden;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+}
+
+.footer .frame2 {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 40px;
+  height: min-content;
+  justify-content: center;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.footer .globalLineAnimationGlobal {
+  flex: none;
+  height: 1px;
+  position: relative;
+  width: 100%;
+}
+
+.footer .frame3 {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: min-content;
+  justify-content: center;
+  overflow: visible;
+  padding: 20px 0px 220px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.footer .frame4,
+.footer .frame6,
+.footer .frame8 {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: 1 0 0px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 11px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  width: 1px;
+}
+
+.footer .sitemap,
+.footer .location,
+.footer .socials {
+  flex: none;
+  height: auto;
+  position: relative;
+  white-space: pre-wrap;
+  width: 100%;
+  word-break: break-word;
+  word-wrap: break-word;
+  --df-paragraph-spacing: 0px;
+}
+
+.footer .frame5,
+.footer .frame7,
+.footer .frame9 {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 5px;
+  height: min-content;
+  justify-content: center;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.footer .linkOpacity,
+.footer .linkOpacity2,
+.footer .linkOpacity3,
+.footer .timeDisplay,
+.footer .linkOpacity4,
+.footer .linkOpacity5 {
+  flex: none;
+  height: auto;
+  position: relative;
+  width: auto;
+}
+
+.footer .londonUk,
+.footer .luca2025 {
+  flex: none;
+  height: auto;
+  position: relative;
+  white-space: pre;
+  width: auto;
+}
+
+.footer .londonUk {
+  --df-paragraph-spacing: 0px;
+}
+
+.footer .frame10 {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.footer .frame11 {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: 1 0 0px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  width: 1px;
+}
+
+.footer .spacer {
+  flex: 1 0 0px;
+  height: 6px;
+  overflow: visible;
+  position: relative;
+  width: 1px;
+}
+
+.footer.footerDarkTablet.root {
+  width: 810px;
+}
+
+.footer.footerDarkTablet .frame4,
+.footer.footerDarkTablet .frame6,
+.footer.footerDarkTablet .frame8,
+.footer.footerDarkTablet .frame11 {
+  flex: 0.5 0 0px;
+}
+
+.footer.footerDarkMobile.root {
+  padding: 50px 0px 0px 0px;
+  width: 390px;
+}
+
+.footer.footerDarkMobile .frame3 {
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px 0px 100px 0px;
+}
+
+.footer.footerDarkMobile .frame4,
+.footer.footerDarkMobile .frame6,
+.footer.footerDarkMobile .frame8 {
+  flex: none;
+  width: 100%;
+}
+
+.footer.footerDarkMobile .frame11 {
+  flex: 1.5 0 0px;
+}

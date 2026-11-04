@@ -1,0 +1,21 @@
+.text-body-17-scope .text-body-17:not(.rich-text-wrapper),
+.text-body-17-scope .text-body-17.rich-text-wrapper p {
+  --df-font-family: "Favorit Light", "Favorit Light Placeholder", sans-serif;
+  --df-font-family-bold: "Favorit Regular", "Favorit Regular Placeholder", sans-serif;
+  --df-font-open-type-features: normal;
+  --df-font-size: 17px;
+  --df-font-style: normal;
+  --df-font-style-bold: normal;
+  --df-font-variation-axes: normal;
+  --df-font-weight: 300;
+  --df-font-weight-bold: 400;
+  --df-letter-spacing: -0.03em;
+  --df-line-height: 117%;
+  --df-paragraph-spacing: 20px;
+  --df-text-alignment: start;
+  --df-text-color: #000000;
+  --df-text-decoration: none;
+  --df-text-stroke-color: initial;
+  --df-text-stroke-width: initial;
+  --df-text-transform: none;
+}

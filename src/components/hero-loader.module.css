@@ -1,0 +1,119 @@
+.heroLoader.root {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 50px;
+  height: 800px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  width: 1200px;
+  background-color: rgb(255, 255, 255);
+}
+
+.heroLoader .container {
+  align-content: center;
+  align-items: center;
+  bottom: -200px;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: 100%;
+  justify-content: center;
+  left: calc(50.00000000000002% - 100% / 2);
+  overflow: visible;
+  padding: 0px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.heroLoader .imageWrapper {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: 20%;
+  justify-content: center;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  width: 20%;
+}
+
+.heroLoader .loaderImage {
+  flex: none;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.heroLoader .whiteOverlay {
+  flex: none;
+  height: 102%;
+  left: 0px;
+  overflow: hidden;
+  position: absolute;
+  top: -1px;
+  width: 101%;
+  z-index: 8;
+  background-color: rgb(255, 255, 255);
+}
+
+.heroLoader.step1 .container,
+.heroLoader.step2 .container,
+.heroLoader.mobileStep1 .container,
+.heroLoader.mobileStep2 .container {
+  bottom: unset;
+  flex: 1 0 0px;
+  height: 1px;
+  left: unset;
+  position: relative;
+}
+
+.heroLoader.step1 .imageWrapper {
+  overflow: hidden;
+}
+
+.heroLoader.step1 .whiteOverlay {
+  height: 1%;
+  top: -4px;
+}
+
+.heroLoader.step2 .imageWrapper,
+.heroLoader.mobileStep2 .imageWrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.heroLoader.step2 .whiteOverlay {
+  height: 1%;
+  top: -15px;
+}
+
+.heroLoader.mobileInitial.root,
+.heroLoader.mobileStep1.root,
+.heroLoader.mobileStep2.root {
+  width: 390px;
+}
+
+.heroLoader.mobileInitial .container {
+  bottom: 0px;
+}
+
+.heroLoader.mobileInitial .imageWrapper {
+  width: 25%;
+}
+
+.heroLoader.mobileStep1 .imageWrapper {
+  overflow: hidden;
+  width: 25%;
+}

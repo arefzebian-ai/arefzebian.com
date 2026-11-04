@@ -1,0 +1,108 @@
+.imageCursorListView.link2,
+.imageCursorListView .link2 {
+  display: block;
+}
+
+.imageCursorListView.root {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: min-content;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  width: min-content;
+}
+
+.imageCursorListView .frame {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 20px;
+  height: min-content;
+  justify-content: center;
+  padding: 0px;
+  position: relative;
+  width: min-content;
+}
+
+.imageCursorListView .link {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: 210px;
+  justify-content: flex-start;
+  padding: 0px;
+  position: relative;
+  text-decoration: none;
+  width: 168px;
+}
+
+.imageCursorListView .image {
+  flex: 1 0 0px;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 1px;
+  z-index: 2;
+}
+
+.imageCursorListView .video {
+  bottom: 0px;
+  flex: none;
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  width: 100%;
+  z-index: 1;
+}
+
+@supports (background: -webkit-named-image(i)) and (not (font-palette:dark)) {
+  .imageCursorListView.root,
+  .imageCursorListView .frame,
+  .imageCursorListView .link {
+    gap: 0px;
+  }
+
+  .imageCursorListView.root > *,
+  .imageCursorListView .link > * {
+    margin: 0px;
+    margin-left: calc(10px / 2);
+    margin-right: calc(10px / 2);
+  }
+
+  .imageCursorListView.root > :first-child,
+  .imageCursorListView .link > :first-child {
+    margin-left: 0px;
+  }
+
+  .imageCursorListView.root > :last-child,
+  .imageCursorListView .link > :last-child {
+    margin-right: 0px;
+  }
+
+  .imageCursorListView .frame > * {
+    margin: 0px;
+    margin-bottom: calc(20px / 2);
+    margin-top: calc(20px / 2);
+  }
+
+  .imageCursorListView .frame > :first-child {
+    margin-top: 0px;
+  }
+
+  .imageCursorListView .frame > :last-child {
+    margin-bottom: 0px;
+  }
+}

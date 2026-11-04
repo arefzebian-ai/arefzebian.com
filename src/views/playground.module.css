@@ -1,0 +1,117 @@
+.page.root {
+  align-content: center;
+  align-items: center;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  width: 1200px;
+}
+
+.page .main {
+  align-content: center;
+  align-items: center;
+  background-color: #000000;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 120px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 150px 20px 0px 20px;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+
+.page .heading {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 40px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.page .heading2 {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 0px 0px 2px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.page .letSConnect {
+  --df-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  max-width: 420px;
+  position: relative;
+  white-space: pre-wrap;
+  width: 100%;
+  will-change: var(--df-will-change-effect-override, transform);
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+.page .sectionPlayground {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0px;
+  height: min-content;
+  justify-content: center;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.page .playgroundContent {
+  flex: none;
+  height: auto;
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 810px) and (max-width: 1199.98px) {
+  .page.root {
+    width: 810px;
+  }
+}
+
+@media (max-width: 809.98px) {
+  .page.root {
+    width: 390px;
+  }
+
+  .page .main {
+    padding: 150px 15px 0px 15px;
+  }
+}

@@ -1,0 +1,27 @@
+.text-h2-30-scope .text-h2-30:not(.rich-text-wrapper),
+.text-h2-30-scope .text-h2-30.rich-text-wrapper h2 {
+  --df-font-family: "Favorit Light", "Favorit Light Placeholder", sans-serif;
+  --df-font-family-bold: "Inter", "Inter Placeholder", sans-serif;
+  --df-font-family-bold-italic: "Inter", "Inter Placeholder", sans-serif;
+  --df-font-family-italic: "Inter", "Inter Placeholder", sans-serif;
+  --df-font-open-type-features: normal;
+  --df-font-size: 30px;
+  --df-font-style: normal;
+  --df-font-style-bold: normal;
+  --df-font-style-bold-italic: italic;
+  --df-font-style-italic: italic;
+  --df-font-variation-axes: normal;
+  --df-font-weight: 300;
+  --df-font-weight-bold: 900;
+  --df-font-weight-bold-italic: 900;
+  --df-font-weight-italic: 700;
+  --df-letter-spacing: -0.03em;
+  --df-line-height: 120%;
+  --df-paragraph-spacing: 40px;
+  --df-text-alignment: start;
+  --df-text-color: #000000;
+  --df-text-decoration: none;
+  --df-text-stroke-color: initial;
+  --df-text-stroke-width: initial;
+  --df-text-transform: none;
+}

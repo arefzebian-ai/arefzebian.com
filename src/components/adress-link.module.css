@@ -1,0 +1,107 @@
+.adressLink.component,
+.adressLink .component {
+  display: block;
+}
+
+.adressLink.root {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0px;
+  height: min-content;
+  justify-content: center;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  text-decoration: none;
+  width: min-content;
+}
+
+.adressLink .frame,
+.adressLink .frame3 {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 0px 0px 2px 0px;
+  position: relative;
+  width: min-content;
+}
+
+.adressLink .frame2 {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: min-content;
+  justify-content: center;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  width: min-content;
+}
+
+.adressLink .mondayToFriday9,
+.adressLink .mondayToFriday9_2 {
+  flex: none;
+  height: auto;
+  position: relative;
+  white-space: pre-wrap;
+  width: 256px;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+@supports (background: -webkit-named-image(i)) and (not (font-palette:dark)) {
+  .adressLink.root,
+  .adressLink .frame,
+  .adressLink .frame2,
+  .adressLink .frame3 {
+    gap: 0px;
+  }
+
+  .adressLink.root > * {
+    margin: 0px;
+    margin-bottom: calc(0px / 2);
+    margin-top: calc(0px / 2);
+  }
+
+  .adressLink.root > :first-child {
+    margin-top: 0px;
+  }
+
+  .adressLink.root > :last-child {
+    margin-bottom: 0px;
+  }
+
+  .adressLink .frame > *,
+  .adressLink .frame2 > *,
+  .adressLink .frame3 > * {
+    margin: 0px;
+    margin-left: calc(10px / 2);
+    margin-right: calc(10px / 2);
+  }
+
+  .adressLink .frame > :first-child,
+  .adressLink .frame2 > :first-child,
+  .adressLink .frame3 > :first-child {
+    margin-left: 0px;
+  }
+
+  .adressLink .frame > :last-child,
+  .adressLink .frame2 > :last-child,
+  .adressLink .frame3 > :last-child {
+    margin-right: 0px;
+  }
+}

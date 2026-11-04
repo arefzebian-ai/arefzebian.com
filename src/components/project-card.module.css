@@ -1,0 +1,253 @@
+.projectCard.root {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: min-content;
+  justify-content: flex-end;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  width: 364px;
+}
+
+.projectCard .container {
+  align-content: center;
+  align-items: center;
+  aspect-ratio: 0.8 / 1;
+  display: flex;
+  flex: 1 0 0px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: var(--df-aspect-ratio-supported, 455px);
+  justify-content: center;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  width: 1px;
+}
+
+.projectCard .media {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: 1 0 0px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: 100%;
+  justify-content: center;
+  padding: 0px;
+  position: relative;
+  width: 1px;
+}
+
+.projectCard .thumbnail {
+  flex: 1 0 0px;
+  height: 1px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.projectCard .video {
+  flex: none;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+}
+
+.projectCard .overlay {
+  bottom: 0px;
+  flex: none;
+  height: 100%;
+  left: 0px;
+  overflow: visible;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.projectCard .projectInfo {
+  align-content: flex-end;
+  align-items: flex-end;
+  bottom: 0px;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 3px;
+  height: min-content;
+  justify-content: flex-start;
+  left: 0px;
+  overflow: hidden;
+  padding: 0px 20px 15px 20px;
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+}
+
+.projectCard .projectInfoContainer {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: 1 0 0px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 5px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  width: 1px;
+}
+
+.projectCard .topRow {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.projectCard .visionOne,
+.projectCard .shapingVisionsDefiningMoments {
+  flex: 1 0 0px;
+  height: auto;
+  position: relative;
+  white-space: pre-wrap;
+  width: 1px;
+  word-break: break-word;
+  word-wrap: break-word;
+  --df-paragraph-spacing: 0px;
+}
+
+.projectCard .bottomRow {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 2px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+@supports (background: -webkit-named-image(i)) and (not (font-palette:dark)) {
+  .projectCard.root,
+  .projectCard .container,
+  .projectCard .media,
+  .projectCard .projectInfo,
+  .projectCard .projectInfoContainer,
+  .projectCard .topRow,
+  .projectCard .bottomRow {
+    gap: 0px;
+  }
+
+  .projectCard.root > *,
+  .projectCard .container > *,
+  .projectCard .topRow > * {
+    margin: 0px;
+    margin-left: calc(10px / 2);
+    margin-right: calc(10px / 2);
+  }
+
+  .projectCard.root > :first-child,
+  .projectCard .container > :first-child,
+  .projectCard .projectInfo > :first-child,
+  .projectCard .topRow > :first-child,
+  .projectCard .bottomRow > :first-child {
+    margin-left: 0px;
+  }
+
+  .projectCard.root > :last-child,
+  .projectCard .container > :last-child,
+  .projectCard .projectInfo > :last-child,
+  .projectCard .topRow > :last-child,
+  .projectCard .bottomRow > :last-child {
+    margin-right: 0px;
+  }
+
+  .projectCard .media > * {
+    margin: 0px;
+    margin-bottom: calc(10px / 2);
+    margin-top: calc(10px / 2);
+  }
+
+  .projectCard .media > :first-child,
+  .projectCard .projectInfoContainer > :first-child {
+    margin-top: 0px;
+  }
+
+  .projectCard .media > :last-child,
+  .projectCard .projectInfoContainer > :last-child {
+    margin-bottom: 0px;
+  }
+
+  .projectCard .projectInfo > * {
+    margin: 0px;
+    margin-left: calc(3px / 2);
+    margin-right: calc(3px / 2);
+  }
+
+  .projectCard .projectInfoContainer > * {
+    margin: 0px;
+    margin-bottom: calc(5px / 2);
+    margin-top: calc(5px / 2);
+  }
+
+  .projectCard .bottomRow > * {
+    margin: 0px;
+    margin-left: calc(2px / 2);
+    margin-right: calc(2px / 2);
+  }
+}
+
+.projectCard.projectCardWide2.root,
+.projectCard.projectCardWide.root,
+.projectCard.projectCardWideTablet.root {
+  width: 684px;
+}
+
+.projectCard.projectCardWide2 .container,
+.projectCard.projectCardWide .container,
+.projectCard.projectCardWideTablet .container {
+  aspect-ratio: 1.5 / 1;
+  height: var(--df-aspect-ratio-supported, 456px);
+}
+
+.projectCard.projectCardSquare.root,
+.projectCard.projectCardSquareHover.root,
+.projectCard.projectCardSquareTablet.root {
+  width: 456px;
+}
+
+.projectCard.projectCardSquare .container,
+.projectCard.projectCardSquareHover .container,
+.projectCard.projectCardSquareTablet .container {
+  aspect-ratio: 1 / 1;
+  height: var(--df-aspect-ratio-supported, 456px);
+}

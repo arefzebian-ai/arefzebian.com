@@ -1,0 +1,171 @@
+.playgroundContent2.root {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 15px;
+  height: min-content;
+  justify-content: center;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  width: 1170px;
+}
+
+.playgroundContent2 .stickyArea {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
+  height: 100%;
+  justify-content: flex-start;
+  left: 0px;
+  overflow: visible;
+  padding: 0px;
+  pointer-events: none;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 2;
+}
+
+.playgroundContent2 .sticky {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: 1 0 0px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0px;
+  height: min-content;
+  justify-content: flex-end;
+  overflow: visible;
+  padding: 10px 0px 10px 0px;
+  pointer-events: auto;
+  position: sticky;
+  top: 42px;
+  width: 1px;
+  z-index: 1;
+}
+
+.playgroundContent2 .toggle {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 3px;
+  height: min-content;
+  justify-content: center;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  width: min-content;
+}
+
+.playgroundContent2 .gridToggle,
+.playgroundContent2 .singleToggle {
+  align-content: center;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0px;
+  height: min-content;
+  justify-content: center;
+  padding: 0px;
+  position: relative;
+  width: min-content;
+}
+
+.playgroundContent2 .gridToggleIcons,
+.playgroundContent2 .singleToggleIcons {
+  flex: none;
+  height: 25px;
+  position: relative;
+  width: 25px;
+}
+
+.playgroundContent2 .frame {
+  -webkit-user-select: auto;
+  display: grid;
+  flex: none;
+  gap: 10px;
+  grid-auto-rows: min-content;
+  grid-template-columns: repeat(8, minmax(20px, 1fr));
+  grid-template-rows: repeat(2, min-content);
+  height: min-content;
+  justify-content: center;
+  overflow: visible;
+  padding: 45px 0px 0px 0px;
+  position: relative;
+  user-select: auto;
+  width: 100%;
+}
+
+.playgroundContent2 .playgroundItem,
+.playgroundContent2 .playgroundItem2,
+.playgroundContent2 .playgroundItem3,
+.playgroundContent2 .playgroundItem4,
+.playgroundContent2 .playgroundItem5,
+.playgroundContent2 .playgroundItem6,
+.playgroundContent2 .playgroundItem7,
+.playgroundContent2 .playgroundItem8,
+.playgroundContent2 .playgroundItem9,
+.playgroundContent2 .playgroundItem10,
+.playgroundContent2 .playgroundItem11,
+.playgroundContent2 .playgroundItem12,
+.playgroundContent2 .playgroundItem13,
+.playgroundContent2 .playgroundItem14,
+.playgroundContent2 .playgroundItem15,
+.playgroundContent2 .playgroundItem16,
+.playgroundContent2 .playgroundItem17,
+.playgroundContent2 .playgroundItem18,
+.playgroundContent2 .playgroundItem19,
+.playgroundContent2 .playgroundItem20 {
+  align-self: start;
+  flex: none;
+  height: auto;
+  justify-self: start;
+  position: relative;
+  width: 100%;
+}
+
+.playgroundContent2.variant1ColumnDesktop .toggle,
+.playgroundContent2.variant1ColumnMobile .toggle {
+  cursor: pointer;
+}
+
+.playgroundContent2.variant1ColumnDesktop .frame {
+  gap: 100px 200px;
+  grid-template-columns: repeat(1, minmax(20px, 1fr));
+  width: 40%;
+}
+
+.playgroundContent2.variant1ColumnMobile.root,
+.playgroundContent2.variant3ColumnMobile.root {
+  width: 390px;
+}
+
+.playgroundContent2.variant1ColumnMobile .sticky,
+.playgroundContent2.variant3ColumnMobile .sticky {
+  top: 57px;
+}
+
+.playgroundContent2.variant1ColumnMobile .frame {
+  gap: 50px 200px;
+  grid-template-columns: repeat(1, minmax(20px, 1fr));
+  padding: 44px 0px 0px 0px;
+}
+
+.playgroundContent2.variant3ColumnMobile .frame {
+  grid-template-columns: repeat(3, minmax(20px, 1fr));
+  padding: 44px 0px 0px 0px;
+}

@@ -1,0 +1,85 @@
+.projectsListRow.root {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 0px 0px 7px 0px;
+  position: relative;
+  width: 1160px;
+}
+
+.projectsListRow .apexLab,
+.projectsListRow .zenith,
+.projectsListRow .tech {
+  flex: 1 0 0px;
+  height: auto;
+  position: relative;
+  white-space: pre-wrap;
+  width: 1px;
+  word-break: break-word;
+  word-wrap: break-word;
+  --df-paragraph-spacing: 0px;
+}
+
+.projectsListRow .text2025 {
+  flex: 0.4 0 0px;
+  height: auto;
+  position: relative;
+  white-space: pre-wrap;
+  width: 1px;
+  word-break: break-word;
+  word-wrap: break-word;
+  --df-paragraph-spacing: 0px;
+}
+
+@supports (background: -webkit-named-image(i)) and (not (font-palette:dark)) {
+  .projectsListRow.root {
+    gap: 0px;
+  }
+
+  .projectsListRow.root > * {
+    margin: 0px;
+    margin-left: calc(10px / 2);
+    margin-right: calc(10px / 2);
+  }
+
+  .projectsListRow.root > :first-child {
+    margin-left: 0px;
+  }
+
+  .projectsListRow.root > :last-child {
+    margin-right: 0px;
+  }
+}
+
+.projectsListRow.listViewMobile.root {
+  align-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  width: 390px;
+}
+
+@supports (background: -webkit-named-image(i)) and (not (font-palette:dark)) {
+  .projectsListRow.listViewMobile.root {
+    gap: 0px;
+  }
+
+  .projectsListRow.listViewMobile.root > * {
+    margin: 0px;
+    margin-left: calc(20px / 2);
+    margin-right: calc(20px / 2);
+  }
+
+  .projectsListRow.listViewMobile.root > :first-child {
+    margin-left: 0px;
+  }
+
+  .projectsListRow.listViewMobile.root > :last-child {
+    margin-right: 0px;
+  }
+}

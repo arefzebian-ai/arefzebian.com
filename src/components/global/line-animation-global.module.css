@@ -1,0 +1,57 @@
+.lineAnimationGlobal.root {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: 1px;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  width: 787px;
+}
+
+.lineAnimationGlobal .line {
+  flex: none;
+  height: 1px;
+  position: relative;
+  width: 0%;
+}
+
+@supports (background: -webkit-named-image(i)) and (not (font-palette:dark)) {
+  .lineAnimationGlobal.root {
+    gap: 0px;
+  }
+
+  .lineAnimationGlobal.root > * {
+    margin: 0px;
+    margin-left: calc(10px / 2);
+    margin-right: calc(10px / 2);
+  }
+
+  .lineAnimationGlobal.root > :first-child {
+    margin-left: 0px;
+  }
+
+  .lineAnimationGlobal.root > :last-child {
+    margin-right: 0px;
+  }
+}
+
+.lineAnimationGlobal.lineAnimationActive .line,
+.lineAnimationGlobal.lineActive .line,
+.lineAnimationGlobal.lineAnimation03Active .line,
+.lineAnimationGlobal.lineAnimation04Active .line {
+  width: 100%;
+}
+
+.lineAnimationGlobal.lineAnimateOnAppear.root,
+.lineAnimationGlobal.lineActive.root,
+.lineAnimationGlobal.lineAnimation03.root,
+.lineAnimationGlobal.lineAnimation03Active.root,
+.lineAnimationGlobal.lineAnimation04.root,
+.lineAnimationGlobal.lineAnimation04Active.root {
+  width: 787px;
+}

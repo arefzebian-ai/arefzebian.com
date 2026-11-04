@@ -1,0 +1,96 @@
+.ctaButton.component,
+.ctaButton .component {
+  display: block;
+}
+
+.ctaButton.root {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: min-content;
+  justify-content: center;
+  overflow: visible;
+  padding: 11px 19px 11px 19px;
+  position: relative;
+  text-decoration: none;
+  width: min-content;
+  -webkit-backdrop-filter: blur(15px);
+  --border-color: rgba(255, 255, 255, 0.1);
+  --border-style: solid;
+  backdrop-filter: blur(15px);
+}
+
+.ctaButton .contactButton {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 5px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  width: min-content;
+}
+
+.ctaButton .text {
+  flex: none;
+  height: auto;
+  position: relative;
+  white-space: pre;
+  width: auto;
+  --df-paragraph-spacing: 0px;
+}
+
+.ctaButton .arrowWrapper {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 4px;
+  height: min-content;
+  justify-content: flex-end;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  width: 14px;
+}
+
+.ctaButton .arrow1,
+.ctaButton .arrow2 {
+  flex: none;
+  height: 14px;
+  position: relative;
+  width: 14px;
+}
+
+.ctaButton.primaryButtonHover .arrowWrapper,
+.ctaButton.greyButtonHover .arrowWrapper,
+.ctaButton.buttonHeroHover .arrowWrapper {
+  justify-content: flex-start;
+}
+
+.ctaButton[data-border="true"]::after,
+.ctaButton [data-border="true"]::after {
+  content: "";
+  border-width: var(--border-top-width, 0) var(--border-right-width, 0) var(--border-bottom-width, 0) var(--border-left-width, 0);
+  border-color: var(--border-color, none);
+  border-style: var(--border-style, none);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+  border-radius: inherit;
+  corner-shape: inherit;
+  pointer-events: none;
+}

@@ -1,0 +1,50 @@
+.shareArticleButton.root {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 2px;
+  height: min-content;
+  justify-content: center;
+  overflow: visible;
+  padding: 8px 16px 8px 16px;
+  position: relative;
+  width: min-content;
+}
+
+.shareArticleButton .share {
+  flex: none;
+  height: auto;
+  position: relative;
+  white-space: pre;
+  width: auto;
+  --df-paragraph-spacing: 0px;
+}
+
+.shareArticleButton .svg {
+  flex: none;
+  height: 16px;
+  position: relative;
+  width: 16px;
+}
+
+@supports (background: -webkit-named-image(i)) and (not (font-palette:dark)) {
+  .shareArticleButton.root {
+    gap: 0px;
+  }
+
+  .shareArticleButton.root > * {
+    margin: 0px;
+    margin-left: calc(2px / 2);
+    margin-right: calc(2px / 2);
+  }
+
+  .shareArticleButton.root > :first-child {
+    margin-left: 0px;
+  }
+
+  .shareArticleButton.root > :last-child {
+    margin-right: 0px;
+  }
+}

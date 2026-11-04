@@ -1,0 +1,320 @@
+.page.link2,
+.page .link2 {
+  display: block;
+}
+
+.page.root {
+  align-content: center;
+  align-items: center;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 100px 0px 0px 0px;
+  position: relative;
+  width: 1200px;
+}
+
+.page .main {
+  align-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 200px 20px 0px 20px;
+  position: relative;
+  width: 100%;
+  z-index: 8;
+}
+
+.page .navVariantTrigger {
+  flex: none;
+  height: 1px;
+  left: calc(50.00000000000002% - 1px / 2);
+  overflow: visible;
+  position: absolute;
+  top: 70px;
+  width: 1px;
+  z-index: 1;
+}
+
+.page .sectionCaseStudy {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 15px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.page .sectionImageSingle,
+.page .sectionImageSingle2,
+.page .sectionImageSingle3,
+.page .sectionImageSingle4,
+.page .sectionImageSingle5,
+.page .sectionImageSingle6,
+.page .sectionImageSingle7,
+.page .sectionImageSingle8,
+.page .sectionImageSingle9,
+.page .sectionImageSingle10,
+.page .sectionImageSingle11,
+.page .sectionImageSingle12,
+.page .sectionImageSingle13,
+.page .sectionImageSingle14,
+.page .sectionImageSingle15,
+.page .sectionImageSingle16,
+.page .sectionImageSingle17,
+.page .sectionImageSingle18,
+.page .sectionImageSingle19,
+.page .sectionImageSingle20,
+.page .sectionImageSingle21,
+.page .sectionImageSingle22,
+.page .sectionImageSingle23,
+.page .sectionImageSingle24,
+.page .sectionImageSingle25,
+.page .sectionImageSingle26,
+.page .sectionImageSingle27,
+.page .sectionImageSingle28,
+.page .sectionImageSingle29 {
+  align-content: center;
+  align-items: center;
+  aspect-ratio: 116 / 65;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 15px;
+  height: auto;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+  will-change: var(--df-will-change-override, transform);
+}
+
+.page .image,
+.page .image2,
+.page .image3,
+.page .image4,
+.page .image5,
+.page .image6,
+.page .image7,
+.page .image8,
+.page .image9,
+.page .image10,
+.page .image11,
+.page .image12,
+.page .image13,
+.page .image14,
+.page .image15,
+.page .image16,
+.page .image17,
+.page .image18,
+.page .image19,
+.page .image20,
+.page .image21,
+.page .image22,
+.page .image23,
+.page .image24,
+.page .image25,
+.page .image26,
+.page .image27,
+.page .image28,
+.page .image29 {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  flex: 1 0 0px;
+  height: 1px;
+  position: relative;
+  width: 100%;
+}
+
+.page .sectionMoreProjects {
+  align-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 30px;
+  height: min-content;
+  justify-content: center;
+  overflow: visible;
+  padding: 120px 0px 60px 0px;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+
+.page .heading {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: min-content;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.page .text {
+  --df-paragraph-spacing: 0px;
+  flex: 1 0 0px;
+  height: auto;
+  position: relative;
+  white-space: pre-wrap;
+  width: 1px;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+.page .textLink {
+  flex: none;
+  height: auto;
+  position: relative;
+  width: auto;
+}
+
+.page .container {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.page .frame,
+.page .frame2,
+.page .frame3 {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: 1 0 0px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: min-content;
+  justify-content: space-between;
+  padding: 0px;
+  position: relative;
+  width: 1px;
+}
+
+.page .link,
+.page .link3 {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: 1 0 0px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0px;
+  height: min-content;
+  justify-content: flex-start;
+  padding: 0px;
+  position: relative;
+  text-decoration: none;
+  width: 1px;
+}
+
+.page .projectCard,
+.page .projectCard2,
+.page .projectCard3 {
+  flex: 1 0 0px;
+  height: auto;
+  position: relative;
+  width: 1px;
+}
+
+.page .link4 {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0px;
+  height: min-content;
+  justify-content: flex-start;
+  padding: 0px;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+}
+
+@media (min-width: 810px) and (max-width: 1199.98px) {
+  .page.root {
+    width: 810px;
+  }
+
+  .page .main {
+    z-index: 2;
+  }
+
+  .page .sectionMoreProjects {
+    padding: 20px 0px 40px 0px;
+  }
+}
+
+@media (max-width: 809.98px) {
+  .page.root {
+    padding: 80px 0px 0px 0px;
+    width: 390px;
+  }
+
+  .page .sectionMoreProjects {
+    padding: 15px 0px 40px 0px;
+  }
+
+  .page .container {
+    flex-direction: column;
+  }
+
+  .page .frame,
+  .page .frame2,
+  .page .frame3 {
+    flex: none;
+    width: 100%;
+  }
+}

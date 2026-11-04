@@ -1,0 +1,306 @@
+.page.link2,
+.page .link2 {
+  display: block;
+}
+
+.page.root {
+  align-content: center;
+  align-items: center;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  width: 1200px;
+}
+
+.page .main {
+  align-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 150px 0px 0px 0px;
+  position: relative;
+  width: 100%;
+  z-index: 5;
+}
+
+.page .sectionBlogIntro {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 30px;
+  height: min-content;
+  justify-content: center;
+  overflow: visible;
+  padding: 0px 20px 0px 20px;
+  position: relative;
+  width: 100%;
+}
+
+.page .container {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 120px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.page .journal {
+  --df-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  position: relative;
+  white-space: pre;
+  width: auto;
+  will-change: var(--df-will-change-effect-override, transform);
+}
+
+.page .sectionArticles {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 40px;
+  height: min-content;
+  justify-content: center;
+  overflow: visible;
+  padding: 40px 20px 100px 20px;
+  position: relative;
+  width: 100%;
+}
+
+.page .globalLineAnimationGlobal {
+  flex: none;
+  height: 1px;
+  position: relative;
+  width: 100%;
+}
+
+.page .articleRow,
+.page .articleRow2,
+.page .articleRow3,
+.page .articleRowMobile,
+.page .articleRowMobile2 {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.page .frame,
+.page .frame2,
+.page .frame3,
+.page .frame4,
+.page .frame5,
+.page .frame6,
+.page .frame7,
+.page .frame8,
+.page .frame9,
+.page .frame10,
+.page .frame11,
+.page .frame12 {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: 1 0 0px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 20px;
+  height: min-content;
+  justify-content: center;
+  padding: 0px;
+  position: relative;
+  width: 1px;
+}
+
+.page .link,
+.page .link3,
+.page .link4,
+.page .link5,
+.page .link6,
+.page .link7,
+.page .link8,
+.page .link9,
+.page .link10,
+.page .link11,
+.page .link12,
+.page .link13 {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: min-content;
+  justify-content: flex-start;
+  padding: 0px;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+}
+
+.page .articleCard,
+.page .articleCard2,
+.page .articleCard3,
+.page .articleCard4,
+.page .articleCard5,
+.page .articleCard6,
+.page .articleCard7,
+.page .articleCard8,
+.page .articleCard9,
+.page .articleCard10,
+.page .articleCard11,
+.page .articleCard12 {
+  flex: 1 0 0px;
+  height: auto;
+  position: relative;
+  width: 1px;
+  will-change: var(--df-will-change-effect-override, transform);
+}
+
+.page .spacer {
+  align-self: stretch;
+  background-color: #ffffff;
+  flex: 1 0 0px;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  width: 1px;
+}
+
+.page .buyTemplateModule {
+  align-content: flex-end;
+  align-items: flex-end;
+  bottom: 0px;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: 1px;
+  justify-content: flex-end;
+  overflow: visible;
+  padding: 0px;
+  position: fixed;
+  right: 0px;
+  width: 100%;
+  z-index: 10;
+}
+
+.page .buttonWrapper {
+  align-content: center;
+  align-items: center;
+  bottom: 66px;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: min-content;
+  justify-content: center;
+  overflow: visible;
+  padding: 0px;
+  position: absolute;
+  right: 20px;
+  width: min-content;
+  z-index: 1;
+}
+
+.page .enaBuyTemplateButton {
+  flex: none;
+  height: auto;
+  position: relative;
+  width: auto;
+  will-change: var(--df-will-change-effect-override, transform);
+}
+
+@media (min-width: 810px) and (max-width: 1199.98px) {
+  .page.root {
+    width: 810px;
+  }
+
+  .page .sectionArticles {
+    padding: 40px 20px 40px 20px;
+  }
+}
+
+@media (max-width: 809.98px) {
+  .page.root {
+    width: 390px;
+  }
+
+  .page .sectionBlogIntro {
+    padding: 0px 15px 0px 15px;
+  }
+
+  .page .sectionArticles {
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 40px 20px 40px 20px;
+  }
+
+  .page .articleRow,
+  .page .articleRow2,
+  .page .articleRow3 {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .page .frame,
+  .page .frame2,
+  .page .frame3,
+  .page .frame4,
+  .page .frame5,
+  .page .frame6,
+  .page .frame7,
+  .page .frame8,
+  .page .frame9 {
+    flex: none;
+    width: 100%;
+  }
+
+  .page .buyTemplateModule {
+    flex-direction: column;
+  }
+
+  .page .buttonWrapper {
+    bottom: 62px;
+  }
+}

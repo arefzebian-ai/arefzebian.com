@@ -1,0 +1,69 @@
+.text-body-40-scope .text-body-40:not(.rich-text-wrapper),
+.text-body-40-scope .text-body-40.rich-text-wrapper p {
+  --df-font-family: "Favorit Light", "Favorit Light Placeholder", sans-serif;
+  --df-font-family-bold: "Favorit Regular", "Favorit Regular Placeholder", sans-serif;
+  --df-font-open-type-features: normal;
+  --df-font-size: 40px;
+  --df-font-style: normal;
+  --df-font-style-bold: normal;
+  --df-font-variation-axes: normal;
+  --df-font-weight: 300;
+  --df-font-weight-bold: 400;
+  --df-letter-spacing: -0.03em;
+  --df-line-height: 120%;
+  --df-paragraph-spacing: 20px;
+  --df-text-alignment: start;
+  --df-text-color: #ffffff;
+  --df-text-decoration: none;
+  --df-text-stroke-color: initial;
+  --df-text-stroke-width: initial;
+  --df-text-transform: none;
+}
+
+@media (max-width: 1199px) and (min-width: 810px) {
+  .text-body-40-scope .text-body-40:not(.rich-text-wrapper),
+  .text-body-40-scope .text-body-40.rich-text-wrapper p {
+    --df-font-family: "Favorit Light", "Favorit Light Placeholder", sans-serif;
+    --df-font-family-bold: "Favorit Regular", "Favorit Regular Placeholder", sans-serif;
+    --df-font-open-type-features: normal;
+    --df-font-size: 35px;
+    --df-font-style: normal;
+    --df-font-style-bold: normal;
+    --df-font-variation-axes: normal;
+    --df-font-weight: 300;
+    --df-font-weight-bold: 400;
+    --df-letter-spacing: -0.03em;
+    --df-line-height: 120%;
+    --df-paragraph-spacing: 20px;
+    --df-text-alignment: start;
+    --df-text-color: #ffffff;
+    --df-text-decoration: none;
+    --df-text-stroke-color: initial;
+    --df-text-stroke-width: initial;
+    --df-text-transform: none;
+  }
+}
+
+@media (max-width: 809px) and (min-width: 0px) {
+  .text-body-40-scope .text-body-40:not(.rich-text-wrapper),
+  .text-body-40-scope .text-body-40.rich-text-wrapper p {
+    --df-font-family: "Favorit Light", "Favorit Light Placeholder", sans-serif;
+    --df-font-family-bold: "Favorit Regular", "Favorit Regular Placeholder", sans-serif;
+    --df-font-open-type-features: normal;
+    --df-font-size: 30px;
+    --df-font-style: normal;
+    --df-font-style-bold: normal;
+    --df-font-variation-axes: normal;
+    --df-font-weight: 300;
+    --df-font-weight-bold: 400;
+    --df-letter-spacing: -0.03em;
+    --df-line-height: 110%;
+    --df-paragraph-spacing: 20px;
+    --df-text-alignment: start;
+    --df-text-color: #ffffff;
+    --df-text-decoration: none;
+    --df-text-stroke-color: initial;
+    --df-text-stroke-width: initial;
+    --df-text-transform: none;
+  }
+}

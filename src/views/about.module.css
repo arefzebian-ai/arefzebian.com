@@ -1,0 +1,418 @@
+.page.root {
+  align-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  width: 1200px;
+}
+
+.page .main {
+  align-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 150px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 200px 0px 0px 0px;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+
+.page .sectionIntro {
+  align-content: flex-start;
+  align-items: flex-start;
+  background-color: #ffffff;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 40px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 0px 20px 0px 20px;
+  position: relative;
+  width: 100%;
+}
+
+.page .frame {
+  align-content: flex-start;
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 1 0 0px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 40px;
+  height: auto;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  width: 1px;
+}
+
+.page .frame2 {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: min-content;
+  justify-content: center;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.page .formaRepresentsTheEpitome {
+  --df-paragraph-spacing: 0px;
+  flex: 1 0 0px;
+  height: auto;
+  position: relative;
+  white-space: pre-wrap;
+  width: 1px;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+.page .sticky {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: min-content;
+  justify-content: flex-start;
+  min-height: 1px;
+  overflow: visible;
+  padding: 0px;
+  position: sticky;
+  top: 600px;
+  width: 100%;
+  z-index: 1;
+}
+
+.page .imageWrapper {
+  align-content: center;
+  align-items: center;
+  aspect-ratio: 0.75 / 1;
+  display: flex;
+  flex: 1 0 0px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: auto;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  width: 1px;
+}
+
+.page .image {
+  flex: 1 0 0px;
+  height: 100%;
+  position: relative;
+  width: 1px;
+  will-change: var(--df-will-change-effect-override, transform);
+}
+
+.page .container {
+  display: grid;
+  flex: none;
+  gap: 10px 10px;
+  grid-auto-rows: minmax(0, 1fr);
+  grid-template-columns: repeat(1, minmax(50px, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  height: min-content;
+  justify-content: center;
+  overflow: visible;
+  padding: 0px 20px 0px 20px;
+  position: relative;
+  width: 100%;
+}
+
+.page .experience {
+  align-content: flex-start;
+  align-items: flex-start;
+  align-self: start;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 20px;
+  grid-column: 1 / -1;
+  height: min-content;
+  justify-content: center;
+  justify-self: start;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.page .experienceTitle,
+.page .educationTitle,
+.page .skillsTitle,
+.page .textLineWrapper3,
+.page .textLineWrapper4,
+.page .textLineWrapper5,
+.page .softwareTitle,
+.page .textLineWrapper9,
+.page .textLineWrapper10,
+.page .textLineWrapper12 {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: min-content;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.page .text,
+.page .text2,
+.page .text3,
+.page .text4 {
+  flex: 1 0 0px;
+  height: auto;
+  opacity: 0.4;
+  position: relative;
+  white-space: pre-wrap;
+  width: 1px;
+  will-change: var(--df-will-change-effect-override, transform);
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+.page .experienceContent,
+.page .educationContent,
+.page .skillsContent,
+.page .softwareContent {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 1px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.page .textLineWrapper,
+.page .textLineWrapper2 {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  width: 50%;
+}
+
+.page .experienceRow,
+.page .experienceRow2,
+.page .experienceRow3,
+.page .experienceRow4,
+.page .experienceRow5,
+.page .experienceRow6,
+.page .infoContent2,
+.page .infoContent3,
+.page .infoContent4,
+.page .infoContent7,
+.page .infoContent8,
+.page .infoContent9,
+.page .infoContent12,
+.page .infoContent14,
+.page .infoContent15,
+.page .infoContent16,
+.page .infoContent17 {
+  flex: none;
+  height: auto;
+  position: relative;
+  width: 100%;
+  will-change: var(--df-will-change-effect-override, transform);
+}
+
+.page .education {
+  align-content: flex-start;
+  align-items: flex-start;
+  align-self: center;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 20px;
+  grid-column: 1 / -1;
+  height: min-content;
+  justify-content: center;
+  justify-self: start;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.page .skills,
+.page .software {
+  align-content: flex-start;
+  align-items: flex-start;
+  align-self: start;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 20px;
+  height: min-content;
+  justify-content: center;
+  justify-self: start;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  width: 50%;
+}
+
+.page .infoContent,
+.page .infoContent5,
+.page .infoContent6,
+.page .infoContent10,
+.page .infoContent11,
+.page .infoContent13 {
+  flex: 1 0 0px;
+  height: auto;
+  position: relative;
+  width: 1px;
+  will-change: var(--df-will-change-effect-override, transform);
+}
+
+.page .textLineWrapper6,
+.page .textLineWrapper7,
+.page .textLineWrapper8,
+.page .textLineWrapper11,
+.page .textLineWrapper13,
+.page .textLineWrapper14,
+.page .textLineWrapper15,
+.page .textLineWrapper16 {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: min-content;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 810px) and (max-width: 1199.98px) {
+  .page.root {
+    width: 810px;
+  }
+
+  .page .sectionIntro {
+    flex-direction: column;
+  }
+
+  .page .frame {
+    align-self: unset;
+    flex: none;
+    height: min-content;
+    width: 90%;
+  }
+
+  .page .sticky {
+    width: 70%;
+  }
+
+  .page .imageWrapper {
+    aspect-ratio: 770 / 1027;
+    flex: none;
+    width: 50%;
+  }
+
+  .page .container {
+    gap: 30px 30px;
+  }
+}
+
+@media (max-width: 809.98px) {
+  .page.root {
+    width: 390px;
+  }
+
+  .page .main {
+    gap: 100px;
+    padding: 150px 0px 0px 0px;
+  }
+
+  .page .sectionIntro {
+    flex-direction: column;
+  }
+
+  .page .frame {
+    align-self: unset;
+    flex: none;
+    height: min-content;
+    width: 100%;
+  }
+
+  .page .imageWrapper {
+    flex: none;
+    width: 100%;
+  }
+
+  .page .container {
+    gap: 60px;
+  }
+
+  .page .experience,
+  .page .education {
+    justify-content: flex-start;
+  }
+
+  .page .textLineWrapper,
+  .page .textLineWrapper2 {
+    width: 100%;
+  }
+}

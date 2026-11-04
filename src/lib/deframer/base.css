@@ -1,0 +1,1119 @@
+/*
+ * The original runtime's base stylesheet, as published sites receive it: the rules
+ * it registers as its combined CSS rules (RenderTarget.preview).
+ * Imported once by styles.tsx, so it comes before component stylesheets.
+ * Site-specific CSS (color tokens, font fallbacks) is emitted by the converter.
+ */
+
+/* Reset that the original runtime's page template puts at the top of every published page. */
+
+html,
+body,
+#main {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure {
+  margin: 0;
+}
+
+body,
+input,
+textarea,
+select,
+button {
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+/* Safari needs will-change hints to avoid rendering glitches; other browsers get none. */
+
+body {
+  --df-will-change-override: none;
+}
+
+@supports (background: -webkit-named-image(i)) and (not (grid-template-rows: subgrid)) {
+  body {
+    --df-will-change-override: transform;
+  }
+}
+
+body {
+  --df-will-change-filter-override: none;
+}
+
+@supports (background: -webkit-named-image(i)) and (not (position-area: top right)) {
+  body {
+    --df-will-change-filter-override: filter;
+  }
+}
+
+/* Every legacy component is absolutely positioned by default. */
+
+[data-component-type] {
+  position: absolute;
+}
+
+/* Legacy <Text> component (data-component-type="Text"). */
+
+[data-component-type="Text"] {
+  cursor: inherit;
+}
+
+[data-component-text-autosized] * {
+  white-space: pre;
+}
+
+[data-component-type="Text"] > * {
+  text-align: var(--df-text-alignment, start);
+}
+
+[data-component-type="Text"] span span,
+[data-component-type="Text"] p span,
+[data-component-type="Text"] h1 span,
+[data-component-type="Text"] h2 span,
+[data-component-type="Text"] h3 span,
+[data-component-type="Text"] h4 span,
+[data-component-type="Text"] h5 span,
+[data-component-type="Text"] h6 span {
+  display: block;
+}
+
+[data-component-type="Text"] span span span,
+[data-component-type="Text"] p span span,
+[data-component-type="Text"] h1 span span,
+[data-component-type="Text"] h2 span span,
+[data-component-type="Text"] h3 span span,
+[data-component-type="Text"] h4 span span,
+[data-component-type="Text"] h5 span span,
+[data-component-type="Text"] h6 span span {
+  display: unset;
+}
+
+[data-component-type="Text"] div div span,
+[data-component-type="Text"] a div span,
+[data-component-type="Text"] span span span,
+[data-component-type="Text"] p span span,
+[data-component-type="Text"] h1 span span,
+[data-component-type="Text"] h2 span span,
+[data-component-type="Text"] h3 span span,
+[data-component-type="Text"] h4 span span,
+[data-component-type="Text"] h5 span span,
+[data-component-type="Text"] h6 span span,
+[data-component-type="Text"] a {
+  font-family: var(--font-family);
+  font-style: var(--font-style);
+  font-weight: min(calc(var(--df-font-weight-increase, 0) + var(--font-weight, 400)), 900);
+  color: var(--text-color);
+  letter-spacing: var(--letter-spacing);
+  font-size: var(--font-size);
+  text-transform: var(--text-transform);
+  --text-decoration: var(--df-text-decoration-style, solid) var(--df-text-decoration, none) var(--df-text-decoration-color, currentcolor) var(--df-text-decoration-thickness, auto);
+  --text-decoration-skip-ink: var(--df-text-decoration-skip-ink);
+  --text-underline-offset: var(--df-text-decoration-offset);
+  line-height: var(--line-height);
+}
+
+[data-component-type="Text"] div div span,
+[data-component-type="Text"] a div span,
+[data-component-type="Text"] span span span,
+[data-component-type="Text"] p span span,
+[data-component-type="Text"] h1 span span,
+[data-component-type="Text"] h2 span span,
+[data-component-type="Text"] h3 span span,
+[data-component-type="Text"] h4 span span,
+[data-component-type="Text"] h5 span span,
+[data-component-type="Text"] h6 span span,
+[data-component-type="Text"] a {
+  --font-family: var(--df-font-family);
+  --font-style: var(--df-font-style);
+  --font-weight: var(--df-font-weight);
+  --text-color: var(--df-text-color);
+  --letter-spacing: var(--df-letter-spacing);
+  --font-size: var(--df-font-size);
+  --text-transform: var(--df-text-transform);
+  --text-decoration: var(--df-text-decoration-style, solid) var(--df-text-decoration, none) var(--df-text-decoration-color, currentcolor) var(--df-text-decoration-thickness, auto);
+  --text-decoration-skip-ink: var(--df-text-decoration-skip-ink);
+  --text-underline-offset: var(--df-text-decoration-offset);
+  --line-height: var(--df-line-height);
+}
+
+[data-component-type="Text"] a,
+[data-component-type="Text"] a div span,
+[data-component-type="Text"] a span span span,
+[data-component-type="Text"] a p span span,
+[data-component-type="Text"] a h1 span span,
+[data-component-type="Text"] a h2 span span,
+[data-component-type="Text"] a h3 span span,
+[data-component-type="Text"] a h4 span span,
+[data-component-type="Text"] a h5 span span,
+[data-component-type="Text"] a h6 span span {
+  --font-family: var(--df-link-font-family, var(--df-font-family));
+  --font-style: var(--df-link-font-style, var(--df-font-style));
+  --font-weight: var(--df-link-font-weight, var(--df-font-weight));
+  --text-color: var(--df-link-text-color, var(--df-text-color));
+  --font-size: var(--df-link-font-size, var(--df-font-size));
+  --text-transform: var(--df-link-text-transform, var(--df-text-transform));
+  --text-decoration: var(--df-link-text-decoration-style, var(--df-text-decoration-style, solid)) var(--df-link-text-decoration, var(--df-text-decoration, none)) var(--df-link-text-decoration-color, var(--df-text-decoration-color, currentcolor)) var(--df-link-text-decoration-thickness, var(--df-text-decoration-thickness, auto));
+  --text-decoration-skip-ink: var(--df-link-text-decoration-skip-ink, var(--df-text-decoration-skip-ink));
+  --text-underline-offset: var(--df-link-text-decoration-offset, var(--df-text-decoration-offset));
+}
+
+[data-component-type="Text"] a:hover,
+[data-component-type="Text"] a div span:hover,
+[data-component-type="Text"] a span span span:hover,
+[data-component-type="Text"] a p span span:hover,
+[data-component-type="Text"] a h1 span span:hover,
+[data-component-type="Text"] a h2 span span:hover,
+[data-component-type="Text"] a h3 span span:hover,
+[data-component-type="Text"] a h4 span span:hover,
+[data-component-type="Text"] a h5 span span:hover,
+[data-component-type="Text"] a h6 span span:hover {
+  --font-family: var(--df-link-hover-font-family, var(--df-link-font-family, var(--df-font-family)));
+  --font-style: var(--df-link-hover-font-style, var(--df-link-font-style, var(--df-font-style)));
+  --font-weight: var(--df-link-hover-font-weight, var(--df-link-font-weight, var(--df-font-weight)));
+  --text-color: var(--df-link-hover-text-color, var(--df-link-text-color, var(--df-text-color)));
+  --font-size: var(--df-link-hover-font-size, var(--df-link-font-size, var(--df-font-size)));
+  --text-transform: var(--df-link-hover-text-transform, var(--df-link-text-transform, var(--df-text-transform)));
+  --text-decoration: var(--df-link-hover-text-decoration-style, var(--df-link-text-decoration-style, var(--df-text-decoration-style, solid))) var(--df-link-hover-text-decoration, var(--df-link-text-decoration, var(--df-text-decoration, none))) var(--df-link-hover-text-decoration-color, var(--df-link-text-decoration-color, var(--df-text-decoration-color, currentcolor))) var(--df-link-hover-text-decoration-thickness, var(--df-link-text-decoration-thickness, var(--df-text-decoration-thickness, auto)));
+  --text-decoration-skip-ink: var(--df-link-hover-text-decoration-skip-ink, var(--df-link-text-decoration-skip-ink, var(--df-text-decoration-skip-ink)));
+  --text-underline-offset: var(--df-link-hover-text-decoration-offset, var(--df-link-text-decoration-offset, var(--df-text-decoration-offset)));
+}
+
+[data-component-type="Text"].isCurrent a,
+[data-component-type="Text"].isCurrent a div span,
+[data-component-type="Text"].isCurrent a span span span,
+[data-component-type="Text"].isCurrent a p span span,
+[data-component-type="Text"].isCurrent a h1 span span,
+[data-component-type="Text"].isCurrent a h2 span span,
+[data-component-type="Text"].isCurrent a h3 span span,
+[data-component-type="Text"].isCurrent a h4 span span,
+[data-component-type="Text"].isCurrent a h5 span span,
+[data-component-type="Text"].isCurrent a h6 span span {
+  --font-family: var(--df-link-current-font-family, var(--df-link-font-family, var(--df-font-family)));
+  --font-style: var(--df-link-current-font-style, var(--df-link-font-style, var(--df-font-style)));
+  --font-weight: var(--df-link-current-font-weight, var(--df-link-font-weight, var(--df-font-weight)));
+  --text-color: var(--df-link-current-text-color, var(--df-link-text-color, var(--df-text-color)));
+  --font-size: var(--df-link-current-font-size, var(--df-link-font-size, var(--df-font-size)));
+  --text-transform: var(--df-link-current-text-transform, var(--df-link-text-transform, var(--df-text-transform)));
+  --text-decoration: var(--df-link-current-text-decoration-style, var(--df-link-text-decoration-style, var(--df-text-decoration-style, solid))) var(--df-link-current-text-decoration, var(--df-link-text-decoration, var(--df-text-decoration, none))) var(--df-link-current-text-decoration-color, var(--df-link-text-decoration-color, var(--df-text-decoration-color, currentcolor))) var(--df-link-current-text-decoration-thickness, var(--df-link-text-decoration-thickness, var(--df-text-decoration-thickness, auto)));
+  --text-decoration-skip-ink: var(--df-link-current-text-decoration-skip-ink, var(--df-link-text-decoration-skip-ink, var(--df-text-decoration-skip-ink)));
+  --text-underline-offset: var(--df-link-current-text-decoration-offset, var(--df-link-text-decoration-offset, var(--df-text-decoration-offset)));
+}
+
+/* Rich text (.df-text) — typography driven by --df-* custom properties. */
+
+[data-component-type="RichTextContainer"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  outline: none;
+  flex-shrink: 0;
+}
+
+p.df-text,
+div.df-text,
+figure.df-text,
+h1.df-text,
+h2.df-text,
+h3.df-text,
+h4.df-text,
+h5.df-text,
+h6.df-text,
+ol.df-text,
+ul.df-text {
+  margin: 0;
+  padding: 0;
+}
+
+p.df-text,
+div.df-text,
+h1.df-text,
+h2.df-text,
+h3.df-text,
+h4.df-text,
+h5.df-text,
+h6.df-text,
+li.df-text,
+ol.df-text,
+ul.df-text,
+mark.df-text,
+span.df-text:not([data-text-fill]) {
+  font-family: var(--df-font-family-preview, var(--df-blockquote-font-family, var(--df-font-family, Inter, Inter Placeholder, sans-serif)));
+  font-style: var(--df-font-style-preview, var(--df-blockquote-font-style, var(--df-font-style, normal)));
+  font-weight: var(--df-font-weight-preview, var(--df-blockquote-font-weight, var(--df-font-weight, 400)));
+  color: var(--df-blockquote-text-color, var(--df-text-color, #000));
+  font-size: calc(var(--df-blockquote-font-size, var(--df-font-size, 16px)) * var(--df-font-size-scale, 1));
+  letter-spacing: var(--df-blockquote-letter-spacing, var(--df-letter-spacing, 0));
+  text-transform: var(--df-blockquote-text-transform, var(--df-text-transform, none));
+  text-decoration-line: var(--df-blockquote-text-decoration, var(--df-text-decoration, initial));
+  text-decoration-style: var(--df-blockquote-text-decoration-style, var(--df-text-decoration-style, initial));
+  text-decoration-color: var(--df-blockquote-text-decoration-color, var(--df-text-decoration-color, initial));
+  text-decoration-thickness: var(--df-blockquote-text-decoration-thickness, var(--df-text-decoration-thickness, initial));
+  text-decoration-skip-ink: var(--df-blockquote-text-decoration-skip-ink, var(--df-text-decoration-skip-ink, initial));
+  text-underline-offset: var(--df-blockquote-text-decoration-offset, var(--df-text-decoration-offset, initial));
+  line-height: var(--df-blockquote-line-height, var(--df-line-height, 1.2em));
+  text-align: var(--df-blockquote-text-alignment, var(--df-text-alignment, start));
+  -webkit-text-stroke-width: var(--df-text-stroke-width, initial);
+  -webkit-text-stroke-color: var(--df-text-stroke-color, initial);
+  -moz-font-feature-settings: var(--df-font-open-type-features, initial);
+  -webkit-font-feature-settings: var(--df-font-open-type-features, initial);
+  font-feature-settings: var(--df-font-open-type-features, initial);
+  font-variation-settings: var(--df-font-variation-axes-preview, var(--df-font-variation-axes, normal));
+  text-wrap: var(--df-text-wrap-override, var(--df-text-wrap));
+}
+
+mark.df-text,
+p.df-text,
+div.df-text,
+h1.df-text,
+h2.df-text,
+h3.df-text,
+h4.df-text,
+h5.df-text,
+h6.df-text,
+li.df-text,
+ol.df-text,
+ul.df-text {
+  background-color: var(--df-blockquote-text-background-color, var(--df-text-background-color, initial));
+  border-radius: var(--df-blockquote-text-background-radius, var(--df-text-background-radius, initial));
+  corner-shape: var(--df-blockquote-text-background-corner-shape, var(--df-text-background-corner-shape, initial));
+  padding: var(--df-blockquote-text-background-padding, var(--df-text-background-padding, initial));
+}
+
+@supports not (color: color(display-p3 1 1 1)) {
+  p.df-text,
+  div.df-text,
+  h1.df-text,
+  h2.df-text,
+  h3.df-text,
+  h4.df-text,
+  h5.df-text,
+  h6.df-text,
+  li.df-text,
+  ol.df-text,
+  ul.df-text,
+  span.df-text:not([data-text-fill]) {
+    color: var(--df-blockquote-text-color-rgb, var(--df-blockquote-text-color, var(--df-text-color-rgb, var(--df-text-color, #000))));
+    -webkit-text-stroke-color: var(--df-text-stroke-color-rgb, var(--df-text-stroke-color, initial));
+  }
+
+  mark.df-text {
+    background-color: var(--df-blockquote-text-background-color-rgb, var(--df-blockquote-text-background-color, var(--df-text-background-color-rgb, var(--df-text-background-color, initial))));
+  }
+}
+
+.df-fit-text .df-text {
+  white-space: nowrap;
+  white-space-collapse: preserve;
+}
+
+strong.df-text {
+  font-family: var(--df-blockquote-font-family-bold, var(--df-font-family-bold));
+  font-style: var(--df-blockquote-font-style-bold, var(--df-font-style-bold));
+  font-weight: var(--df-blockquote-font-weight-bold, var(--df-font-weight-bold, bolder));
+  font-variation-settings: var(--df-blockquote-font-variation-axes-bold, var(--df-font-variation-axes-bold));
+}
+
+em.df-text {
+  font-family: var(--df-blockquote-font-family-italic, var(--df-font-family-italic));
+  font-style: var(--df-blockquote-font-style-italic, var(--df-font-style-italic, italic));
+  font-weight: var(--df-blockquote-font-weight-italic, var(--df-font-weight-italic));
+  font-variation-settings: var(--df-blockquote-font-variation-axes-italic, var(--df-font-variation-axes-italic));
+}
+
+em.df-text > strong.df-text {
+  font-family: var(--df-blockquote-font-family-bold-italic, var(--df-font-family-bold-italic));
+  font-style: var(--df-blockquote-font-style-bold-italic, var(--df-font-style-bold-italic, italic));
+  font-weight: var(--df-blockquote-font-weight-bold-italic, var(--df-font-weight-bold-italic, bolder));
+  font-variation-settings: var(--df-blockquote-font-variation-axes-bold-italic, var(--df-font-variation-axes-bold-italic));
+}
+
+p.df-text:not(:first-child),
+div.df-text:not(:first-child),
+h1.df-text:not(:first-child),
+h2.df-text:not(:first-child),
+h3.df-text:not(:first-child),
+h4.df-text:not(:first-child),
+h5.df-text:not(:first-child),
+h6.df-text:not(:first-child),
+ol.df-text:not(:first-child),
+ul.df-text:not(:first-child),
+blockquote.df-text:not(:first-child),
+table.df-text:not(:first-child),
+figure.df-text:not(:first-child),
+.df-image.df-text:not(:first-child) {
+  margin-top: var(--df-blockquote-paragraph-spacing, var(--df-paragraph-spacing, 0));
+}
+
+li.df-text > ul.df-text:nth-child(2),
+li.df-text > ol.df-text:nth-child(2) {
+  margin-top: 0;
+}
+
+.df-text[data-text-fill] {
+  display: inline-block;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: max(0em, calc(calc(1.3em - var(--df-blockquote-line-height, var(--df-line-height, 1.3em))) / 2));
+  margin: min(0em, calc(calc(1.3em - var(--df-blockquote-line-height, var(--df-line-height, 1.3em))) / -2));
+}
+
+code.df-text,
+code.df-text span.df-text:not([data-text-fill]) {
+  font-family: var(--df-code-font-family, var(--df-font-family, Inter, Inter Placeholder, sans-serif));
+  font-style: var(--df-blockquote-font-style, var(--df-code-font-style, var(--df-font-style, normal)));
+  font-weight: var(--df-blockquote-font-weight, var(--df-code-font-weight, var(--df-font-weight, 400)));
+  color: var(--df-blockquote-text-color, var(--df-code-text-color, var(--df-text-color, #000)));
+  font-size: calc(var(--df-blockquote-font-size, var(--df-font-size, 16px)) * var(--df-font-size-scale, 1));
+  letter-spacing: var(--df-blockquote-letter-spacing, var(--df-letter-spacing, 0));
+  line-height: var(--df-blockquote-line-height, var(--df-line-height, 1.2em));
+}
+
+@supports not (color: color(display-p3 1 1 1)) {
+  code.df-text,
+  code.df-text span.df-text:not([data-text-fill]) {
+    color: var(--df-blockquote-text-color-rgb, var(--df-blockquote-text-color, var(--df-code-text-color-rgb, var(--df-code-text-color, var(--df-text-color-rgb, var(--df-text-color, #000))))));
+  }
+}
+
+blockquote.df-text {
+  margin-block-start: initial;
+  margin-block-end: initial;
+  margin-inline-start: initial;
+  margin-inline-end: initial;
+  unicode-bidi: initial;
+}
+
+a.df-text,
+a.df-text span.df-text:not([data-text-fill]),
+span.df-text[data-nested-link],
+span.df-text[data-nested-link] span.df-text:not([data-text-fill]) {
+  color: inherit;
+  font-family: var(--df-font-family-preview, var(--df-blockquote-font-family, var(--df-link-font-family, var(--df-font-family, Inter, Inter Placeholder, sans-serif))));
+  font-style: var(--df-font-style-preview, var(--df-blockquote-font-style, var(--df-link-font-style, var(--df-font-style, normal))));
+  font-weight: var(--df-font-weight-preview, var(--df-blockquote-font-weight, var(--df-link-font-weight, var(--df-font-weight, 400))));
+  font-size: calc(var(--df-blockquote-font-size, var(--df-font-size, 16px)) * var(--df-font-size-scale, 1));
+  text-transform: var(--df-blockquote-text-transform, var(--df-link-text-transform, var(--df-text-transform, none)));
+  cursor: var(--df-custom-cursors, pointer);
+  background-color: initial;
+  border-radius: var(--df-link-text-background-radius, initial);
+  corner-shape: var(--df-link-text-background-corner-shape, initial);
+  padding: var(--df-link-text-background-padding, initial);
+}
+
+a.df-text,
+span.df-text[data-nested-link] {
+  color: var(--df-blockquote-text-color, var(--df-link-text-color, var(--df-text-color, #000)));
+  text-decoration-line: var(--df-blockquote-text-decoration, var(--df-link-text-decoration, var(--df-text-decoration, initial)));
+  text-decoration-style: var(--df-blockquote-text-decoration-style, var(--df-link-text-decoration-style, var(--df-text-decoration-style, initial)));
+  text-decoration-color: var(--df-blockquote-text-decoration-color, var(--df-link-text-decoration-color, var(--df-text-decoration-color, initial)));
+  text-decoration-thickness: var(--df-blockquote-text-decoration-thickness, var(--df-link-text-decoration-thickness, var(--df-text-decoration-thickness, initial)));
+  text-decoration-skip-ink: var(--df-blockquote-text-decoration-skip-ink, var(--df-link-text-decoration-skip-ink, var(--df-text-decoration-skip-ink, initial)));
+  text-underline-offset: var(--df-blockquote-text-decoration-offset, var(--df-link-text-decoration-offset, var(--df-text-decoration-offset, initial)));
+  background-color: var(--df-link-text-background-color, initial);
+}
+
+@supports not (color: color(display-p3 1 1 1)) {
+  a.df-text,
+  span.df-text[data-nested-link] {
+    color: var(--df-blockquote-text-color-rgb, var(--df-blockquote-text-color, var(--df-link-text-color-rgb, var(--df-link-text-color, var(--df-text-color-rgb, var(--df-text-color, #000))))));
+    background-color: var(--df-link-text-background-color-rgb, var(--df-link-text-background-color, initial));
+    text-decoration-color: var(--df-link-text-decoration-color-rgb, var(--df-link-text-decoration-color, var(--df-text-decoration-color-rgb, var(--df-text-decoration-color, currentcolor))));
+  }
+}
+
+code.df-text a.df-text,
+code.df-text a.df-text span.df-text:not([data-text-fill]),
+code.df-text span.df-text[data-nested-link],
+code.df-text span.df-text[data-nested-link] span.df-text:not([data-text-fill]) {
+  font-family: var(--df-code-font-family, var(--df-font-family, Inter, Inter Placeholder, sans-serif));
+  font-style: var(--df-blockquote-font-style, var(--df-code-font-style, var(--df-font-style, normal)));
+  font-weight: var(--df-blockquote-font-weight, var(--df-code-font-weight, var(--df-font-weight, 400)));
+  color: inherit;
+  font-size: calc(var(--df-blockquote-font-size, var(--df-font-size, 16px)) * var(--df-font-size-scale, 1));
+}
+
+code.df-text a.df-text,
+code.df-text span.df-text[data-nested-link] {
+  color: var(--df-blockquote-text-color, var(--df-link-text-color, var(--df-code-text-color, var(--df-text-color, #000))));
+}
+
+@supports not (color: color(display-p3 1 1 1)) {
+  code.df-text a.df-text,
+  code.df-text a.df-text span.df-text:not([data-text-fill]),
+  code.df-text span.df-text[data-nested-link],
+  code.df-text span.df-text[data-nested-link] span.df-text:not([data-text-fill]) {
+    color: var(--df-blockquote-text-color-rgb, var(--df-blockquote-text-color, var(--df-link-text-color-rgb, var(--df-link-text-color, var(--df-code-text-color-rgb, var(--df-code-text-color, var(--df-text-color-rgb, var(--df-text-color, #000))))))));
+  }
+}
+
+a.df-text:hover,
+a.df-text:hover span.df-text:not([data-text-fill]),
+span.df-text[data-nested-link]:hover,
+span.df-text[data-nested-link]:hover span.df-text:not([data-text-fill]) {
+  font-family: var(--df-font-family-preview, var(--df-link-hover-font-family, var(--df-blockquote-font-family, var(--df-link-font-family, var(--df-font-family, Inter, Inter Placeholder, sans-serif)))));
+  font-style: var(--df-font-style-preview, var(--df-link-hover-font-style, var(--df-blockquote-font-style, var(--df-link-font-style, var(--df-font-style, normal)))));
+  font-weight: var(--df-font-weight-preview, var(--df-link-hover-font-weight, var(--df-blockquote-font-weight, var(--df-link-font-weight, var(--df-font-weight, 400)))));
+  font-size: calc(var(--df-link-hover-font-size, var(--df-blockquote-font-size, var(--df-font-size, 16px))) * var(--df-font-size-scale, 1));
+  text-transform: var(--df-link-hover-text-transform, var(--df-blockquote-text-transform, var(--df-link-text-transform, var(--df-text-transform, none))));
+  border-radius: var(--df-link-hover-text-background-radius, var(--df-link-text-background-radius, var(--df-text-background-radius, initial)));
+  corner-shape: var(--df-link-hover-text-background-corner-shape, var(--df-link-text-background-corner-shape, var(--df-text-background-corner-shape, initial)));
+  padding: var(--df-link-hover-text-background-padding, var(--df-link-text-background-padding, var(--df-text-background-padding, initial)));
+}
+
+a.df-text:hover,
+span.df-text[data-nested-link]:hover {
+  color: var(--df-link-hover-text-color, var(--df-blockquote-text-color, var(--df-link-text-color, var(--df-text-color, #000))));
+  text-decoration-line: var(--df-link-hover-text-decoration, var(--df-blockquote-text-decoration, var(--df-link-text-decoration, var(--df-text-decoration, initial))));
+  text-decoration-style: var(--df-link-hover-text-decoration-style, var(--df-blockquote-text-decoration-style, var(--df-link-text-decoration-style, var(--df-text-decoration-style, initial))));
+  text-decoration-color: var(--df-link-hover-text-decoration-color, var(--df-blockquote-text-decoration-color, var(--df-link-text-decoration-color, var(--df-text-decoration-color, initial))));
+  text-decoration-thickness: var(--df-link-hover-text-decoration-thickness, var(--df-blockquote-text-decoration-thickness, var(--df-link-text-decoration-thickness, var(--df-text-decoration-thickness, initial))));
+  text-decoration-skip-ink: var(--df-link-hover-text-decoration-skip-ink, var(--df-blockquote-text-decoration-skip-ink, var(--df-link-text-decoration-skip-ink, var(--df-text-decoration-skip-ink, initial))));
+  text-underline-offset: var(--df-link-hover-text-decoration-offset, var(--df-blockquote-text-decoration-offset, var(--df-link-text-decoration-offset, var(--df-text-decoration-offset, initial))));
+  background-color: var(--df-link-hover-text-background-color, var(--df-link-text-background-color, var(--df-text-background-color, initial)));
+}
+
+@supports not (color: color(display-p3 1 1 1)) {
+  a.df-text:hover,
+  span.df-text[data-nested-link]:hover {
+    color: var(--df-link-hover-text-color-rgb, var(--df-link-hover-text-color, var(--df-blockquote-text-color-rgb, var(--df-blockquote-text-color, var(--df-link-text-color-rgb, var(--df-link-text-color, var(--df-text-color-rgb, var(--df-text-color, #000))))))));
+    background-color: var(--df-link-hover-text-background-color-rgb, var(--df-link-hover-text-background-color, var(--df-link-text-background-color-rgb, var(--df-link-text-background-color, var(--df-text-background-color-rgb, var(--df-text-background-color, initial))))));
+    text-decoration-color: var(--df-link-hover-text-decoration-color-rgb, var(--df-link-hover-text-decoration-color, var(--df-link-text-decoration-color-rgb, var(--df-link-text-decoration-color, var(--df-text-decoration-color-rgb, var(--df-text-decoration-color, currentcolor))))));
+  }
+}
+
+code.df-text a.df-text:hover,
+code.df-text span.df-text[data-nested-link]:hover {
+  color: var(--df-link-hover-text-color, var(--df-blockquote-text-color, var(--df-link-text-color, var(--df-code-text-color, var(--df-text-color, #000)))));
+}
+
+@supports not (color: color(display-p3 1 1 1)) {
+  code.df-text a.df-text:hover,
+  code.df-text span.df-text[data-nested-link]:hover {
+    color: var(--df-link-hover-text-color-rgb, var(--df-link-hover-text-color, var(--df-blockquote-text-color-rgb, var(--df-blockquote-text-color, var(--df-link-text-color-rgb, var(--df-link-text-color, var(--df-code-text-color-rgb, var(--df-code-text-color, var(--df-text-color-rgb, var(--df-text-color, #000))))))))));
+  }
+}
+
+a.df-text[data-page-link-current],
+a.df-text[data-page-link-current] span.df-text:not([data-text-fill]),
+span.df-text[data-page-link-current],
+span.df-text[data-page-link-current] span.df-text:not([data-text-fill]) {
+  font-family: var(--df-font-family-preview, var(--df-link-current-font-family, var(--df-link-font-family, var(--df-font-family, Inter, Inter Placeholder, sans-serif))));
+  font-style: var(--df-font-style-preview, var(--df-link-current-font-style, var(--df-link-font-style, var(--df-font-style, normal))));
+  font-weight: var(--df-font-weight-preview, var(--df-link-current-font-weight, var(--df-link-font-weight, var(--df-font-weight, 400))));
+  font-size: calc(var(--df-link-current-font-size, var(--df-link-font-size, var(--df-font-size, 16px))) * var(--df-font-size-scale, 1));
+  text-transform: var(--df-link-current-text-transform, var(--df-link-text-transform, var(--df-text-transform, none)));
+  border-radius: var(--df-link-current-text-background-radius, var(--df-link-text-background-radius, initial));
+  corner-shape: var(--df-link-current-text-background-corner-shape, var(--df-link-text-background-corner-shape, initial));
+  padding: var(--df-link-current-text-background-padding, var(--df-link-text-background-padding, initial));
+}
+
+a.df-text[data-page-link-current],
+span.df-text[data-page-link-current] {
+  color: var(--df-link-current-text-color, var(--df-link-text-color, var(--df-text-color, #000)));
+  text-decoration-line: var(--df-link-current-text-decoration, var(--df-link-text-decoration, var(--df-text-decoration, initial)));
+  text-decoration-style: var(--df-link-current-text-decoration-style, var(--df-link-text-decoration-style, var(--df-text-decoration-style, initial)));
+  text-decoration-color: var(--df-link-current-text-decoration-color, var(--df-link-text-decoration-color, var(--df-text-decoration-color, initial)));
+  text-decoration-thickness: var(--df-link-current-text-decoration-thickness, var(--df-link-text-decoration-thickness, var(--df-text-decoration-thickness, initial)));
+  text-decoration-skip-ink: var(--df-link-current-text-decoration-skip-ink, var(--df-link-text-decoration-skip-ink, var(--df-text-decoration-skip-ink, initial)));
+  text-underline-offset: var(--df-link-current-text-decoration-offset, var(--df-link-text-decoration-offset, var(--df-text-decoration-offset, initial)));
+  background-color: var(--df-link-current-text-background-color, var(--df-link-text-background-color, var(--df-text-background-color, initial)));
+}
+
+@supports not (color: color(display-p3 1 1 1)) {
+  a.df-text[data-page-link-current],
+  span.df-text[data-page-link-current] {
+    color: var(--df-link-current-text-color-rgb, var(--df-link-current-text-color, var(--df-link-text-color-rgb, var(--df-link-text-color, var(--df-text-color-rgb, var(--df-text-color, #000))))));
+    background-color: var(--df-link-current-text-background-color-rgb, var(--df-link-current-text-background-color, var(--df-link-text-background-color-rgb, var(--df-link-text-background-color, var(--df-text-background-color-rgb, var(--df-text-background-color, initial))))));
+    text-decoration-color: var(--df-link-current-text-decoration-color-rgb, var(--df-link-current-text-decoration-color, var(--df-link-text-decoration-color-rgb, var(--df-link-text-decoration-color, var(--df-text-decoration-color-rgb, var(--df-text-decoration-color, currentcolor))))));
+  }
+}
+
+code.df-text a.df-text[data-page-link-current],
+code.df-text a.df-text[data-page-link-current] span.df-text:not([data-text-fill]),
+code.df-text span.df-text[data-page-link-current],
+code.df-text span.df-text[data-page-link-current] span.df-text:not([data-text-fill]) {
+  font-family: var(--df-code-font-family, var(--df-font-family, Inter, Inter Placeholder, sans-serif));
+  font-style: var(--df-code-font-style, var(--df-font-style, normal));
+  font-weight: var(--df-code-font-weight, var(--df-font-weight, 400));
+  color: inherit;
+  font-size: calc(var(--df-link-current-font-size, var(--df-link-font-size, var(--df-font-size, 16px))) * var(--df-font-size-scale, 1));
+}
+
+code.df-text a.df-text[data-page-link-current],
+code.df-text span.df-text[data-page-link-current] {
+  color: var(--df-link-current-text-color, var(--df-link-text-color, var(--df-code-text-color, var(--df-text-color, #000))));
+}
+
+@supports not (color: color(display-p3 1 1 1)) {
+  code.df-text a.df-text[data-page-link-current],
+  code.df-text a.df-text[data-page-link-current] span.df-text:not([data-text-fill]),
+  code.df-text span.df-text[data-page-link-current],
+  code.df-text span.df-text[data-page-link-current] span.df-text:not([data-text-fill]) {
+    color: var(--df-link-current-text-color-rgb, var(--df-link-current-text-color, var(--df-link-text-color-rgb, var(--df-link-text-color, var(--df-code-text-color-rgb, var(--df-code-text-color, var(--df-text-color-rgb, var(--df-text-color, #000))))))));
+    background-color: var(--df-link-current-text-background-color-rgb, var(--df-link-current-text-background-color, var(--df-link-text-background-color-rgb, var(--df-link-text-background-color, var(--df-text-background-color-rgb, var(--df-text-background-color, initial))))));
+  }
+}
+
+a.df-text[data-page-link-current]:hover,
+a.df-text[data-page-link-current]:hover span.df-text:not([data-text-fill]),
+span.df-text[data-page-link-current]:hover,
+span.df-text[data-page-link-current]:hover span.df-text:not([data-text-fill]) {
+  color: inherit;
+  font-family: var(--df-font-family-preview, var(--df-link-hover-font-family, var(--df-link-current-font-family, var(--df-link-font-family, var(--df-font-family, Inter, Inter Placeholder, sans-serif)))));
+  font-style: var(--df-font-style-preview, var(--df-link-hover-font-style, var(--df-link-current-font-style, var(--df-link-font-style, var(--df-font-style, normal)))));
+  font-weight: var(--df-font-weight-preview, var(--df-link-hover-font-weight, var(--df-link-current-font-weight, var(--df-link-font-weight, var(--df-font-weight, 400)))));
+  font-size: calc(var(--df-link-hover-font-size, var(--df-link-current-font-size, var(--df-link-font-size, var(--df-font-size, 16px)))) * var(--df-font-size-scale, 1));
+  text-transform: var(--df-link-hover-text-transform, var(--df-link-current-text-transform, var(--df-link-text-transform, var(--df-text-transform, none))));
+  border-radius: var(--df-link-hover-text-background-radius, var(--df-link-current-text-background-radius, var(--df-link-text-background-radius, initial)));
+  corner-shape: var(--df-link-hover-text-background-corner-shape, var(--df-link-current-text-background-corner-shape, var(--df-link-text-background-corner-shape, initial)));
+  padding: var(--df-link-hover-text-background-padding, var(--df-link-current-text-background-padding, var(--df-link-text-background-padding, initial)));
+}
+
+a.df-text[data-page-link-current]:hover,
+span.df-text[data-page-link-current]:hover {
+  color: var(--df-link-hover-text-color, var(--df-link-current-text-color, var(--df-link-text-color, var(--df-text-color, #000))));
+  text-decoration-line: var(--df-link-hover-text-decoration, var(--df-link-current-text-decoration, var(--df-link-text-decoration, var(--df-text-decoration, initial))));
+  text-decoration-style: var(--df-link-hover-text-decoration-style, var(--df-link-current-text-decoration-style, var(--df-link-text-decoration-style, var(--df-text-decoration-style, initial))));
+  text-decoration-color: var(--df-link-hover-text-decoration-color, var(--df-link-current-text-decoration-color, var(--df-link-text-decoration-color, var(--df-text-decoration-color, initial))));
+  text-decoration-thickness: var(--df-link-hover-text-decoration-thickness, var(--df-link-current-text-decoration-thickness, var(--df-link-text-decoration-thickness, var(--df-text-decoration-thickness, initial))));
+  text-decoration-skip-ink: var(--df-link-hover-text-decoration-skip-ink, var(--df-link-current-text-decoration-skip-ink, var(--df-link-text-decoration-skip-ink, var(--df-text-decoration-skip-ink, initial))));
+  text-underline-offset: var(--df-link-hover-text-decoration-offset, var(--df-link-current-text-decoration-offset, var(--df-link-text-decoration-offset, var(--df-text-decoration-offset, initial))));
+  background-color: var(--df-link-hover-text-background-color, var(--df-link-current-text-background-color, var(--df-link-text-background-color, initial)));
+}
+
+@supports not (color: color(display-p3 1 1 1)) {
+  a.df-text[data-page-link-current]:hover,
+  span.df-text[data-page-link-current]:hover {
+    color: var(--df-link-hover-text-color-rgb, var(--df-link-hover-text-color, var(--df-link-current-text-color-rgb, var(--df-link-current-text-color, var(--df-link-text-color-rgb, var(--df-link-text-color, var(--df-code-text-color-rgb, var(--df-code-text-color, var(--df-text-color-rgb, var(--df-text-color, #000))))))))));
+    background-color: var(--df-link-hover-text-background-color-rgb, var(--df-link-hover-text-background-color, var(--df-link-current-text-background-color-rgb, var(--df-link-current-text-background-color, var(--df-link-text-background-color-rgb, var(--df-link-text-background-color, initial))))));
+    text-decoration-color: var(--df-link-hover-text-decoration-color-rgb, var(--df-link-hover-text-decoration-color, var(--df-link-current-text-decoration-color-rgb, var(--df-link-current-text-decoration-color, var(--df-link-text-decoration-color-rgb, var(--df-link-text-decoration-color, var(--df-text-decoration-color-rgb, var(--df-text-decoration-color, currentcolor))))))));
+  }
+}
+
+code.df-text a.df-text[data-page-link-current]:hover,
+code.df-text span.df-text[data-page-link-current]:hover {
+  color: var(--df-link-hover-text-color, var(--df-link-current-text-color, var(--df-link-text-color, var(--df-code-text-color, var(--df-text-color, #000)))));
+}
+
+@supports not (color: color(display-p3 1 1 1)) {
+  code.df-text a.df-text[data-page-link-current]:hover,
+  code.df-text a.df-text[data-page-link-current]:hover span.df-text:not([data-text-fill]),
+  code.df-text span.df-text[data-page-link-current]:hover,
+  code.df-text span.df-text[data-page-link-current]:hover span.df-text:not([data-text-fill]) {
+    color: var(--df-link-hover-text-color-rgb, var(--df-link-hover-text-color, var(--df-link-current-text-color-rgb, var(--df-link-current-text-color, var(--df-link-text-color-rgb, var(--df-link-text-color, var(--df-code-text-color-rgb, var(--df-code-text-color, var(--df-text-color-rgb, var(--df-text-color, #000))))))))));
+    background-color: var(--df-link-hover-text-background-color-rgb, var(--df-link-hover-text-background-color, var(--df-link-current-text-background-color-rgb, var(--df-link-current-text-background-color, var(--df-link-text-background-color-rgb, var(--df-link-text-background-color, initial))))));
+  }
+}
+
+.df-image.df-text {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.text-styles-preset-reset.df-text {
+  --df-font-family: Inter, Inter Placeholder, sans-serif;
+  --df-font-style: normal;
+  --df-font-weight: 500;
+  --df-text-color: #000;
+  --df-font-size: 16px;
+  --df-letter-spacing: 0;
+  --df-text-transform: none;
+  --df-text-decoration: none;
+  --df-text-decoration-style: none;
+  --df-text-decoration-color: none;
+  --df-text-decoration-thickness: none;
+  --df-text-decoration-skip-ink: none;
+  --df-text-decoration-offset: none;
+  --df-line-height: 1.2em;
+  --df-text-alignment: start;
+  --df-font-open-type-features: normal;
+  --df-text-background-color: initial;
+  --df-text-background-radius: initial;
+  --df-text-background-corner-shape: initial;
+  --df-text-background-padding: initial;
+}
+
+ol.df-text{--list-style-type:decimal}
+ul.df-text,ol.df-text{padding-inline-start:0;position:relative}
+li.df-text{counter-increment:list-item;padding-inline-start:2ch;list-style:""}
+ol.df-text>li.df-text:before{content:counter(list-item, var(--list-style-type)) ".";font-variant-numeric:tabular-nums;position:absolute;inset-inline-start:0}
+ul.df-text>li.df-text:before{content:"•";position:absolute;inset-inline-start:0}
+
+.df-table-wrapper {
+  overflow-x: auto;
+}
+
+table.df-text,.df-table-wrapper table.df-text{border-collapse:separate;border-spacing:0;table-layout:auto;word-break:normal;width:100%}
+td.df-text,th.df-text{overflow-wrap:anywhere;vertical-align:top;min-width:16ch}
+
+.df-text-module[data-width="fill"] > :first-child,
+.df-text-module[data-width="fill"] > .ssr-variant > :first-child,
+.df-text-module:not([data-width="fit"])[style*="aspect-ratio"] > :first-child,
+.df-text-module:not([data-width="fit"])[style*="aspect-ratio"] > .ssr-variant > :first-child {
+  width: 100% !important;
+}
+
+@supports not (aspect-ratio: 1) {
+  .df-text-module:not([data-width="fit"])[style*="aspect-ratio"] {
+    position: relative !important;
+  }
+}
+
+@supports not (aspect-ratio: 1) {
+  .df-text-module:not([data-width="fit"])[style*="aspect-ratio"]::before {
+    content: "";
+    display: block;
+    padding-bottom: calc(100% / calc(var(--aspect-ratio)));
+  }
+}
+
+@supports not (aspect-ratio: 1) {
+  .df-text-module[data-width="fill"] > :first-child,
+  .df-text-module[data-width="fill"] > .ssr-variant > :first-child,
+  .df-text-module:not([data-width="fit"])[style*="aspect-ratio"] > :first-child,
+  .df-text-module:not([data-width="fit"])[style*="aspect-ratio"] > .ssr-variant > :first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100% !important;
+  }
+}
+
+/* Older rich text (data-component-type="DeprecatedRichText"). */
+
+[data-component-type="DeprecatedRichText"] {
+  cursor: inherit;
+}
+
+[data-component-type="DeprecatedRichText"] .text-styles-preset-reset {
+  --df-font-family: Inter, Inter Placeholder, sans-serif;
+  --df-font-style: normal;
+  --df-font-weight: 500;
+  --df-text-color: #000;
+  --df-font-size: 16px;
+  --df-letter-spacing: 0;
+  --df-text-transform: none;
+  --df-text-decoration: none;
+  --df-line-height: 1.2em;
+  --df-text-alignment: start;
+  --df-font-open-type-features: normal;
+  --font-variation-settings: normal;
+}
+
+[data-component-type="DeprecatedRichText"] p,
+[data-component-type="DeprecatedRichText"] div,
+[data-component-type="DeprecatedRichText"] h1,
+[data-component-type="DeprecatedRichText"] h2,
+[data-component-type="DeprecatedRichText"] h3,
+[data-component-type="DeprecatedRichText"] h4,
+[data-component-type="DeprecatedRichText"] h5,
+[data-component-type="DeprecatedRichText"] h6 {
+  margin: 0;
+  padding: 0;
+}
+
+[data-component-type="DeprecatedRichText"] p,
+[data-component-type="DeprecatedRichText"] div,
+[data-component-type="DeprecatedRichText"] h1,
+[data-component-type="DeprecatedRichText"] h2,
+[data-component-type="DeprecatedRichText"] h3,
+[data-component-type="DeprecatedRichText"] h4,
+[data-component-type="DeprecatedRichText"] h5,
+[data-component-type="DeprecatedRichText"] h6,
+[data-component-type="DeprecatedRichText"] li,
+[data-component-type="DeprecatedRichText"] ol,
+[data-component-type="DeprecatedRichText"] ul,
+[data-component-type="DeprecatedRichText"] span:not([data-text-fill]) {
+  font-family: var(--df-font-family, Inter, Inter Placeholder, sans-serif);
+  font-style: var(--df-font-style, normal);
+  font-weight: var(--df-font-weight, 400);
+  color: var(--df-text-color, #000);
+  font-size: var(--df-font-size, 16px);
+  letter-spacing: var(--df-letter-spacing, 0);
+  text-transform: var(--df-text-transform, none);
+  text-decoration: var(--df-text-decoration, none);
+  line-height: var(--df-line-height, 1.2em);
+  text-align: var(--df-text-alignment, start);
+}
+
+[data-component-type="DeprecatedRichText"] p:not(:first-child),
+[data-component-type="DeprecatedRichText"] div:not(:first-child),
+[data-component-type="DeprecatedRichText"] h1:not(:first-child),
+[data-component-type="DeprecatedRichText"] h2:not(:first-child),
+[data-component-type="DeprecatedRichText"] h3:not(:first-child),
+[data-component-type="DeprecatedRichText"] h4:not(:first-child),
+[data-component-type="DeprecatedRichText"] h5:not(:first-child),
+[data-component-type="DeprecatedRichText"] h6:not(:first-child),
+[data-component-type="DeprecatedRichText"] ol:not(:first-child),
+[data-component-type="DeprecatedRichText"] ul:not(:first-child),
+[data-component-type="DeprecatedRichText"] .df-image:not(:first-child) {
+  margin-top: var(--df-paragraph-spacing, 0);
+}
+
+[data-component-type="DeprecatedRichText"] span[data-text-fill] {
+  display: inline-block;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+[data-component-type="DeprecatedRichText"] a,
+[data-component-type="DeprecatedRichText"] a span:not([data-text-fill]) {
+  font-family: var(--df-link-font-family, var(--df-font-family, Inter, Inter Placeholder, sans-serif));
+  font-style: var(--df-link-font-style, var(--df-font-style, normal));
+  font-weight: var(--df-link-font-weight, var(--df-font-weight, 400));
+  color: var(--df-link-text-color, var(--df-text-color, #000));
+  font-size: var(--df-link-font-size, var(--df-font-size, 16px));
+  text-transform: var(--df-link-text-transform, var(--df-text-transform, none));
+  text-decoration: var(--df-link-text-decoration, var(--df-text-decoration, none));
+}
+
+[data-component-type="DeprecatedRichText"] a:hover,
+[data-component-type="DeprecatedRichText"] a:hover span:not([data-text-fill]) {
+  font-family: var(--df-link-hover-font-family, var(--df-link-font-family, var(--df-font-family, Inter, Inter Placeholder, sans-serif)));
+  font-style: var(--df-link-hover-font-style, var(--df-link-font-style, var(--df-font-style, normal)));
+  font-weight: var(--df-link-hover-font-weight, var(--df-link-font-weight, var(--df-font-weight, 400)));
+  color: var(--df-link-hover-text-color, var(--df-link-text-color, var(--df-text-color, #000)));
+  font-size: var(--df-link-hover-font-size, var(--df-link-font-size, var(--df-font-size, 16px)));
+  text-transform: var(--df-link-hover-text-transform, var(--df-link-text-transform, var(--df-text-transform, none)));
+  text-decoration: var(--df-link-hover-text-decoration, var(--df-link-text-decoration, var(--df-text-decoration, none)));
+}
+
+[data-component-type="DeprecatedRichText"] a[data-page-link-current],
+[data-component-type="DeprecatedRichText"] a[data-page-link-current] span:not([data-text-fill]):not([data-nested-link]) {
+  font-family: var(--df-link-current-font-family, var(--df-link-font-family, var(--df-font-family, Inter, Inter Placeholder, sans-serif)));
+  font-style: var(--df-link-current-font-style, var(--df-link-font-style, var(--df-font-style, normal)));
+  font-weight: var(--df-link-current-font-weight, var(--df-link-font-weight, var(--df-font-weight, 400)));
+  color: var(--df-link-current-text-color, var(--df-link-text-color, var(--df-text-color, #000)));
+  font-size: var(--df-link-current-font-size, var(--df-link-font-size, var(--df-font-size, 16px)));
+  text-transform: var(--df-link-current-text-transform, var(--df-link-text-transform, var(--df-text-transform, none)));
+  text-decoration: var(--df-link-current-text-decoration, var(--df-link-text-decoration, var(--df-text-decoration, none)));
+}
+
+[data-component-type="DeprecatedRichText"] a[data-page-link-current]:hover,
+[data-component-type="DeprecatedRichText"] a[data-page-link-current]:hover span:not([data-text-fill]):not([data-nested-link]) {
+  font-family: var(--df-link-hover-font-family, var(--df-link-current-font-family, var(--df-link-font-family, var(--df-font-family, Inter, Inter Placeholder, sans-serif))));
+  font-style: var(--df-link-hover-font-style, var(--df-link-current-font-style, var(--df-link-font-style, var(--df-font-style, normal))));
+  font-weight: var(--df-link-hover-font-weight, var(--df-link-current-font-weight, var(--df-link-font-weight, var(--df-font-weight, 400))));
+  color: var(--df-link-hover-text-color, var(--df-link-current-text-color, var(--df-link-text-color, var(--df-text-color, #000))));
+  font-size: var(--df-link-hover-font-size, var(--df-link-current-font-size, var(--df-link-font-size, var(--df-font-size, 16px))));
+  text-transform: var(--df-link-hover-text-transform, var(--df-link-current-text-transform, var(--df-link-text-transform, var(--df-text-transform, none))));
+  text-decoration: var(--df-link-hover-text-decoration, var(--df-link-current-text-decoration, var(--df-link-text-decoration, var(--df-text-decoration, none))));
+}
+
+[data-component-type="DeprecatedRichText"] strong {
+  font-weight: bolder;
+}
+
+[data-component-type="DeprecatedRichText"] em {
+  font-style: italic;
+}
+
+[data-component-type="DeprecatedRichText"] .df-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+[data-component-type="DeprecatedRichText"] ul,
+[data-component-type="DeprecatedRichText"] ol {
+  display: table;
+  width: 100%;
+  padding-left: 0;
+  margin: 0;
+}
+
+[data-component-type="DeprecatedRichText"] li {
+  display: table-row;
+  counter-increment: list-item;
+  list-style: none;
+}
+
+[data-component-type="DeprecatedRichText"] ol > li::before {
+  display: table-cell;
+  width: 2.25ch;
+  box-sizing: border-box;
+  padding-right: 0.75ch;
+  content: counter(list-item) ".";
+  white-space: nowrap;
+}
+
+[data-component-type="DeprecatedRichText"] ul > li::before {
+  display: table-cell;
+  width: 2.25ch;
+  box-sizing: border-box;
+  padding-right: 0.75ch;
+  content: "•";
+}
+
+/* Legacy stacks and the flexbox-gap fallback. */
+
+:not([data-generated]) > [data-stack-content-wrapper] > *,
+:not([data-generated]) > [data-stack-content-wrapper] > [data-component-type],
+:not([data-generated]) > [data-stack-content-wrapper] > [data-legacy-stack-gap-enabled] > *,
+:not([data-generated]) > [data-stack-content-wrapper] > [data-legacy-stack-gap-enabled] > [data-component-type] {
+  position: relative;
+}
+
+.flexbox-gap-not-supported [data-legacy-stack-gap-enabled="true"] > *,
+[data-legacy-stack-gap-enabled="true"][data-stack-flexbox-gap="false"] {
+  margin-top: calc(var(--stack-gap-y) / 2);
+  margin-bottom: calc(var(--stack-gap-y) / 2);
+  margin-right: calc(var(--stack-gap-x) / 2);
+  margin-left: calc(var(--stack-gap-x) / 2);
+}
+
+[data-stack-content-wrapper][data-stack-gap-enabled="true"] {
+  row-gap: var(--stack-native-row-gap);
+  column-gap: var(--stack-native-column-gap);
+}
+
+.flexbox-gap-not-supported [data-stack-content-wrapper][data-stack-gap-enabled="true"] {
+  row-gap: unset;
+  column-gap: unset;
+}
+
+.flexbox-gap-not-supported [data-stack-direction-reverse="false"] [data-legacy-stack-gap-enabled="true"] > *:first-child,
+[data-stack-direction-reverse="false"] [data-legacy-stack-gap-enabled="true"][data-stack-flexbox-gap="false"] > *:first-child,
+.flexbox-gap-not-supported [data-stack-direction-reverse="true"] [data-legacy-stack-gap-enabled="true"] > *:last-child,
+[data-stack-direction-reverse="true"] [data-legacy-stack-gap-enabled="true"][data-stack-flexbox-gap="false"] > *:last-child {
+  margin-top: 0;
+  margin-left: 0;
+}
+
+.flexbox-gap-not-supported [data-stack-direction-reverse="false"] [data-legacy-stack-gap-enabled="true"] > *:last-child,
+[data-stack-direction-reverse="false"] [data-legacy-stack-gap-enabled="true"][data-stack-flexbox-gap="false"] > *:last-child,
+.flexbox-gap-not-supported [data-stack-direction-reverse="true"] [data-legacy-stack-gap-enabled="true"] > *:first-child,
+[data-stack-direction-reverse="true"] [data-legacy-stack-gap-enabled="true"][data-stack-flexbox-gap="false"] > *:first-child {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+/* Navigation */
+
+NavigationContainer [data-component-type="NavigationContainer"] > *,
+[data-component-type="NavigationContainer"] > [data-component-type] {
+  position: relative;
+}
+
+/* Scroll */
+
+[data-component-type="Scroll"]::-webkit-scrollbar {
+  display: none;
+}
+
+[data-component-type="ScrollContentWrapper"] > * {
+  position: relative;
+}
+
+/* Native scroll */
+
+[data-component-type="NativeScroll"] {
+  -webkit-overflow-scrolling: touch;
+}
+
+[data-component-type="NativeScroll"] > * {
+  position: relative;
+}
+
+[data-component-type="NativeScroll"].direction-both {
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+[data-component-type="NativeScroll"].direction-vertical {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+[data-component-type="NativeScroll"].direction-horizontal {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+[data-component-type="NativeScroll"].direction-vertical > * {
+  width: 100% !important;
+}
+
+[data-component-type="NativeScroll"].direction-horizontal > * {
+  height: 100% !important;
+}
+
+[data-component-type="NativeScroll"].scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+/* Page content wrapper */
+
+[data-component-type="PageContentWrapper"] > *,
+[data-component-type="PageContentWrapper"] > [data-component-type] {
+  position: relative;
+}
+
+/* Device component */
+
+[data-component-type="DeviceComponent"].no-device > * {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Elements animating out (AnimatePresence) must not catch pointer events. */
+
+[data-is-present="false"],
+[data-is-present="false"] * {
+  pointer-events: none !important;
+}
+
+/* Cursor */
+
+[data-cursor="pointer"] {
+  cursor: pointer;
+}
+
+[data-cursor="grab"] {
+  cursor: grab;
+}
+
+[data-cursor="grab"]:active {
+  cursor: grabbing;
+}
+
+/* Published sites render as RenderTarget.preview, which includes these legacy pointer-event rules. */
+
+[data-component-type="Frame"] *,
+[data-component-type="Stack"] * {
+  pointer-events: auto;
+}
+
+[data-generated] * {
+  pointer-events: unset;
+}
+
+/* SVG */
+
+.svgContainer svg {
+  display: block;
+}
+
+/* Button reset */
+
+[data-reset="button"] {
+  border-width: 0;
+  padding: 0;
+  background: none;
+}
+
+/* Hide scrollbars */
+
+[data-hide-scrollbars="true"]::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+[data-hide-scrollbars="true"]::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+[data-hide-scrollbars="true"] {
+  scrollbar-width: none;
+}
+
+/* Browsers without overflow: clip fall back to hidden via var(--overflow-clip-fallback, clip). */
+
+@supports (not (overflow: clip)) {
+  :root {
+    --overflow-clip-fallback: hidden;
+  }
+}
+
+/* Lightbox */
+
+.df-lightbox-container {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+/* Safari 16 cannot line-clamp block children; render them inline instead. */
+
+@supports (background: -webkit-named-image(i)) and (not (contain-intrinsic-size: inherit)) {
+  div.df-text,
+  p.df-text,
+  h1.df-text,
+  h2.df-text,
+  h3.df-text,
+  h4.df-text,
+  h5.df-text,
+  h6.df-text,
+  ol.df-text,
+  ul.df-text,
+  li.df-text,
+  blockquote.df-text,
+  .df-text.df-image {
+    display: var(--text-truncation-display-inline-for-safari-16, revert);
+  }
+
+  div.df-text::after,
+  p.df-text::after,
+  h1.df-text::after,
+  h2.df-text::after,
+  h3.df-text::after,
+  h4.df-text::after,
+  h5.df-text::after,
+  h6.df-text::after,
+  ol.df-text::after,
+  ul.df-text::after,
+  li.df-text::after,
+  blockquote.df-text::after,
+  .df-text.df-image::after {
+    content: var(--text-truncation-line-break-for-safari-16);
+    white-space: pre;
+  }
+
+  .df-text.df-text-module,
+  .df-text.df-table-wrapper {
+    display: var(--text-truncation-display-none-for-safari-16, revert);
+  }
+
+  p.df-text[data-text-fill] {
+    display: var(--text-truncation-display-inline-for-safari-16, inline-block);
+  }
+}
+
+/* Corner shape */
+
+@supports (corner-shape: superellipse(2)) {
+  :root {
+    --one-if-corner-shape-supported: 1;
+  }
+}
+
+/* Every generated component repeats this rule; served once here, before them. */
+
+@supports (aspect-ratio: 1) {
+  body {
+    --df-aspect-ratio-supported: auto;
+  }
+}

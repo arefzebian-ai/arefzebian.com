@@ -1,0 +1,329 @@
+.page.link2,
+.page .link2 {
+  display: block;
+}
+
+.page.root {
+  align-content: center;
+  align-items: center;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  width: 1200px;
+}
+
+.page .main {
+  align-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0px;
+  height: 100vh;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 200px 0px 0px 0px;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+
+.page .sectionHeader {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 150px;
+  height: min-content;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.page .sectionHeader2 {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 100px;
+  height: min-content;
+  justify-content: center;
+  overflow: visible;
+  padding: 0px 20px 40px 20px;
+  position: relative;
+  width: 100%;
+}
+
+.page .titleWrapper {
+  align-content: flex-end;
+  align-items: flex-end;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.page .allProjects8 {
+  --df-paragraph-spacing: 0px;
+  flex: 1 0 0px;
+  height: auto;
+  position: relative;
+  white-space: pre-wrap;
+  width: 1px;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+.page .underlineButton {
+  flex: none;
+  height: auto;
+  position: relative;
+  width: auto;
+}
+
+.page .sectionProjects {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 15px;
+  height: min-content;
+  justify-content: center;
+  overflow: visible;
+  padding: 0px 20px 0px 20px;
+  position: relative;
+  width: 100%;
+}
+
+.page .frame {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.page .client,
+.page .project,
+.page .industry {
+  --df-paragraph-spacing: 0px;
+  flex: 1 0 0px;
+  height: auto;
+  position: relative;
+  white-space: pre-wrap;
+  width: 1px;
+  will-change: var(--df-will-change-effect-override, transform);
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+.page .year {
+  --df-paragraph-spacing: 0px;
+  flex: 0.4 0 0px;
+  height: auto;
+  position: relative;
+  white-space: pre-wrap;
+  width: 1px;
+  will-change: var(--df-will-change-effect-override, transform);
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+.page .projects {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0px;
+  height: min-content;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.page .project1,
+.page .project2,
+.page .project3,
+.page .project4,
+.page .project5,
+.page .project6,
+.page .project7,
+.page .project8,
+.page .project9,
+.page .project10,
+.page .project11,
+.page .project12 {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0px;
+  height: min-content;
+  justify-content: flex-start;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.page .link,
+.page .project2Link,
+.page .project3Link,
+.page .project4Link,
+.page .project5Link,
+.page .project6Link,
+.page .project7Link,
+.page .project8Link,
+.page .project9Link,
+.page .project10Link,
+.page .project11Link,
+.page .project12Link {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+}
+
+.page .project1ListRow,
+.page .project2ListRow,
+.page .project3ListRow,
+.page .project4ListRow,
+.page .project5ListRow,
+.page .project6ListRow,
+.page .project7ListRow,
+.page .project8ListRow,
+.page .project9ListRow,
+.page .project10ListRow,
+.page .project11ListRow,
+.page .project12ListRow {
+  flex: 1 0 0px;
+  height: auto;
+  position: relative;
+  width: 1px;
+  will-change: var(--df-will-change-effect-override, transform);
+}
+
+.page .buyTemplateModule {
+  align-content: flex-end;
+  align-items: flex-end;
+  bottom: 0px;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: 1px;
+  justify-content: flex-end;
+  overflow: visible;
+  padding: 0px;
+  position: fixed;
+  right: 0px;
+  width: 100%;
+  z-index: 10;
+}
+
+.page .buttonWrapper {
+  align-content: center;
+  align-items: center;
+  bottom: 66px;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: min-content;
+  justify-content: center;
+  overflow: visible;
+  padding: 0px;
+  position: absolute;
+  right: 20px;
+  width: min-content;
+  z-index: 1;
+}
+
+.page .enaBuyTemplateButton {
+  flex: none;
+  height: auto;
+  position: relative;
+  width: auto;
+  will-change: var(--df-will-change-effect-override, transform);
+}
+
+@media (min-width: 810px) and (max-width: 1199.98px) {
+  .page.root {
+    width: 810px;
+  }
+}
+
+@media (max-width: 809.98px) {
+  .page.root {
+    width: 390px;
+  }
+
+  .page .main {
+    padding: 150px 0px 0px 0px;
+  }
+
+  .page .sectionHeader2 {
+    padding: 0px 15px 40px 15px;
+  }
+
+  .page .frame {
+    gap: 20px;
+  }
+
+  .page .buyTemplateModule {
+    flex-direction: column;
+  }
+
+  .page .buttonWrapper {
+    bottom: 62px;
+  }
+}

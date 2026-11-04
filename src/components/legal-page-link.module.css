@@ -1,0 +1,53 @@
+.legalPageLink.component,
+.legalPageLink .component {
+  display: block;
+}
+
+.legalPageLink.root {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: min-content;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  text-decoration: none;
+  width: min-content;
+}
+
+.legalPageLink .text01TermsConditions {
+  flex: none;
+  height: auto;
+  position: relative;
+  white-space: pre;
+  width: auto;
+  --df-paragraph-spacing: 0px;
+}
+
+@supports (background: -webkit-named-image(i)) and (not (font-palette:dark)) {
+  .legalPageLink.root {
+    gap: 0px;
+  }
+
+  .legalPageLink.root > * {
+    margin: 0px;
+    margin-bottom: calc(10px / 2);
+    margin-top: calc(10px / 2);
+  }
+
+  .legalPageLink.root > :first-child {
+    margin-top: 0px;
+  }
+
+  .legalPageLink.root > :last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.legalPageLink.legalLinkUnActive.root {
+  cursor: pointer;
+}

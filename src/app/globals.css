@@ -1,0 +1,11 @@
+/* Base styles come from the kit (src/lib/deframer/base.css), design tokens from src/styles/tokens.ts. */
+
+/* Metric-matched fallback faces, so text doesn't shift while fonts load. */
+@font-face { font-family: "Inter Tight Placeholder"; src: local("Arial"); ascent-override: 99.65%; descent-override: 24.81%; line-gap-override: 0.00%; size-adjust: 97.21% }
+@font-face { font-family: "DM Sans Placeholder"; src: local("Arial"); ascent-override: 94.36%; descent-override: 29.49%; line-gap-override: 0.00%; size-adjust: 105.13% }
+@font-face { font-family: "Favorit Light Placeholder"; src: local("Arial"); ascent-override: 92.95%; descent-override: 30.95%; line-gap-override: 0.00%; size-adjust: 100.80% }
+@font-face { font-family: "Favorit Regular Placeholder"; src: local("Arial"); ascent-override: 90.77%; descent-override: 30.22%; line-gap-override: 0.00%; size-adjust: 103.23% }
+@font-face { font-family: "Inter Placeholder"; src: local("Arial"); ascent-override: 89.79%; descent-override: 22.36%; line-gap-override: 0.00%; size-adjust: 107.89% }
+@font-face { font-family: "Inter Variable Placeholder"; src: local("Arial"); ascent-override: 89.79%; descent-override: 22.36%; line-gap-override: 0.00%; size-adjust: 107.89% }
+@font-face { font-family: "Inter Display Placeholder"; src: local("Arial"); ascent-override: 98.56%; descent-override: 24.54%; line-gap-override: 0.00%; size-adjust: 98.29% }
+@font-face { font-family: "Switzer Placeholder"; src: local("Arial"); ascent-override: 96.67%; descent-override: 24.66%; line-gap-override: 8.88%; size-adjust: 101.38% }

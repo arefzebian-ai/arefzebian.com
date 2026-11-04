@@ -1,0 +1,15 @@
+.enaLogo.root {
+  height: 20px;
+  overflow: hidden;
+  position: relative;
+  width: 53px;
+}
+
+.enaLogo .enaLogowhite {
+  flex: none;
+  height: 20px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 53px;
+}

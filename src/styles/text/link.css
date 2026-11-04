@@ -1,0 +1,8 @@
+.link-scope .link:not(.rich-text-wrapper),
+.link-scope .link.rich-text-wrapper a {
+  --df-link-current-text-decoration: none;
+  --df-link-hover-text-color: rgba(0, 0, 0, 0.6);
+  --df-link-hover-text-decoration: none;
+  --df-link-text-color: #000000;
+  --df-link-text-decoration: underline;
+}

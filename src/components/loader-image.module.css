@@ -1,0 +1,61 @@
+.loaderImage.root {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: 160px;
+  justify-content: center;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  width: 240px;
+}
+
+.loaderImage .image {
+  flex: none;
+  height: 100%;
+  left: 0px;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  will-change: var(--df-will-change-filter-override, filter);
+  z-index: 1;
+}
+
+.loaderImage .image2 {
+  flex: none;
+  height: 100%;
+  left: 0px;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  will-change: var(--df-will-change-filter-override, filter);
+  z-index: 2;
+}
+
+.loaderImage .image3 {
+  flex: none;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  will-change: var(--df-will-change-filter-override, filter);
+  z-index: 3;
+}
+
+.loaderImage.loaderImage1 .image2,
+.loaderImage.loaderImage2 .image {
+  z-index: 3;
+}
+
+.loaderImage.loaderImage1 .image3 {
+  z-index: 2;
+}
+
+.loaderImage.loaderImage2 .image3 {
+  z-index: 1;
+}

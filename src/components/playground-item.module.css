@@ -1,0 +1,69 @@
+.playgroundItem.root {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 8px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  width: 281px;
+}
+
+.playgroundItem .contentWrapper {
+  align-content: center;
+  align-items: center;
+  aspect-ratio: 281 / 351;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: var(--df-aspect-ratio-supported, 351px);
+  justify-content: center;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.playgroundItem .video {
+  flex: none;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+}
+
+.playgroundItem .image {
+  flex: 1 0 0px;
+  height: 100%;
+  overflow: visible;
+  position: relative;
+  width: 1px;
+}
+
+.playgroundItem .text {
+  flex: none;
+  height: auto;
+  position: relative;
+  white-space: pre;
+  width: auto;
+  --df-link-text-color: rgb(0, 153, 255);
+  --df-link-text-decoration: underline;
+}
+
+.playgroundItem.variant4x3 .contentWrapper {
+  aspect-ratio: 281 / 212;
+  height: var(--df-aspect-ratio-supported, 212px);
+}
+
+.playgroundItem.variant1x1 .contentWrapper {
+  aspect-ratio: 1 / 1;
+  height: var(--df-aspect-ratio-supported, 281px);
+}

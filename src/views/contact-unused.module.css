@@ -1,0 +1,422 @@
+.page.root {
+  align-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  width: 1200px;
+}
+
+.page .main {
+  align-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 150px 0px 0px 0px;
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
+
+.page .sectionContact {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 180px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 0px 20px 40px 20px;
+  position: relative;
+  width: 100%;
+}
+
+.page .heading,
+.page .frame8 {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.page .frame,
+.page .frame2,
+.page .frame3,
+.page .frame7,
+.page .addressFrame,
+.page .frame11 {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.page .letSConnect,
+.page .letSConnect2 {
+  --df-paragraph-spacing: 0px;
+  flex: 1 0 0px;
+  height: auto;
+  max-width: 420px;
+  position: relative;
+  white-space: pre-wrap;
+  width: 1px;
+  will-change: var(--df-will-change-effect-override, transform);
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+.page .sectionContactFrame {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.page .contact {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 7px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  width: 240px;
+}
+
+.page .contact2,
+.page .socials2,
+.page .address2 {
+  --df-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  position: relative;
+  white-space: pre-wrap;
+  width: 175px;
+  will-change: var(--df-will-change-effect-override, transform);
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+.page .frame4 {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  width: min-content;
+}
+
+.page .frame5,
+.page .frame6 {
+  align-content: center;
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 0px 0px 2px 0px;
+  position: relative;
+  width: auto;
+}
+
+.page .linkOpacity,
+.page .linkOpacity2,
+.page .linkOpacity3,
+.page .linkOpacity4,
+.page .enaBuyTemplateButton {
+  flex: none;
+  height: auto;
+  position: relative;
+  width: auto;
+  will-change: var(--df-will-change-effect-override, transform);
+}
+
+.page .socials {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 7px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  width: 200px;
+}
+
+.page .frame9,
+.page .frame10,
+.page .frame13,
+.page .frame14 {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 0px 0px 2px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.page .address,
+.page .studioHours {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 7px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  width: 260px;
+}
+
+.page .adressLink {
+  flex: none;
+  height: auto;
+  position: relative;
+  width: auto;
+}
+
+.page .studioHours2 {
+  --df-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  position: relative;
+  white-space: pre-wrap;
+  width: 256px;
+  will-change: var(--df-will-change-effect-override, transform);
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+.page .frame12 {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.page .mondayToFriday9,
+.page .mondayToFriday9_2 {
+  --df-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  opacity: 0.4;
+  position: relative;
+  white-space: pre-wrap;
+  width: 256px;
+  will-change: var(--df-will-change-effect-override, transform);
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+.page .imageWrapper {
+  align-content: center;
+  align-items: center;
+  aspect-ratio: 40 / 13;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0px;
+  height: auto;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.page .image {
+  flex: 1 0 0px;
+  gap: 10px;
+  height: 1px;
+  position: relative;
+  width: 100%;
+}
+
+.page .buyTemplateModule {
+  align-content: flex-end;
+  align-items: flex-end;
+  bottom: 0px;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: 1px;
+  justify-content: flex-end;
+  overflow: visible;
+  padding: 0px;
+  position: fixed;
+  right: 0px;
+  width: 100%;
+  z-index: 10;
+}
+
+.page .buttonWrapper {
+  align-content: center;
+  align-items: center;
+  bottom: 66px;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: min-content;
+  justify-content: center;
+  overflow: visible;
+  padding: 0px;
+  position: absolute;
+  right: 20px;
+  width: min-content;
+  z-index: 1;
+}
+
+@media (min-width: 810px) and (max-width: 1199.98px) {
+  .page.root {
+    width: 810px;
+  }
+
+  .page .sectionContactFrame {
+    gap: 0px;
+  }
+
+  .page .contact {
+    flex: 0.7 0 0px;
+    width: 1px;
+  }
+
+  .page .socials {
+    flex: 0.5 0 0px;
+    width: 1px;
+  }
+
+  .page .address {
+    flex: 0.9 0 0px;
+    width: 1px;
+  }
+
+  .page .studioHours {
+    flex: 1 0 0px;
+    width: 1px;
+  }
+}
+
+@media (max-width: 809.98px) {
+  .page.root {
+    width: 390px;
+  }
+
+  .page .sectionContact {
+    background-color: #ffffff;
+    gap: 120px;
+  }
+
+  .page .sectionContactFrame {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .page .contact,
+  .page .socials,
+  .page .address,
+  .page .studioHours {
+    width: 100%;
+  }
+
+  .page .imageWrapper {
+    aspect-ratio: 1 / 1;
+  }
+
+  .page .buyTemplateModule {
+    flex-direction: column;
+  }
+
+  .page .buttonWrapper {
+    bottom: 62px;
+  }
+}

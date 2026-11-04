@@ -1,0 +1,24 @@
+.toggleIcons.root {
+  align-content: center;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: 25px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  width: 25px;
+  will-change: var(--df-will-change-override, transform);
+}
+
+.toggleIcons .graphic,
+.toggleIcons .graphic2 {
+  flex: none;
+  height: 17px;
+  position: relative;
+  width: 17px;
+}

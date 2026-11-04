@@ -1,0 +1,77 @@
+.layout.root {
+  align-content: center;
+  align-items: center;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.layout .navigationNew {
+  flex: none;
+  height: auto;
+  left: 0px;
+  position: var(--df-canvas-fixed-position, fixed);
+  right: 0px;
+  top: 0px;
+  z-index: 10;
+}
+
+.layout .frame {
+  background: transparent;
+  flex-grow: 1;
+  height: 0px;
+  margin: 0px;
+  margin-bottom: calc(0 * -1px);
+  position: relative;
+  width: 0px;
+}
+
+.layout .frame2 {
+  bottom: 0px;
+  flex: none;
+  height: auto;
+  order: 1002;
+  position: sticky;
+  width: 100%;
+  z-index: 1;
+}
+
+/* cssmodules-pure-ignore */
+[data-layout-template="true"] > :global(#overlay) {
+  margin-bottom: calc(0 * -1px);
+}
+
+@supports (background: -webkit-named-image(i)) and (not (scale:1)) {
+  .layout.root {
+    gap: 0px;
+  }
+
+  .layout.root > * {
+    margin: 0px;
+    margin-bottom: calc(0px / 2);
+    margin-top: calc(0px / 2);
+  }
+
+  .layout.root > :first-child {
+    margin-top: 0px;
+  }
+
+  .layout.root > :last-child {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 809px) {
+  .layout .frame2 {
+    bottom: unset;
+    position: relative;
+  }
+}

@@ -1,0 +1,53 @@
+.linkOpacity.component,
+.linkOpacity .component {
+  display: block;
+}
+
+.linkOpacity.root {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: min-content;
+  justify-content: center;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  text-decoration: none;
+  width: min-content;
+}
+
+.linkOpacity .about {
+  flex: none;
+  height: auto;
+  position: relative;
+  white-space: pre;
+  width: auto;
+  --df-paragraph-spacing: 0px;
+}
+
+@supports (background: -webkit-named-image(i)) and (not (font-palette:dark)) {
+  .linkOpacity.root {
+    gap: 0px;
+  }
+
+  .linkOpacity.root > * {
+    margin: 0px;
+    margin-left: calc(10px / 2);
+    margin-right: calc(10px / 2);
+  }
+
+  .linkOpacity.root > :first-child {
+    margin-left: 0px;
+  }
+
+  .linkOpacity.root > :last-child {
+    margin-right: 0px;
+  }
+}
+
+.linkOpacity.variant2 .about {
+  cursor: pointer;
+}

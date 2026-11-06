@@ -204,51 +204,8 @@
   width: 1px;
 }
 
-.page .buyTemplateModule {
-  align-content: flex-end;
-  align-items: flex-end;
-  bottom: 0px;
-  display: flex;
-  flex: none;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 10px;
-  height: 1px;
-  justify-content: flex-end;
-  overflow: visible;
-  padding: 0px;
-  position: fixed;
-  right: 0px;
-  width: 100%;
-  z-index: 10;
-}
 
-.page .buttonWrapper {
-  align-content: center;
-  align-items: center;
-  bottom: 66px;
-  display: flex;
-  flex: none;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 10px;
-  height: min-content;
-  justify-content: center;
-  overflow: visible;
-  padding: 0px;
-  position: absolute;
-  right: 20px;
-  width: min-content;
-  z-index: 1;
-}
 
-.page .enaBuyTemplateButton {
-  flex: none;
-  height: auto;
-  position: relative;
-  width: auto;
-  will-change: var(--df-will-change-effect-override, transform);
-}
 
 @media (min-width: 810px) and (max-width: 1199.98px) {
   .page.root {
@@ -296,11 +253,5 @@
     width: 100%;
   }
 
-  .page .buyTemplateModule {
-    flex-direction: column;
-  }
 
-  .page .buttonWrapper {
-    bottom: 62px;
-  }
 }

@@ -25,7 +25,6 @@ import {
 } from "@/deframer";
 import { LayoutGroup, motion, MotionConfigContext } from "motion/react";
 import * as React from "react";
-import EnaBuyTemplateButton from "@/components/ena/buy-template-button";
 import AdressLink from "@/components/adress-link";
 import LinkOpacity from "@/components/link-opacity";
 import * as body13Uppercase from "@/styles/text/body-13-uppercase";
@@ -617,34 +616,6 @@ const ContactUnusedPage = React.forwardRef<HTMLDivElement, Props>(function (prop
               </PropertyOverrides>
             </div>
           </motion.main>
-          <motion.div
-            className={styles.buyTemplateModule}
-            data-name="Buy Template Module"
-            layout={motionLayout}
-          >
-            <div className={styles.buttonWrapper} data-name="Button Wrapper">
-              <ComponentViewportProvider>
-                <ContainerWithOptimizedAppearEffect
-                  animate={animation11}
-                  className={styles.enaBuyTemplateButton}
-                  data-appear-id="1yp182o"
-                  initial={animation12}
-                  isModuleExternal
-                  nodeId="EnaBuyTemplateButton"
-                  optimized
-                  rendersWithMotion
-                  scopeId="ContactUnusedPage"
-                  style={{ transformPerspective: 1200 }}
-                >
-                  <EnaBuyTemplateButton
-                    height="100%"
-                    link="https://ena.lemonsqueezy.com/checkout/buy/f3e8e965-c75c-45a7-bbcc-33ef570c2dc1"
-                    width="100%"
-                  />
-                </ContainerWithOptimizedAppearEffect>
-              </ComponentViewportProvider>
-            </div>
-          </motion.div>
         </motion.div>
         <div id="overlay" />
       </LayoutGroup>
@@ -664,7 +635,6 @@ ContactUnusedPage.loader = {
       [
         () => forwardLoader(LinkOpacity, {}, context),
         () => forwardLoader(AdressLink, {}, context),
-        () => forwardLoader(EnaBuyTemplateButton, {}, context),
       ],
       context,
     );

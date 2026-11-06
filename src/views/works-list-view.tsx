@@ -30,7 +30,6 @@ import {
 } from "@/deframer";
 import { LayoutGroup, motion, MotionConfigContext } from "motion/react";
 import * as React from "react";
-import EnaBuyTemplateButton from "@/components/ena/buy-template-button";
 import UnderlineButton from "@/components/underline-button";
 import ImageCursorListView from "@/components/image-cursor-list-view";
 import ProjectsListRow from "@/components/projects-list-row";
@@ -490,35 +489,6 @@ const query11 = () => ({
     { collection: "works69", name: "id", type: "Identifier" },
   ],
 });
-
-const transition17 = { delay: 1.7, duration: 0.7, ease: [0.12, 0.23, 0.13, 0.96], type: "tween" } as const;
-
-const animation18 = {
-  opacity: 1,
-  rotate: 0,
-  rotateX: 0,
-  rotateY: 0,
-  scale: 1,
-  skewX: 0,
-  skewY: 0,
-  transformPerspective: 1200,
-  transition: transition17,
-  x: 0,
-  y: 0,
-} as const;
-
-const animation19 = {
-  opacity: 0.001,
-  rotate: 0,
-  rotateX: 0,
-  rotateY: 0,
-  scale: 1,
-  skewX: 0,
-  skewY: 0,
-  transformPerspective: 1200,
-  x: 0,
-  y: 50,
-};
 
 const getProps = ({ height, id, width, ...props }: any) => ({
   ...props,
@@ -1735,34 +1705,6 @@ const WorksListViewPage = React.forwardRef<HTMLDivElement, Props>(function (prop
               </div>
             </div>
           </motion.main>
-          <motion.div
-            className={styles.buyTemplateModule}
-            data-name="Buy Template Module"
-            layout={motionLayout}
-          >
-            <div className={styles.buttonWrapper} data-name="Button Wrapper">
-              <ComponentViewportProvider>
-                <ContainerWithOptimizedAppearEffect
-                  animate={animation18}
-                  className={styles.enaBuyTemplateButton}
-                  data-appear-id="1s6qijb"
-                  initial={animation19}
-                  isModuleExternal
-                  nodeId="EnaBuyTemplateButton"
-                  optimized
-                  rendersWithMotion
-                  scopeId="WorksListViewPage"
-                  style={{ transformPerspective: 1200 }}
-                >
-                  <EnaBuyTemplateButton
-                    height="100%"
-                    link="https://ena.lemonsqueezy.com/checkout/buy/f3e8e965-c75c-45a7-bbcc-33ef570c2dc1"
-                    width="100%"
-                  />
-                </ContainerWithOptimizedAppearEffect>
-              </ComponentViewportProvider>
-            </div>
-          </motion.div>
         </motion.div>
         <div id="overlay" />
       </LayoutGroup>
@@ -1807,7 +1749,6 @@ WorksListViewPage.loader = {
         () => queryCacheEntry10.preload(),
         () => queryCacheEntry11.preload(),
         () => forwardLoader(UnderlineButton, {}, context),
-        () => forwardLoader(EnaBuyTemplateButton, {}, context),
         async () => {
           const parentData = (await runWithYield(() => queryCacheEntry.readMaybeAsync(), context)) ?? [];
           return runTasksWithYield(

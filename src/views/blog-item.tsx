@@ -41,7 +41,6 @@ import {
 import { LayoutGroup, motion, MotionConfigContext } from "motion/react";
 import * as React from "react";
 import { Clipboard_Share } from "@/vendor/share-article";
-import EnaBuyTemplateButton from "@/components/ena/buy-template-button";
 import ShareArticleButton, * as ShareArticleButtonInfo from "@/components/share-article-button";
 import TextLink from "@/components/text-link";
 import GlobalLineAnimationGlobal from "@/components/global/line-animation-global";
@@ -66,7 +65,6 @@ const ShareArticleButtonClipboard_Sharey5yqy2WithMappedReactPropsa6oa4n = withMa
 const MotionDivWithOptimizedAppearEffect = withOptimizedAppearEffect(motion.div);
 const RichTextWithOptimizedAppearEffect = withOptimizedAppearEffect(RichText);
 const Image1WithFX = withFX(Image1);
-const ContainerWithOptimizedAppearEffect = withOptimizedAppearEffect(Container);
 
 const breakpoints = {
   Phone: "(max-width: 809.98px)",
@@ -279,35 +277,6 @@ const query2 = (nextArticle3) => ({
     type: "BinaryOperation",
   },
 });
-
-const transition8 = { delay: 1.7, duration: 0.7, ease: [0.12, 0.23, 0.13, 0.96], type: "tween" } as const;
-
-const animation8 = {
-  opacity: 1,
-  rotate: 0,
-  rotateX: 0,
-  rotateY: 0,
-  scale: 1,
-  skewX: 0,
-  skewY: 0,
-  transformPerspective: 1200,
-  transition: transition8,
-  x: 0,
-  y: 0,
-} as const;
-
-const animation9 = {
-  opacity: 0.001,
-  rotate: 0,
-  rotateX: 0,
-  rotateY: 0,
-  scale: 1,
-  skewX: 0,
-  skewY: 0,
-  transformPerspective: 1200,
-  x: 0,
-  y: 50,
-};
 
 const detailQuery = (where) => ({
   from: { alias: "blogItem", data: Blog, type: "Collection" },
@@ -988,34 +957,6 @@ const BlogItemPage = React.forwardRef<HTMLDivElement, Props>(function (props, re
               </div>
             </div>
           </motion.main>
-          <motion.div
-            className={styles.buyTemplateModule}
-            data-name="Buy Template Module"
-            layout={motionLayout}
-          >
-            <div className={styles.buttonWrapper} data-name="Button Wrapper">
-              <ComponentViewportProvider>
-                <ContainerWithOptimizedAppearEffect
-                  animate={animation8}
-                  className={styles.enaBuyTemplateButton}
-                  data-appear-id="rpwivu"
-                  initial={animation9}
-                  isModuleExternal
-                  nodeId="EnaBuyTemplateButton"
-                  optimized
-                  rendersWithMotion
-                  scopeId="BlogItemPage"
-                  style={{ transformPerspective: 1200 }}
-                >
-                  <EnaBuyTemplateButton
-                    height="100%"
-                    link="https://ena.lemonsqueezy.com/checkout/buy/f3e8e965-c75c-45a7-bbcc-33ef570c2dc1"
-                    width="100%"
-                  />
-                </ContainerWithOptimizedAppearEffect>
-              </ComponentViewportProvider>
-            </div>
-          </motion.div>
         </motion.div>
         <div id="overlay" />
       </LayoutGroup>
@@ -1060,7 +1001,6 @@ BlogItemPage.loader = {
         () => forwardLoader(GlobalLineAnimationGlobal, {}, context),
         () => forwardLoader(ShareArticleButton, {}, context),
         () => forwardLoader(TextLink, {}, context),
-        () => forwardLoader(EnaBuyTemplateButton, {}, context),
         async () => {
           const [detailData] = (await detailResultPromise) ?? [];
           const parentData =

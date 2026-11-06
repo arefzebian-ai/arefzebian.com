@@ -21,7 +21,7 @@
   position: relative;
   white-space: pre-wrap;
   width: 1px;
-  word-break: break-word;
+  word-break: normal;
   word-wrap: break-word;
   --df-paragraph-spacing: 0px;
 }
@@ -32,7 +32,7 @@
   position: relative;
   white-space: pre-wrap;
   width: 1px;
-  word-break: break-word;
+  word-break: normal;
   word-wrap: break-word;
   --df-paragraph-spacing: 0px;
 }

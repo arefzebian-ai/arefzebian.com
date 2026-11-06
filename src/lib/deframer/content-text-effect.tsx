@@ -81,7 +81,8 @@ function tokenizeText(text: string, tokenization: Tokenization, register: () => 
       // Lines are found after layout by grouping characters on the same offsetTop.
       return words.map((word, index) => (
         <Fragment key={word + index + (index === last)}>
-          <span style={{ whiteSpace: word.length <= 12 ? "nowrap" : "unset" }}>
+          {/* Always nowrap: per-letter inline-blocks otherwise wrap mid-word (e.g. "visualization"). */}
+          <span style={{ whiteSpace: "nowrap" }}>
             {word.match(characterPattern)?.map((char, i) => (
               <span key={char + i} ref={register()} style={style}>
                 {char}

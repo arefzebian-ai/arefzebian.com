@@ -644,16 +644,6 @@ const NavigationNEW = React.forwardRef<HTMLDivElement, Props>(function (props, r
                         className={cx(styles.link, styles.logo2)}
                         layoutDependency={layoutDependency}
                         layoutId="layer 2"
-                        {...addPropertyOverrides(
-                          {
-                            "Navigation Mobile Open Fill": {
-                              "data-highlight": true,
-                              onTap: onTapNavigationMobileOpenFill,
-                            },
-                          },
-                          baseVariant,
-                          gestureVariant,
-                        )}
                       >
                         <RichTextWithFXWithOptimizedAppearEffect
                           children={
@@ -724,16 +714,6 @@ const NavigationNEW = React.forwardRef<HTMLDivElement, Props>(function (props, r
                         className={cx(styles.link2, styles.logo2)}
                         layoutDependency={layoutDependency}
                         layoutId="layer 3"
-                        {...addPropertyOverrides(
-                          {
-                            "Navigation Mobile Open Fill": {
-                              "data-highlight": true,
-                              onTap: onTapNavigationMobileOpenFill,
-                            },
-                          },
-                          baseVariant,
-                          gestureVariant,
-                        )}
                       >
                         <RichTextWithFXWithOptimizedAppearEffect
                           children={
@@ -799,39 +779,16 @@ const NavigationNEW = React.forwardRef<HTMLDivElement, Props>(function (props, r
                         />
                       </motion.a>
                     </Link>
-                    <Link
-                      href="/blog-unused"
-                      motionChild
-                      nodeId="link"
-                      {...addPropertyOverrides(
-                        { "Navigation Mobile Open Fill": { href: "/playground", openInNewTab: false } },
-                        baseVariant,
-                        gestureVariant,
-                      )}
-                    >
+                    <Link href="/playground" motionChild nodeId="link">
                       <motion.a
                         className={cx(styles.link3, styles.logo2)}
                         layoutDependency={layoutDependency}
                         layoutId="layer 4"
-                        {...addPropertyOverrides(
-                          {
-                            "Navigation Mobile Open Fill": {
-                              "data-highlight": true,
-                              onTap: onTapNavigationMobileOpenFill,
-                            },
-                            "Navigation Mobile Open": {
-                              "data-highlight": true,
-                              onTap: onTapNavigationMobileOpen,
-                            },
-                          },
-                          baseVariant,
-                          gestureVariant,
-                        )}
                       >
                         <RichTextWithFXWithOptimizedAppearEffect
                           children={
                             <>
-                              <motion.p className="text-body-navigation-link-mobile">news</motion.p>
+                              <motion.p className="text-body-navigation-link-mobile">playground</motion.p>
                             </>
                           }
                           className={styles.news}
@@ -880,16 +837,7 @@ const NavigationNEW = React.forwardRef<HTMLDivElement, Props>(function (props, r
                                       dir="auto"
                                       style={{ "--df-text-color": "var(--news-text-color, rgb(0, 0, 0))" }}
                                     >
-                                      <Link
-                                        href="/playground"
-                                        motionChild
-                                        nodeId="link"
-                                        openInNewTab={false}
-                                        relValues={[]}
-                                        smoothScroll={false}
-                                      >
-                                        <motion.a className="link">Playground</motion.a>
-                                      </Link>
+                                      playground
                                     </motion.p>
                                   </>
                                 ),
@@ -908,20 +856,6 @@ const NavigationNEW = React.forwardRef<HTMLDivElement, Props>(function (props, r
                     className={styles.frame2}
                     layoutDependency={layoutDependency}
                     layoutId="layer 5"
-                    {...addPropertyOverrides(
-                      {
-                        "Navigation Mobile Open Fill": {
-                          "data-highlight": true,
-                          onTap: onTapNavigationMobileOpenFill,
-                        },
-                        "Navigation Mobile Open": {
-                          "data-highlight": true,
-                          onTap: onTapNavigationMobileOpen,
-                        },
-                      },
-                      baseVariant,
-                      gestureVariant,
-                    )}
                   >
                     <ComponentViewportProvider
                       height={15}
@@ -953,20 +887,12 @@ const NavigationNEW = React.forwardRef<HTMLDivElement, Props>(function (props, r
                       >
                         <ContactButton
                           label="get in touch"
-                          link="/contact-unused"
+                          link="/contact"
                           height="100%"
                           layoutId="ContactButton 2"
                           variant={matchVariant("Variant 1")}
                           width="100%"
                           color="rgb(0, 0, 0)"
-                          {...addPropertyOverrides(
-                            {
-                              "Navigation Mobile Open Fill": { link: "/contact" },
-                              "Navigation Mobile Open": { link: "/contact" },
-                            },
-                            baseVariant,
-                            gestureVariant,
-                          )}
                         />
                       </SmartComponentScopedContainerWithFXWithOptimizedAppearEffect>
                     </ComponentViewportProvider>

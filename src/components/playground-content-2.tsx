@@ -476,15 +476,8 @@ const PlaygroundContent2 = React.forwardRef<HTMLDivElement, Props>(function (pro
                 layoutId="Toggle"
                 optimized
                 style={{ transformPerspective: 1200 }}
-                {...addPropertyOverrides(
-                  {
-                    "1 Column Desktop": { "data-highlight": true, onTap: onTap },
-                    "1 Column Mobile": { "data-highlight": true, onTap: onTapTo_3ColumnMobile },
-                  },
-                  baseVariant,
-                  gestureVariant,
-                )}
               >
+                {/* "Grid Toggle" hosts the single/column icon; "Single Toggle" hosts the quad/grid icon (Framer names). */}
                 <motion.div
                   className={styles.gridToggle}
                   data-name="Grid Toggle"
@@ -494,8 +487,8 @@ const PlaygroundContent2 = React.forwardRef<HTMLDivElement, Props>(function (pro
                   onTap={onTapTo_1ColumnDesktop}
                   {...addPropertyOverrides(
                     {
-                      "1 Column Mobile": { onTap: onTapTo_3ColumnMobile },
-                      "3 Column Mobile": { onTap: onTapTo_3ColumnMobile },
+                      "1 Column Mobile": { onTap: switchTo_1ColumnMobile },
+                      "3 Column Mobile": { onTap: switchTo_1ColumnMobile },
                     },
                     baseVariant,
                     gestureVariant,
@@ -520,7 +513,14 @@ const PlaygroundContent2 = React.forwardRef<HTMLDivElement, Props>(function (pro
                         width="100%"
                         {...addPropertyOverrides(
                           {
-                            "1 Column Mobile": { click: switchTo_1ColumnMobile },
+                            "1 Column Desktop": {
+                              click: onTapTo_1ColumnDesktop,
+                              variant: matchVariant("Column Active"),
+                            },
+                            "1 Column Mobile": {
+                              click: switchTo_1ColumnMobile,
+                              variant: matchVariant("Column Active"),
+                            },
                             "3 Column Mobile": { click: switchTo_1ColumnMobile },
                           },
                           baseVariant,
@@ -539,8 +539,8 @@ const PlaygroundContent2 = React.forwardRef<HTMLDivElement, Props>(function (pro
                   onTap={onTap}
                   {...addPropertyOverrides(
                     {
-                      "1 Column Mobile": { onTap: switchTo_1ColumnMobile },
-                      "3 Column Mobile": { onTap: switchTo_1ColumnMobile },
+                      "1 Column Mobile": { onTap: onTapTo_3ColumnMobile },
+                      "3 Column Mobile": { onTap: onTapTo_3ColumnMobile },
                     },
                     baseVariant,
                     gestureVariant,
@@ -565,7 +565,14 @@ const PlaygroundContent2 = React.forwardRef<HTMLDivElement, Props>(function (pro
                         width="100%"
                         {...addPropertyOverrides(
                           {
-                            "1 Column Mobile": { click: onTapTo_3ColumnMobile },
+                            "1 Column Desktop": {
+                              click: onTap,
+                              variant: matchVariant("Grid InActive"),
+                            },
+                            "1 Column Mobile": {
+                              click: onTapTo_3ColumnMobile,
+                              variant: matchVariant("Grid InActive"),
+                            },
                             "3 Column Mobile": { click: onTapTo_3ColumnMobile },
                           },
                           baseVariant,

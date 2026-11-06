@@ -36,8 +36,6 @@ import {
   isInternalHref,
   localePrefix,
   normalizeHref,
-  notFoundPaths,
-  relativePath,
   resolveHash,
   routePath,
   type Locale,
@@ -139,15 +137,13 @@ interface LinkScope {
   locale: Locale | null;
 }
 
-/** Href for a page path: relative to the current page like the original runtime, absolute where that can't work. */
+/**
+ * Href for a page path. Always absolute (`/about`, `/works/grid-view`) so native
+ * fallback navigation and iOS Safari don't resolve `./about`-style relatives against
+ * the wrong directory when the current URL has no trailing slash.
+ */
 function hrefForPath(path: string, scope: LinkScope): string {
-  const current = scope.currentRoute;
-  const prefix = localePrefix(scope.locale);
-  if (!current || notFoundPaths.has(current.path)) return prefix + path;
-  const from = routePath(current, current.pathVariables, scope.locale?.code);
-  if (!prefix) return relativePath(from, path);
-  // Relative to the URL as served: a locale's home is `/en` (the original runtime's is `/en/`), so `./about` would leave the locale.
-  return relativePath(prefix + (from === "/" ? "" : from), prefix + path);
+  return localePrefix(scope.locale) + path;
 }
 
 function compact(variables: PathVariables): Record<string, string> {

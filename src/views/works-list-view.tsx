@@ -1129,7 +1129,7 @@ const WorksListViewPage = React.forwardRef<HTMLDivElement, Props>(function (prop
                                 return (
                                   <LayoutGroup id={`works62-${worksId4}`} key={worksId4}>
                                     <PathVariablesContext.Provider value={{ worksSlug: slug4 }}>
-                                      <Link href="/404" motionChild nodeId="link" openInNewTab={false}>
+                                      <Link href="/creature" motionChild nodeId="link" openInNewTab={false}>
                                         <motion.a className={cx(styles.project5Link, styles.link2)}>
                                           <ComponentViewportProvider
                                             height={27}

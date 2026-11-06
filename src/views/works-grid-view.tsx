@@ -688,7 +688,7 @@ const WorksGridViewPage = React.forwardRef<HTMLDivElement, Props>(function (prop
                                 return (
                                   <LayoutGroup id={`works53-${worksId4}`} key={worksId4}>
                                     <PathVariablesContext.Provider value={{ worksSlug: slug4 }}>
-                                      <Link href="/404" motionChild nodeId="link" openInNewTab={false}>
+                                      <Link href="/creature" motionChild nodeId="link" openInNewTab={false}>
                                         <motion.a className={cx(styles.link6, styles.link2)}>
                                           <PropertyOverrides
                                             breakpoint={baseVariant}

@@ -118,7 +118,7 @@
   position: relative;
   white-space: pre-wrap;
   width: 500px;
-  word-break: break-word;
+  word-break: normal;
   word-wrap: break-word;
 }
 
@@ -147,7 +147,7 @@
   position: relative;
   white-space: pre-wrap;
   width: 100%;
-  word-break: break-word;
+  word-break: normal;
   word-wrap: break-word;
 }
 
@@ -253,7 +253,7 @@
   white-space: pre-wrap;
   width: 1px;
   will-change: var(--df-will-change-effect-override, transform);
-  word-break: break-word;
+  word-break: normal;
   word-wrap: break-word;
 }
 
@@ -266,7 +266,7 @@
   white-space: pre-wrap;
   width: 1px;
   will-change: var(--df-will-change-effect-override, transform);
-  word-break: break-word;
+  word-break: normal;
   word-wrap: break-word;
 }
 
@@ -334,7 +334,7 @@
   position: relative;
   white-space: pre-wrap;
   width: 100%;
-  word-break: break-word;
+  word-break: normal;
   word-wrap: break-word;
 }
 
@@ -361,7 +361,7 @@
   position: relative;
   white-space: pre-wrap;
   width: 1px;
-  word-break: break-word;
+  word-break: normal;
   word-wrap: break-word;
 }
 

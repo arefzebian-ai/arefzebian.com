@@ -1,5 +1,21 @@
 /* Base styles come from the kit (src/lib/deframer/base.css), design tokens from src/styles/tokens.ts. */
 
+/* Keep body copy wrapping between words — never mid-word (e.g. "v-isualization"). */
+p,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.df-text,
+[class*="text-body"],
+[class*="text-h"] {
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
 /* Metric-matched fallback faces, so text doesn't shift while fonts load. */
 @font-face { font-family: "Inter Tight Placeholder"; src: local("Arial"); ascent-override: 99.65%; descent-override: 24.81%; line-gap-override: 0.00%; size-adjust: 97.21% }
 @font-face { font-family: "DM Sans Placeholder"; src: local("Arial"); ascent-override: 94.36%; descent-override: 29.49%; line-gap-override: 0.00%; size-adjust: 105.13% }

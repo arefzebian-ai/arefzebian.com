@@ -90,7 +90,7 @@
   position: relative;
   white-space: pre-wrap;
   width: auto;
-  word-break: break-word;
+  word-break: normal;
   word-wrap: break-word;
 }
 
@@ -246,7 +246,7 @@
   position: relative;
   white-space: pre-wrap;
   width: 100%;
-  word-break: break-word;
+  word-break: normal;
   word-wrap: break-word;
 }
 
@@ -364,7 +364,7 @@
   position: relative;
   white-space: pre-wrap;
   width: 100%;
-  word-break: break-word;
+  word-break: normal;
   word-wrap: break-word;
 }
 
@@ -376,7 +376,7 @@
   position: relative;
   white-space: pre-wrap;
   width: 100%;
-  word-break: break-word;
+  word-break: normal;
   word-wrap: break-word;
 }
 
@@ -503,7 +503,7 @@
   top: 60px;
   white-space: pre-wrap;
   width: 1px;
-  word-break: break-word;
+  word-break: normal;
   word-wrap: break-word;
   z-index: 1;
 }
@@ -595,7 +595,7 @@
   position: relative;
   white-space: pre-wrap;
   width: 1px;
-  word-break: break-word;
+  word-break: normal;
   word-wrap: break-word;
 }
 

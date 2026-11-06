@@ -15,6 +15,7 @@ const pages = [
   "/404",
   "/legal-unused",
   "/playground",
+  "/creature",
   "/halv-draft",
   "/halv",
   "/halv-casestudy",

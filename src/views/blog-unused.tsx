@@ -33,7 +33,6 @@ import {
 } from "@/deframer";
 import { LayoutGroup, motion, MotionConfigContext } from "motion/react";
 import * as React from "react";
-import EnaBuyTemplateButton from "@/components/ena/buy-template-button";
 import GlobalLineAnimationGlobal from "@/components/global/line-animation-global";
 import ArticleCard from "@/components/article-card";
 import Blog from "@/cms/blog";
@@ -431,22 +430,6 @@ const query15 = () => ({
     { collection: "blog15", name: "id", type: "Identifier" },
   ],
 });
-
-const transition8 = { delay: 1.7, duration: 0.7, ease: [0.12, 0.23, 0.13, 0.96], type: "tween" } as const;
-
-const animation9 = {
-  opacity: 1,
-  rotate: 0,
-  rotateX: 0,
-  rotateY: 0,
-  scale: 1,
-  skewX: 0,
-  skewY: 0,
-  transformPerspective: 1200,
-  transition: transition8,
-  x: 0,
-  y: 0,
-} as const;
 
 const animation10 = {
   opacity: 0.001,
@@ -1509,34 +1492,6 @@ const BlogUnusedPage = React.forwardRef<HTMLDivElement, Props>(function (props, 
               )}
             </section>
           </motion.main>
-          <motion.div
-            className={styles.buyTemplateModule}
-            data-name="Buy Template Module"
-            layout={motionLayout}
-          >
-            <div className={styles.buttonWrapper} data-name="Button Wrapper">
-              <ComponentViewportProvider>
-                <ContainerWithOptimizedAppearEffect
-                  animate={animation9}
-                  className={styles.enaBuyTemplateButton}
-                  data-appear-id="uwlkvb"
-                  initial={animation10}
-                  isModuleExternal
-                  nodeId="EnaBuyTemplateButton"
-                  optimized
-                  rendersWithMotion
-                  scopeId="BlogUnusedPage"
-                  style={{ transformPerspective: 1200 }}
-                >
-                  <EnaBuyTemplateButton
-                    height="100%"
-                    link="https://ena.lemonsqueezy.com/checkout/buy/f3e8e965-c75c-45a7-bbcc-33ef570c2dc1"
-                    width="100%"
-                  />
-                </ContainerWithOptimizedAppearEffect>
-              </ComponentViewportProvider>
-            </div>
-          </motion.div>
         </motion.div>
         <div id="overlay" />
       </LayoutGroup>
@@ -1589,7 +1544,6 @@ BlogUnusedPage.loader = {
         () => queryCacheEntry14.preload(),
         () => queryCacheEntry15.preload(),
         () => forwardLoader(GlobalLineAnimationGlobal, {}, context),
-        () => forwardLoader(EnaBuyTemplateButton, {}, context),
         async () => {
           const parentData = (await runWithYield(() => queryCacheEntry.readMaybeAsync(), context)) ?? [];
           return runTasksWithYield(

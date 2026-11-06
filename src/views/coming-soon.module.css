@@ -1,0 +1,136 @@
+.page.root {
+  align-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  width: 1200px;
+}
+
+.page .main {
+  align-content: flex-start;
+  align-items: flex-start;
+  background-color: #ffffff;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 150px 0px 0px 0px;
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
+
+.page .sectionComingSoon {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 30px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 0px 20px 120px 20px;
+  position: relative;
+  width: 100%;
+}
+
+.page .container {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 15px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.page .headline {
+  --df-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  position: relative;
+  white-space: pre-wrap;
+  width: 100%;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+.page .text {
+  --df-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  max-width: 280px;
+  opacity: 0.4;
+  position: relative;
+  white-space: pre-wrap;
+  width: 100%;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+.page .contactButton {
+  flex: none;
+  height: auto;
+  position: relative;
+  width: auto;
+}
+
+.page .imageWrapper {
+  align-content: center;
+  align-items: center;
+  aspect-ratio: 40 / 13;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0px;
+  height: auto;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.page .image {
+  flex: 1 0 0px;
+  height: 100%;
+  position: relative;
+  width: 1px;
+}
+
+@media (min-width: 810px) and (max-width: 1199.98px) {
+  .page.root {
+    width: 810px;
+  }
+}
+
+@media (max-width: 809.98px) {
+  .page.root {
+    width: 390px;
+  }
+
+  .page .imageWrapper {
+    aspect-ratio: 1 / 1;
+  }
+}

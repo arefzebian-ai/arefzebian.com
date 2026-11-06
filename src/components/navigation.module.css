@@ -16,7 +16,8 @@
   overflow: hidden;
   padding: 0px;
   position: relative;
-  width: 1200px;
+  width: 100%;
+  max-width: 100%;
 }
 
 .navigation .container {
@@ -235,7 +236,7 @@
 .navigation.navigationMobileOpen.root,
 .navigation.navigationMobileFill.root,
 .navigation.navigationMobileOpenFill.root {
-  width: 390px;
+  width: 100%;
 }
 
 .navigation.navigationMobile .container,
@@ -253,14 +254,37 @@
   min-width: unset;
 }
 
+.navigation.navigationMobileOpen.root,
+.navigation.navigationMobileOpenFill.root {
+  mix-blend-mode: normal;
+  overflow: visible;
+}
+
 .navigation.navigationMobileOpen .container,
 .navigation.navigationMobileOpenFill .container {
   gap: 90px;
-  height: calc(var(--df-viewport-height, 100vh) * 1);
+  height: var(--df-viewport-height, 100vh);
   justify-content: flex-start;
+  min-height: 100vh;
+  min-height: 100dvh;
   order: 0;
+  width: 100%;
 }
 
+.navigation.navigationMobileOpen .menuMobile,
+.navigation.navigationMobileOpenFill .menuMobile {
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.navigation.navigationMobileOpen .menuMobileLinks,
+.navigation.navigationMobileOpenFill .menuMobileLinks {
+  width: 100%;
+}
+
+.navigation.navigationMobileOpen .link,
+.navigation.navigationMobileOpen .link2,
 .navigation.navigationMobileOpen .link3,
 .navigation.navigationMobileOpen .frame2,
 .navigation.navigationMobileOpenFill .link,
@@ -268,6 +292,7 @@
 .navigation.navigationMobileOpenFill .link3,
 .navigation.navigationMobileOpenFill .frame2 {
   cursor: pointer;
+  text-decoration: none;
 }
 
 .navigation.navigationMobileOpen .stopScroll,
@@ -277,7 +302,7 @@
 
 .navigation.navigationTablet.root,
 .navigation.navigationTabletFill.root {
-  width: 810px;
+  width: 100%;
 }
 
 .navigation.navigationTablet .menuLinks,

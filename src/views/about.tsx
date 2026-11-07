@@ -618,12 +618,6 @@ const AboutPage = React.forwardRef<HTMLDivElement, Props>(function (props, ref) 
                   >
                     <>
                       <p className="text-body-30" dir="auto">
-                        Hi, I’m Aref.
-                      </p>
-                      <p className="text-body-30" dir="auto">
-                        <br className="trailing-break" />
-                      </p>
-                      <p className="text-body-30" dir="auto">
                         I’m an industrial designer interested in what happens when different disciplines
                         overlap. I’ve worked across furniture, consumer products, accessories, packaging,
                         visualization, branding, and digital experiences.

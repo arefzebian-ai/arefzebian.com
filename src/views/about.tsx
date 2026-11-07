@@ -626,17 +626,15 @@ const AboutPage = React.forwardRef<HTMLDivElement, Props>(function (props, ref) 
                       <p className="text-body-30" dir="auto">
                         I’m an industrial designer interested in what happens when different disciplines
                         overlap. I’ve worked across furniture, consumer products, accessories, packaging,
-                        visualization, branding, and digital experiences, moving between physical and digital
-                        design constantly.
+                        visualization, branding, and digital experiences.
                       </p>
                       <p className="text-body-30" dir="auto">
                         <br className="trailing-break" />
                       </p>
                       <p className="text-body-30" dir="auto">
-                        I enjoy building ideas from the ground up—whether that’s developing a product, shaping
-                        how it’s presented, or thinking about the system that surrounds it. I’m fascinated by
-                        how people interact with objects, technology, and the spaces around them, and I
-                        believe the best design comes from considering all of those things together.
+                        I’m fascinated by how people interact with objects, technology, and the spaces around
+                        them, and I believe the best design comes from considering all of those things
+                        together.
                       </p>
                       <p className="text-body-30" dir="auto">
                         <br className="trailing-break" />

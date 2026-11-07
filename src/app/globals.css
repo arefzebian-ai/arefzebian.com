@@ -1,5 +1,10 @@
 /* Base styles come from the kit (src/lib/deframer/base.css), design tokens from src/styles/tokens.ts. */
 
+/* Remove the default mobile tap flash on links and controls. */
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
 /* Keep body copy wrapping between words — never mid-word (e.g. "v-isualization"). */
 p,
 li,

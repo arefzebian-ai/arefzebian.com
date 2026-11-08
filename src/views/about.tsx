@@ -922,15 +922,20 @@ const AboutPage = React.forwardRef<HTMLDivElement, Props>(function (props, ref) 
                           optimized
                           rendersWithMotion
                         >
-                          <ExperienceRow
-                            role={"Savannah College of Art & Design"}
-                            height="100%"
-                            style={{ width: "100%" }}
-                            company="BFA - INDUSTRIAL DESIGN"
-                            variant={matchVariant("Experience Row")}
-                            dates="2021 — 2025"
-                            width="100%"
-                          />
+                          <PropertyOverrides
+                            breakpoint={baseVariant}
+                            overrides={{ Phone: { variant: matchVariant("Experience Row - mobile") } }}
+                          >
+                            <ExperienceRow
+                              role={"Savannah College of Art & Design"}
+                              height="100%"
+                              style={{ width: "100%" }}
+                              company="BFA - INDUSTRIAL DESIGN"
+                              variant={matchVariant("Experience Row")}
+                              dates="2021 — 2025"
+                              width="100%"
+                            />
+                          </PropertyOverrides>
                         </ContainerWithOptimizedAppearEffect>
                       </ComponentViewportProvider>
                     </PropertyOverrides>

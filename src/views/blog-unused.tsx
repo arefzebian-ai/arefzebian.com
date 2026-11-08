@@ -55,7 +55,7 @@ const hiddenClassNames = {
   Desktop: "hidden-desktop",
 };
 
-const transition1 = { delay: 0.2, duration: 1.5, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition1 = { delay: 0.2, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation = {
   opacity: 1,
@@ -82,7 +82,7 @@ const animation1 = {
   y: 50,
 };
 
-const transition2 = { delay: 0.4, duration: 1.5, ease: [0.25, 1, 0.5, 1], type: "tween" } as const;
+const transition2 = { delay: 0.4, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation2 = {
   opacity: 1,
@@ -141,7 +141,7 @@ const QueryData = ({ query, pageSize, children }: any) => {
   return children(data);
 };
 
-const transition3 = { delay: 0.5, duration: 1.5, ease: [0.25, 1, 0.5, 1], type: "tween" } as const;
+const transition3 = { delay: 0.5, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation4 = {
   opacity: 1,
@@ -171,7 +171,7 @@ const query1 = () => ({
   ],
 });
 
-const transition4 = { delay: 0.6, duration: 1.5, ease: [0.25, 1, 0.5, 1], type: "tween" } as const;
+const transition4 = { delay: 0.6, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation5 = {
   opacity: 1,
@@ -201,7 +201,7 @@ const query2 = () => ({
   ],
 });
 
-const transition5 = { delay: 0.7, duration: 1.5, ease: [0.25, 1, 0.5, 1], type: "tween" } as const;
+const transition5 = { delay: 0.7, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation6 = {
   opacity: 1,
@@ -245,7 +245,7 @@ const query4 = () => ({
   ],
 });
 
-const transition6 = { delay: 0.8, duration: 1.5, ease: [0.25, 1, 0.5, 1], type: "tween" } as const;
+const transition6 = { delay: 0.8, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation7 = {
   opacity: 1,
@@ -289,7 +289,7 @@ const query6 = () => ({
   ],
 });
 
-const transition7 = { delay: 0.9, duration: 1.5, ease: [0.25, 1, 0.5, 1], type: "tween" } as const;
+const transition7 = { delay: 0.9, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation8 = {
   opacity: 1,

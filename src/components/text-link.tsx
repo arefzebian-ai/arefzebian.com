@@ -24,9 +24,9 @@ const variantClassNames = { "Line IN": styles.lineIn };
 
 const transition1 = { duration: 0, type: "tween" } as const;
 
-const transition2 = { delay: 0, duration: 1, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition2 = { delay: 0, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
-const transition3 = { delay: 0, duration: 0.8, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition3 = { delay: 0, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const getProps = ({ color, height, id, label, link, newTab, width, ...props }: any) => ({
   ...props,

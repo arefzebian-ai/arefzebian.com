@@ -81,7 +81,7 @@ const hiddenClassNames = {
 
 const animation = { opacity: 0.001, rotate: 0, scale: 1, skewX: 0, skewY: 0, x: 0, y: 50 };
 
-const transition1 = { delay: 0.1, duration: 2, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition1 = { delay: 0.1, duration: 2, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const textEffect = {
   effect: animation,
@@ -103,7 +103,7 @@ const textEffect1 = {
   type: "appear",
 } as const;
 
-const transition2 = { delay: 0.5, duration: 1.5, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition2 = { delay: 0.5, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation1 = {
   opacity: 1,
@@ -130,7 +130,7 @@ const animation2 = {
   y: 40,
 };
 
-const transition3 = { delay: 0.6, duration: 1.5, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition3 = { delay: 0.6, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation3 = {
   opacity: 0.4,
@@ -145,7 +145,7 @@ const animation3 = {
   y: 0,
 } as const;
 
-const transition4 = { delay: 0.8, duration: 1.5, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition4 = { delay: 0.8, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation4 = {
   opacity: 1,
@@ -160,7 +160,7 @@ const animation4 = {
   y: 0,
 } as const;
 
-const transition5 = { delay: 0.7, duration: 1.5, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition5 = { delay: 0.7, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation5 = {
   opacity: 0.4,
@@ -175,7 +175,7 @@ const animation5 = {
   y: 0,
 } as const;
 
-const transition6 = { delay: 1, duration: 1.5, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition6 = { delay: 1, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation6 = {
   opacity: 1,
@@ -190,7 +190,7 @@ const animation6 = {
   y: 0,
 } as const;
 
-const transition7 = { delay: 1.4, duration: 1.5, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition7 = { delay: 1.4, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation7 = {
   opacity: 1,

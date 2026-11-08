@@ -55,7 +55,7 @@ const variantClassNames = {
   "Project Card - Square": styles.projectCardSquare,
 };
 
-const transition1 = { delay: 0, duration: 1, ease: [0.25, 1, 0.5, 1], type: "tween" } as const;
+const transition1 = { delay: 0, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const getProps = ({
   height,

@@ -40,13 +40,13 @@ const variantClassNames = {
   "Button Hero Hover": styles.buttonHeroHover,
 };
 
-const transition1 = { delay: 0, duration: 1, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition1 = { delay: 0, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
-const transition2 = { delay: 2.9, duration: 1, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition2 = { delay: 2.9, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const transition3 = { duration: 0, type: "tween" } as const;
 
-const transition4 = { delay: 0, duration: 0, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition4 = { delay: 0, duration: 0, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const getProps = ({ height, id, label, width, onLabelChange, appearAfter, ...props }: any) => ({
   ...props,

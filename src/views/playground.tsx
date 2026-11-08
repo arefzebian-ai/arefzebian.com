@@ -41,7 +41,7 @@ const hiddenClassNames = {
   Phone: "hidden-playground-phone",
 };
 
-const transition1 = { delay: 0.2, duration: 1.5, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition1 = { delay: 0.2, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation = {
   opacity: 1,

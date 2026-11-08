@@ -34,7 +34,7 @@ const variantClassNames = {
   "Article Card Wide - Hover": styles.articleCardWideHover,
 };
 
-const transition1 = { delay: 0, duration: 1, ease: [0.23, 1, 0.32, 1], type: "tween" } as const;
+const transition1 = { delay: 0, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const getProps = ({ category, height, id, image, title, width, ...props }: any) => ({
   ...props,

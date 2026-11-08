@@ -36,6 +36,7 @@ import TextLink from "@/components/text-link";
 import ProjectCard from "@/components/project-card";
 import Works from "@/cms/works";
 
+import { caseStudyImageSpring } from "@/lib/motion";
 const Image1WithFX = withFX(Image1);
 
 const breakpoints = {
@@ -180,16 +181,7 @@ const AetherBrandingPage = React.forwardRef<HTMLDivElement, Props>(function (pro
             <div className={styles.sectionCaseStudy} data-name="Section Case Study">
               <div className={styles.sectionImageSingle} data-name="Section Image Single">
                 <Image1WithFX
-                  __fx_spring={{
-                    damping: 60,
-                    delay: 0,
-                    duration: 0.3,
-                    ease: [0.44, 0, 0.56, 1],
-                    mass: 1,
-                    stagger: 0,
-                    stiffness: 500,
-                    type: "spring",
-                  }}
+                  __fx_spring={caseStudyImageSpring}
                   __fx_styleTransformEffectEnabled
                   __fx_transformTargets={[
                     {
@@ -239,16 +231,7 @@ const AetherBrandingPage = React.forwardRef<HTMLDivElement, Props>(function (pro
               </div>
               <div className={styles.sectionImageSingle2} data-name="Section Image Single">
                 <Image1WithFX
-                  __fx_spring={{
-                    damping: 60,
-                    delay: 0,
-                    duration: 0.3,
-                    ease: [0.44, 0, 0.56, 1],
-                    mass: 1,
-                    stagger: 0,
-                    stiffness: 500,
-                    type: "spring",
-                  }}
+                  __fx_spring={caseStudyImageSpring}
                   __fx_styleTransformEffectEnabled
                   __fx_transformTargets={[
                     {
@@ -298,16 +281,7 @@ const AetherBrandingPage = React.forwardRef<HTMLDivElement, Props>(function (pro
               </div>
               <div className={styles.sectionImageSingle3} data-name="Section Image Single">
                 <Image1WithFX
-                  __fx_spring={{
-                    damping: 60,
-                    delay: 0,
-                    duration: 0.3,
-                    ease: [0.44, 0, 0.56, 1],
-                    mass: 1,
-                    stagger: 0,
-                    stiffness: 500,
-                    type: "spring",
-                  }}
+                  __fx_spring={caseStudyImageSpring}
                   __fx_styleTransformEffectEnabled
                   __fx_transformTargets={[
                     {
@@ -357,16 +331,7 @@ const AetherBrandingPage = React.forwardRef<HTMLDivElement, Props>(function (pro
               </div>
               <div className={styles.sectionImageSingle4} data-name="Section Image Single">
                 <Image1WithFX
-                  __fx_spring={{
-                    damping: 60,
-                    delay: 0,
-                    duration: 0.3,
-                    ease: [0.44, 0, 0.56, 1],
-                    mass: 1,
-                    stagger: 0,
-                    stiffness: 500,
-                    type: "spring",
-                  }}
+                  __fx_spring={caseStudyImageSpring}
                   __fx_styleTransformEffectEnabled
                   __fx_transformTargets={[
                     {
@@ -416,16 +381,7 @@ const AetherBrandingPage = React.forwardRef<HTMLDivElement, Props>(function (pro
               </div>
               <div className={styles.sectionImageSingle5} data-name="Section Image Single">
                 <Image1WithFX
-                  __fx_spring={{
-                    damping: 60,
-                    delay: 0,
-                    duration: 0.3,
-                    ease: [0.44, 0, 0.56, 1],
-                    mass: 1,
-                    stagger: 0,
-                    stiffness: 500,
-                    type: "spring",
-                  }}
+                  __fx_spring={caseStudyImageSpring}
                   __fx_styleTransformEffectEnabled
                   __fx_transformTargets={[
                     {
@@ -475,16 +431,7 @@ const AetherBrandingPage = React.forwardRef<HTMLDivElement, Props>(function (pro
               </div>
               <div className={styles.sectionImageSingle6} data-name="Section Image Single">
                 <Image1WithFX
-                  __fx_spring={{
-                    damping: 60,
-                    delay: 0,
-                    duration: 0.3,
-                    ease: [0.44, 0, 0.56, 1],
-                    mass: 1,
-                    stagger: 0,
-                    stiffness: 500,
-                    type: "spring",
-                  }}
+                  __fx_spring={caseStudyImageSpring}
                   __fx_styleTransformEffectEnabled
                   __fx_transformTargets={[
                     {
@@ -534,16 +481,7 @@ const AetherBrandingPage = React.forwardRef<HTMLDivElement, Props>(function (pro
               </div>
               <div className={styles.sectionImageSingle7} data-name="Section Image Single">
                 <Image1WithFX
-                  __fx_spring={{
-                    damping: 60,
-                    delay: 0,
-                    duration: 0.3,
-                    ease: [0.44, 0, 0.56, 1],
-                    mass: 1,
-                    stagger: 0,
-                    stiffness: 500,
-                    type: "spring",
-                  }}
+                  __fx_spring={caseStudyImageSpring}
                   __fx_styleTransformEffectEnabled
                   __fx_transformTargets={[
                     {
@@ -593,16 +531,7 @@ const AetherBrandingPage = React.forwardRef<HTMLDivElement, Props>(function (pro
               </div>
               <div className={styles.sectionImageSingle8} data-name="Section Image Single">
                 <Image1WithFX
-                  __fx_spring={{
-                    damping: 60,
-                    delay: 0,
-                    duration: 0.3,
-                    ease: [0.44, 0, 0.56, 1],
-                    mass: 1,
-                    stagger: 0,
-                    stiffness: 500,
-                    type: "spring",
-                  }}
+                  __fx_spring={caseStudyImageSpring}
                   __fx_styleTransformEffectEnabled
                   __fx_transformTargets={[
                     {
@@ -652,16 +581,7 @@ const AetherBrandingPage = React.forwardRef<HTMLDivElement, Props>(function (pro
               </div>
               <div className={styles.sectionImageSingle9} data-name="Section Image Single">
                 <Image1WithFX
-                  __fx_spring={{
-                    damping: 60,
-                    delay: 0,
-                    duration: 0.3,
-                    ease: [0.44, 0, 0.56, 1],
-                    mass: 1,
-                    stagger: 0,
-                    stiffness: 500,
-                    type: "spring",
-                  }}
+                  __fx_spring={caseStudyImageSpring}
                   __fx_styleTransformEffectEnabled
                   __fx_transformTargets={[
                     {
@@ -711,16 +631,7 @@ const AetherBrandingPage = React.forwardRef<HTMLDivElement, Props>(function (pro
               </div>
               <div className={styles.sectionImageSingle10} data-name="Section Image Single">
                 <Image1WithFX
-                  __fx_spring={{
-                    damping: 60,
-                    delay: 0,
-                    duration: 0.3,
-                    ease: [0.44, 0, 0.56, 1],
-                    mass: 1,
-                    stagger: 0,
-                    stiffness: 500,
-                    type: "spring",
-                  }}
+                  __fx_spring={caseStudyImageSpring}
                   __fx_styleTransformEffectEnabled
                   __fx_transformTargets={[
                     {
@@ -770,16 +681,7 @@ const AetherBrandingPage = React.forwardRef<HTMLDivElement, Props>(function (pro
               </div>
               <div className={styles.sectionImageSingle11} data-name="Section Image Single">
                 <Image1WithFX
-                  __fx_spring={{
-                    damping: 60,
-                    delay: 0,
-                    duration: 0.3,
-                    ease: [0.44, 0, 0.56, 1],
-                    mass: 1,
-                    stagger: 0,
-                    stiffness: 500,
-                    type: "spring",
-                  }}
+                  __fx_spring={caseStudyImageSpring}
                   __fx_styleTransformEffectEnabled
                   __fx_transformTargets={[
                     {
@@ -829,16 +731,7 @@ const AetherBrandingPage = React.forwardRef<HTMLDivElement, Props>(function (pro
               </div>
               <div className={styles.sectionImageSingle12} data-name="Section Image Single">
                 <Image1WithFX
-                  __fx_spring={{
-                    damping: 60,
-                    delay: 0,
-                    duration: 0.3,
-                    ease: [0.44, 0, 0.56, 1],
-                    mass: 1,
-                    stagger: 0,
-                    stiffness: 500,
-                    type: "spring",
-                  }}
+                  __fx_spring={caseStudyImageSpring}
                   __fx_styleTransformEffectEnabled
                   __fx_transformTargets={[
                     {
@@ -888,16 +781,7 @@ const AetherBrandingPage = React.forwardRef<HTMLDivElement, Props>(function (pro
               </div>
               <div className={styles.sectionImageSingle13} data-name="Section Image Single">
                 <Image1WithFX
-                  __fx_spring={{
-                    damping: 60,
-                    delay: 0,
-                    duration: 0.3,
-                    ease: [0.44, 0, 0.56, 1],
-                    mass: 1,
-                    stagger: 0,
-                    stiffness: 500,
-                    type: "spring",
-                  }}
+                  __fx_spring={caseStudyImageSpring}
                   __fx_styleTransformEffectEnabled
                   __fx_transformTargets={[
                     {
@@ -947,16 +831,7 @@ const AetherBrandingPage = React.forwardRef<HTMLDivElement, Props>(function (pro
               </div>
               <div className={styles.sectionImageSingle14} data-name="Section Image Single">
                 <Image1WithFX
-                  __fx_spring={{
-                    damping: 60,
-                    delay: 0,
-                    duration: 0.3,
-                    ease: [0.44, 0, 0.56, 1],
-                    mass: 1,
-                    stagger: 0,
-                    stiffness: 500,
-                    type: "spring",
-                  }}
+                  __fx_spring={caseStudyImageSpring}
                   __fx_styleTransformEffectEnabled
                   __fx_transformTargets={[
                     {
@@ -1006,16 +881,7 @@ const AetherBrandingPage = React.forwardRef<HTMLDivElement, Props>(function (pro
               </div>
               <div className={styles.sectionImageSingle15} data-name="Section Image Single">
                 <Image1WithFX
-                  __fx_spring={{
-                    damping: 60,
-                    delay: 0,
-                    duration: 0.3,
-                    ease: [0.44, 0, 0.56, 1],
-                    mass: 1,
-                    stagger: 0,
-                    stiffness: 500,
-                    type: "spring",
-                  }}
+                  __fx_spring={caseStudyImageSpring}
                   __fx_styleTransformEffectEnabled
                   __fx_transformTargets={[
                     {
@@ -1065,16 +931,7 @@ const AetherBrandingPage = React.forwardRef<HTMLDivElement, Props>(function (pro
               </div>
               <div className={styles.sectionImageSingle16} data-name="Section Image Single">
                 <Image1WithFX
-                  __fx_spring={{
-                    damping: 60,
-                    delay: 0,
-                    duration: 0.3,
-                    ease: [0.44, 0, 0.56, 1],
-                    mass: 1,
-                    stagger: 0,
-                    stiffness: 500,
-                    type: "spring",
-                  }}
+                  __fx_spring={caseStudyImageSpring}
                   __fx_styleTransformEffectEnabled
                   __fx_transformTargets={[
                     {
@@ -1124,16 +981,7 @@ const AetherBrandingPage = React.forwardRef<HTMLDivElement, Props>(function (pro
               </div>
               <div className={styles.sectionImageSingle17} data-name="Section Image Single">
                 <Image1WithFX
-                  __fx_spring={{
-                    damping: 60,
-                    delay: 0,
-                    duration: 0.3,
-                    ease: [0.44, 0, 0.56, 1],
-                    mass: 1,
-                    stagger: 0,
-                    stiffness: 500,
-                    type: "spring",
-                  }}
+                  __fx_spring={caseStudyImageSpring}
                   __fx_styleTransformEffectEnabled
                   __fx_transformTargets={[
                     {
@@ -1183,16 +1031,7 @@ const AetherBrandingPage = React.forwardRef<HTMLDivElement, Props>(function (pro
               </div>
               <div className={styles.sectionImageSingle18} data-name="Section Image Single">
                 <Image1WithFX
-                  __fx_spring={{
-                    damping: 60,
-                    delay: 0,
-                    duration: 0.3,
-                    ease: [0.44, 0, 0.56, 1],
-                    mass: 1,
-                    stagger: 0,
-                    stiffness: 500,
-                    type: "spring",
-                  }}
+                  __fx_spring={caseStudyImageSpring}
                   __fx_styleTransformEffectEnabled
                   __fx_transformTargets={[
                     {
@@ -1242,16 +1081,7 @@ const AetherBrandingPage = React.forwardRef<HTMLDivElement, Props>(function (pro
               </div>
               <div className={styles.sectionImageSingle19} data-name="Section Image Single">
                 <Image1WithFX
-                  __fx_spring={{
-                    damping: 60,
-                    delay: 0,
-                    duration: 0.3,
-                    ease: [0.44, 0, 0.56, 1],
-                    mass: 1,
-                    stagger: 0,
-                    stiffness: 500,
-                    type: "spring",
-                  }}
+                  __fx_spring={caseStudyImageSpring}
                   __fx_styleTransformEffectEnabled
                   __fx_transformTargets={[
                     {
@@ -1301,16 +1131,7 @@ const AetherBrandingPage = React.forwardRef<HTMLDivElement, Props>(function (pro
               </div>
               <div className={styles.sectionImageSingle20} data-name="Section Image Single">
                 <Image1WithFX
-                  __fx_spring={{
-                    damping: 60,
-                    delay: 0,
-                    duration: 0.3,
-                    ease: [0.44, 0, 0.56, 1],
-                    mass: 1,
-                    stagger: 0,
-                    stiffness: 500,
-                    type: "spring",
-                  }}
+                  __fx_spring={caseStudyImageSpring}
                   __fx_styleTransformEffectEnabled
                   __fx_transformTargets={[
                     {
@@ -1360,16 +1181,7 @@ const AetherBrandingPage = React.forwardRef<HTMLDivElement, Props>(function (pro
               </div>
               <div className={styles.sectionImageSingle21} data-name="Section Image Single">
                 <Image1WithFX
-                  __fx_spring={{
-                    damping: 60,
-                    delay: 0,
-                    duration: 0.3,
-                    ease: [0.44, 0, 0.56, 1],
-                    mass: 1,
-                    stagger: 0,
-                    stiffness: 500,
-                    type: "spring",
-                  }}
+                  __fx_spring={caseStudyImageSpring}
                   __fx_styleTransformEffectEnabled
                   __fx_transformTargets={[
                     {
@@ -1419,16 +1231,7 @@ const AetherBrandingPage = React.forwardRef<HTMLDivElement, Props>(function (pro
               </div>
               <div className={styles.sectionImageSingle22} data-name="Section Image Single">
                 <Image1WithFX
-                  __fx_spring={{
-                    damping: 60,
-                    delay: 0,
-                    duration: 0.3,
-                    ease: [0.44, 0, 0.56, 1],
-                    mass: 1,
-                    stagger: 0,
-                    stiffness: 500,
-                    type: "spring",
-                  }}
+                  __fx_spring={caseStudyImageSpring}
                   __fx_styleTransformEffectEnabled
                   __fx_transformTargets={[
                     {
@@ -1478,16 +1281,7 @@ const AetherBrandingPage = React.forwardRef<HTMLDivElement, Props>(function (pro
               </div>
               <div className={styles.sectionImageSingle23} data-name="Section Image Single">
                 <Image1WithFX
-                  __fx_spring={{
-                    damping: 60,
-                    delay: 0,
-                    duration: 0.3,
-                    ease: [0.44, 0, 0.56, 1],
-                    mass: 1,
-                    stagger: 0,
-                    stiffness: 500,
-                    type: "spring",
-                  }}
+                  __fx_spring={caseStudyImageSpring}
                   __fx_styleTransformEffectEnabled
                   __fx_transformTargets={[
                     {
@@ -1537,16 +1331,7 @@ const AetherBrandingPage = React.forwardRef<HTMLDivElement, Props>(function (pro
               </div>
               <div className={styles.sectionImageSingle24} data-name="Section Image Single">
                 <Image1WithFX
-                  __fx_spring={{
-                    damping: 60,
-                    delay: 0,
-                    duration: 0.3,
-                    ease: [0.44, 0, 0.56, 1],
-                    mass: 1,
-                    stagger: 0,
-                    stiffness: 500,
-                    type: "spring",
-                  }}
+                  __fx_spring={caseStudyImageSpring}
                   __fx_styleTransformEffectEnabled
                   __fx_transformTargets={[
                     {
@@ -1596,16 +1381,7 @@ const AetherBrandingPage = React.forwardRef<HTMLDivElement, Props>(function (pro
               </div>
               <div className={styles.sectionImageSingle25} data-name="Section Image Single">
                 <Image1WithFX
-                  __fx_spring={{
-                    damping: 60,
-                    delay: 0,
-                    duration: 0.3,
-                    ease: [0.44, 0, 0.56, 1],
-                    mass: 1,
-                    stagger: 0,
-                    stiffness: 500,
-                    type: "spring",
-                  }}
+                  __fx_spring={caseStudyImageSpring}
                   __fx_styleTransformEffectEnabled
                   __fx_transformTargets={[
                     {
@@ -1655,16 +1431,7 @@ const AetherBrandingPage = React.forwardRef<HTMLDivElement, Props>(function (pro
               </div>
               <div className={styles.sectionImageSingle26} data-name="Section Image Single">
                 <Image1WithFX
-                  __fx_spring={{
-                    damping: 60,
-                    delay: 0,
-                    duration: 0.3,
-                    ease: [0.44, 0, 0.56, 1],
-                    mass: 1,
-                    stagger: 0,
-                    stiffness: 500,
-                    type: "spring",
-                  }}
+                  __fx_spring={caseStudyImageSpring}
                   __fx_styleTransformEffectEnabled
                   __fx_transformTargets={[
                     {
@@ -1714,16 +1481,7 @@ const AetherBrandingPage = React.forwardRef<HTMLDivElement, Props>(function (pro
               </div>
               <div className={styles.sectionImageSingle27} data-name="Section Image Single">
                 <Image1WithFX
-                  __fx_spring={{
-                    damping: 60,
-                    delay: 0,
-                    duration: 0.3,
-                    ease: [0.44, 0, 0.56, 1],
-                    mass: 1,
-                    stagger: 0,
-                    stiffness: 500,
-                    type: "spring",
-                  }}
+                  __fx_spring={caseStudyImageSpring}
                   __fx_styleTransformEffectEnabled
                   __fx_transformTargets={[
                     {
@@ -1773,16 +1531,7 @@ const AetherBrandingPage = React.forwardRef<HTMLDivElement, Props>(function (pro
               </div>
               <div className={styles.sectionImageSingle28} data-name="Section Image Single">
                 <Image1WithFX
-                  __fx_spring={{
-                    damping: 60,
-                    delay: 0,
-                    duration: 0.3,
-                    ease: [0.44, 0, 0.56, 1],
-                    mass: 1,
-                    stagger: 0,
-                    stiffness: 500,
-                    type: "spring",
-                  }}
+                  __fx_spring={caseStudyImageSpring}
                   __fx_styleTransformEffectEnabled
                   __fx_transformTargets={[
                     {
@@ -1832,16 +1581,7 @@ const AetherBrandingPage = React.forwardRef<HTMLDivElement, Props>(function (pro
               </div>
               <div className={styles.sectionImageSingle29} data-name="Section Image Single">
                 <Image1WithFX
-                  __fx_spring={{
-                    damping: 60,
-                    delay: 0,
-                    duration: 0.3,
-                    ease: [0.44, 0, 0.56, 1],
-                    mass: 1,
-                    stagger: 0,
-                    stiffness: 500,
-                    type: "spring",
-                  }}
+                  __fx_spring={caseStudyImageSpring}
                   __fx_styleTransformEffectEnabled
                   __fx_transformTargets={[
                     {

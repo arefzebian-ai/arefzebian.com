@@ -40,6 +40,7 @@ import * as body20 from "@/styles/text/body-20";
 import * as body14 from "@/styles/text/body-14";
 import * as body40 from "@/styles/text/body-40";
 
+import { polishedEase } from "@/lib/motion";
 const Image1WithOptimizedAppearEffect = withOptimizedAppearEffect(Image1);
 
 const breakpoints = {
@@ -57,12 +58,12 @@ const hiddenClassNames = {
 
 const animation = { opacity: 0.001, rotate: 0, scale: 1, skewX: 0, skewY: 0, x: 0, y: 50 };
 
-const transition1 = { delay: 0.1, duration: 2, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition1 = { delay: 0.1, duration: 2, ease: polishedEase, type: "tween" } as const;
 
 const textEffect = {
   effect: animation,
   repeat: false,
-  startDelay: 0.2,
+  startDelay: 0.4,
   tokenization: "line",
   transition: transition1,
   trigger: "onMount",
@@ -71,7 +72,7 @@ const textEffect = {
 
 const animation1 = { opacity: 1, rotate: 0, scale: 1, skewX: 0, skewY: 0, x: 0, y: 40 };
 
-const transition2 = { delay: 0.1, duration: 1, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition2 = { delay: 0.1, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const textEffect1 = {
   effect: animation1,
@@ -133,7 +134,7 @@ const textEffect6 = {
   type: "appear",
 } as const;
 
-const transition3 = { delay: 0, duration: 3, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition3 = { delay: 0, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation2 = {
   opacity: 1,

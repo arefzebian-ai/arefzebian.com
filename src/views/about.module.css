@@ -383,7 +383,7 @@
 
   .page .main {
     gap: 100px;
-    padding: 150px 0px 0px 0px;
+    padding: 150px 0px 96px 0px;
   }
 
   .page .sectionIntro {
@@ -403,12 +403,18 @@
   }
 
   .page .container {
-    gap: 60px;
+    gap: 36px;
+    grid-auto-rows: auto;
+    grid-template-rows: none;
   }
 
   .page .experience,
-  .page .education {
+  .page .education,
+  .page .skills,
+  .page .software {
+    gap: 14px;
     justify-content: flex-start;
+    width: 100%;
   }
 
   .page .textLineWrapper,

@@ -29,6 +29,7 @@ import LinkOpacity from "@/components/link-opacity";
 import * as body13Uppercase from "@/styles/text/body-13-uppercase";
 import * as body40 from "@/styles/text/body-40";
 
+import { polishedEase } from "@/lib/motion";
 const RichTextWithOptimizedAppearEffect = withOptimizedAppearEffect(RichText);
 const ContainerWithOptimizedAppearEffect = withOptimizedAppearEffect(Container);
 
@@ -45,7 +46,7 @@ const hiddenClassNames = {
   Desktop: "hidden-desktop",
 };
 
-const transition1 = { delay: 0.2, duration: 1.5, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition1 = { delay: 0.2, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation = {
   opacity: 1,
@@ -72,7 +73,7 @@ const animation1 = {
   y: 50,
 };
 
-const transition2 = { delay: 0.4, duration: 1.5, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition2 = { delay: 0.4, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation2 = {
   opacity: 1,
@@ -99,7 +100,7 @@ const animation3 = {
   y: 20,
 };
 
-const transition3 = { delay: 0.6, duration: 1.5, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition3 = { delay: 0.6, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation4 = {
   opacity: 1,
@@ -114,7 +115,7 @@ const animation4 = {
   y: 0,
 } as const;
 
-const transition4 = { delay: 0.5, duration: 1.5, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition4 = { delay: 0.5, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation5 = {
   opacity: 1,
@@ -129,7 +130,7 @@ const animation5 = {
   y: 0,
 } as const;
 
-const transition5 = { delay: 0.7, duration: 1.5, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition5 = { delay: 0.7, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation6 = {
   opacity: 1,

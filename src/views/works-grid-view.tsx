@@ -36,6 +36,7 @@ import ProjectCard from "@/components/project-card";
 import Works from "@/cms/works";
 import * as body40 from "@/styles/text/body-40";
 
+import { polishedEase } from "@/lib/motion";
 const ContainerWithOptimizedAppearEffect = withOptimizedAppearEffect(Container);
 
 const breakpoints = {
@@ -51,7 +52,7 @@ const hiddenClassNames = {
   Tablet: "hidden-works-grid-view-tablet",
 };
 
-const transition1 = { delay: 0.4, duration: 3, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition1 = { delay: 0.4, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation = {
   opacity: 1,
@@ -99,7 +100,7 @@ const QueryData = ({ query, pageSize, children }: any) => {
   return children(data);
 };
 
-const transition2 = { delay: 0.5, duration: 3, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition2 = { delay: 0.5, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation2 = {
   opacity: 1,
@@ -129,7 +130,7 @@ const query1 = () => ({
   ],
 });
 
-const transition3 = { delay: 0.6, duration: 3, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition3 = { delay: 0.6, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation3 = {
   opacity: 1,
@@ -159,7 +160,7 @@ const query2 = () => ({
   ],
 });
 
-const transition4 = { delay: 0.7, duration: 3, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition4 = { delay: 0.7, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation4 = {
   opacity: 1,
@@ -189,7 +190,7 @@ const query3 = () => ({
   ],
 });
 
-const transition5 = { delay: 0.8, duration: 3, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition5 = { delay: 0.8, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation5 = {
   opacity: 1,
@@ -219,7 +220,7 @@ const query4 = () => ({
   ],
 });
 
-const transition6 = { delay: 0.9, duration: 3, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition6 = { delay: 0.9, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation6 = {
   opacity: 1,

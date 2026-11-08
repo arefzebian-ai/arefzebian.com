@@ -30,6 +30,7 @@ import InfoContent from "@/components/info-content";
 import * as body30 from "@/styles/text/body-30";
 import * as body13Uppercase from "@/styles/text/body-13-uppercase";
 
+import { polishedEase } from "@/lib/motion";
 const Image1WithOptimizedAppearEffect = withOptimizedAppearEffect(Image1);
 const RichTextWithOptimizedAppearEffect = withOptimizedAppearEffect(RichText);
 const ContainerWithOptimizedAppearEffect = withOptimizedAppearEffect(Container);
@@ -47,21 +48,21 @@ const hiddenClassNames = {
   Tablet: "hidden-about-tablet",
 };
 
-const animation = { opacity: 0.001, rotate: 0, scale: 1, skewX: 0, skewY: 0, x: 0, y: 30 };
+const animation = { opacity: 0.001, rotate: 0, scale: 1, skewX: 0, skewY: 0, x: 0, y: 50 };
 
-const transition1 = { delay: 0.1, duration: 2, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition1 = { delay: 0.1, duration: 2, ease: polishedEase, type: "tween" } as const;
 
 const textEffect = {
   effect: animation,
   repeat: false,
-  startDelay: 0.2,
+  startDelay: 0.4,
   tokenization: "line",
   transition: transition1,
   trigger: "onMount",
   type: "appear",
 } as const;
 
-const transition2 = { delay: 0.2, duration: 0.5, ease: [0, 0, 1, 1], type: "tween" } as const;
+const transition2 = { delay: 0.2, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation1 = {
   opacity: 1,
@@ -88,7 +89,7 @@ const animation2 = {
   y: 0,
 };
 
-const transition3 = { delay: 1.1, duration: 0.5, ease: [0, 0, 1, 1], type: "tween" } as const;
+const transition3 = { delay: 1.1, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation3 = {
   opacity: 1,
@@ -103,7 +104,7 @@ const animation3 = {
   y: 0,
 } as const;
 
-const transition4 = { delay: 1.2, duration: 0.5, ease: [0, 0, 1, 1], type: "tween" } as const;
+const transition4 = { delay: 1.2, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation4 = {
   opacity: 1,
@@ -118,7 +119,7 @@ const animation4 = {
   y: 0,
 } as const;
 
-const transition5 = { delay: 0.7, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition5 = { delay: 0.7, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation5 = {
   opacity: 0.4,
@@ -147,7 +148,7 @@ const animation6 = {
   y: 20,
 };
 
-const transition6 = { delay: 1.2, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition6 = { delay: 1.2, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation7 = {
   opacity: 0.4,
@@ -163,7 +164,7 @@ const animation7 = {
   y: 0,
 } as const;
 
-const transition7 = { delay: 0.8, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition7 = { delay: 0.8, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation8 = {
   opacity: 1,
@@ -190,7 +191,7 @@ const animation9 = {
   y: 20,
 };
 
-const transition8 = { delay: 0.9, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition8 = { delay: 0.9, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation10 = {
   opacity: 1,
@@ -205,7 +206,7 @@ const animation10 = {
   y: 0,
 } as const;
 
-const transition9 = { delay: 1, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition9 = { delay: 1, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation11 = {
   opacity: 1,
@@ -220,7 +221,7 @@ const animation11 = {
   y: 0,
 } as const;
 
-const transition10 = { delay: 1.1, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition10 = { delay: 1.1, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation12 = {
   opacity: 1,
@@ -248,7 +249,7 @@ const animation13 = {
   y: 0,
 } as const;
 
-const transition11 = { delay: 1.3, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition11 = { delay: 1.3, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation14 = {
   opacity: 1,
@@ -263,7 +264,7 @@ const animation14 = {
   y: 0,
 } as const;
 
-const transition12 = { delay: 1.4, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition12 = { delay: 1.4, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation15 = {
   opacity: 0.4,
@@ -292,7 +293,7 @@ const animation16 = {
   y: 0,
 } as const;
 
-const transition13 = { delay: 1.5, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition13 = { delay: 1.5, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation17 = {
   opacity: 1,
@@ -307,7 +308,7 @@ const animation17 = {
   y: 0,
 } as const;
 
-const transition14 = { delay: 1.6, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition14 = { delay: 1.6, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation18 = {
   opacity: 1,
@@ -322,7 +323,7 @@ const animation18 = {
   y: 0,
 } as const;
 
-const transition15 = { delay: 1.7, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition15 = { delay: 1.7, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation19 = {
   opacity: 1,
@@ -337,7 +338,7 @@ const animation19 = {
   y: 0,
 } as const;
 
-const transition16 = { delay: 1.8, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition16 = { delay: 1.8, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation20 = {
   opacity: 1,
@@ -352,7 +353,7 @@ const animation20 = {
   y: 0,
 } as const;
 
-const transition17 = { delay: 1.9, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition17 = { delay: 1.9, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation21 = {
   opacity: 1,
@@ -367,7 +368,7 @@ const animation21 = {
   y: 0,
 } as const;
 
-const transition18 = { delay: 2, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition18 = { delay: 2, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation22 = {
   opacity: 1,
@@ -382,7 +383,7 @@ const animation22 = {
   y: 0,
 } as const;
 
-const transition19 = { delay: 2.1, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition19 = { delay: 2.1, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation23 = {
   opacity: 1,
@@ -397,7 +398,7 @@ const animation23 = {
   y: 0,
 } as const;
 
-const transition20 = { delay: 2.2, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition20 = { delay: 2.2, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation24 = {
   opacity: 1,
@@ -412,7 +413,7 @@ const animation24 = {
   y: 0,
 } as const;
 
-const transition21 = { delay: 2.3, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition21 = { delay: 2.3, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation25 = {
   opacity: 0.4,
@@ -441,7 +442,7 @@ const animation26 = {
   y: 0,
 } as const;
 
-const transition22 = { delay: 2.4, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition22 = { delay: 2.4, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation27 = {
   opacity: 1,
@@ -456,7 +457,7 @@ const animation27 = {
   y: 0,
 } as const;
 
-const transition23 = { delay: 2.5, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition23 = { delay: 2.5, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation28 = {
   opacity: 1,
@@ -471,7 +472,7 @@ const animation28 = {
   y: 0,
 } as const;
 
-const transition24 = { delay: 2.6, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition24 = { delay: 2.6, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation29 = {
   opacity: 1,
@@ -486,7 +487,7 @@ const animation29 = {
   y: 0,
 } as const;
 
-const transition25 = { delay: 2.7, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition25 = { delay: 2.7, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation30 = {
   opacity: 1,
@@ -501,7 +502,7 @@ const animation30 = {
   y: 0,
 } as const;
 
-const transition26 = { delay: 2.8, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition26 = { delay: 2.8, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation31 = {
   opacity: 1,
@@ -516,7 +517,7 @@ const animation31 = {
   y: 0,
 } as const;
 
-const transition27 = { delay: 2.9, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition27 = { delay: 2.9, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation32 = {
   opacity: 1,
@@ -531,7 +532,7 @@ const animation32 = {
   y: 0,
 } as const;
 
-const transition28 = { delay: 3, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition28 = { delay: 3, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation33 = {
   opacity: 1,
@@ -922,15 +923,20 @@ const AboutPage = React.forwardRef<HTMLDivElement, Props>(function (props, ref) 
                           optimized
                           rendersWithMotion
                         >
-                          <ExperienceRow
-                            role={"Savannah College of Art & Design"}
-                            height="100%"
-                            style={{ width: "100%" }}
-                            company="BFA - INDUSTRIAL DESIGN"
-                            variant={matchVariant("Experience Row")}
-                            dates="2021 — 2025"
-                            width="100%"
-                          />
+                          <PropertyOverrides
+                            breakpoint={baseVariant}
+                            overrides={{ Phone: { variant: matchVariant("Experience Row - mobile") } }}
+                          >
+                            <ExperienceRow
+                              role={"Savannah College of Art & Design"}
+                              height="100%"
+                              style={{ width: "100%" }}
+                              company="BFA - INDUSTRIAL DESIGN"
+                              variant={matchVariant("Experience Row")}
+                              dates="2021 — 2025"
+                              width="100%"
+                            />
+                          </PropertyOverrides>
                         </ContainerWithOptimizedAppearEffect>
                       </ComponentViewportProvider>
                     </PropertyOverrides>

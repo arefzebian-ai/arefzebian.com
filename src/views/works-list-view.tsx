@@ -37,6 +37,7 @@ import Works from "@/cms/works";
 import * as body13Uppercase from "@/styles/text/body-13-uppercase";
 import * as body40 from "@/styles/text/body-40";
 
+import { polishedEase } from "@/lib/motion";
 const RichTextWithOptimizedAppearEffect = withOptimizedAppearEffect(RichText);
 const ContainerWithOptimizedAppearEffect = withOptimizedAppearEffect(Container);
 
@@ -53,7 +54,7 @@ const hiddenClassNames = {
   Tablet: "hidden-works-list-view-tablet",
 };
 
-const transition1 = { delay: 0.2, duration: 0.8, ease: [0.25, 1, 0.5, 1], type: "tween" } as const;
+const transition1 = { delay: 0.2, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation = {
   opacity: 1,
@@ -80,7 +81,7 @@ const animation1 = {
   y: 40,
 };
 
-const transition2 = { delay: 0.25, duration: 0.8, ease: [0.25, 1, 0.5, 1], type: "tween" } as const;
+const transition2 = { delay: 0.25, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation2 = {
   opacity: 1,
@@ -95,7 +96,7 @@ const animation2 = {
   y: 0,
 } as const;
 
-const transition3 = { delay: 0.3, duration: 0.8, ease: [0.25, 1, 0.5, 1], type: "tween" } as const;
+const transition3 = { delay: 0.3, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation3 = {
   opacity: 1,
@@ -110,7 +111,7 @@ const animation3 = {
   y: 0,
 } as const;
 
-const transition4 = { delay: 0.35, duration: 0.8, ease: [0.25, 1, 0.5, 1], type: "tween" } as const;
+const transition4 = { delay: 0.35, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation4 = {
   opacity: 1,
@@ -125,7 +126,7 @@ const animation4 = {
   y: 0,
 } as const;
 
-const transition5 = { delay: 0.4, duration: 0.8, ease: [0.25, 1, 0.5, 1], type: "tween" } as const;
+const transition5 = { delay: 0.4, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation5 = {
   opacity: 1,
@@ -171,7 +172,7 @@ const QueryData = ({ query, pageSize, children }: any) => {
   return children(data);
 };
 
-const transition6 = { delay: 0.5, duration: 0.8, ease: [0.25, 1, 0.5, 1], type: "tween" } as const;
+const transition6 = { delay: 0.5, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation7 = {
   opacity: 1,
@@ -200,7 +201,7 @@ const query1 = () => ({
   ],
 });
 
-const transition7 = { delay: 0.6, duration: 0.8, ease: [0.25, 1, 0.5, 1], type: "tween" } as const;
+const transition7 = { delay: 0.6, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation8 = {
   opacity: 1,
@@ -229,7 +230,7 @@ const query2 = () => ({
   ],
 });
 
-const transition8 = { delay: 0.7, duration: 0.8, ease: [0.25, 1, 0.5, 1], type: "tween" } as const;
+const transition8 = { delay: 0.7, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation9 = {
   opacity: 1,
@@ -258,7 +259,7 @@ const query3 = () => ({
   ],
 });
 
-const transition9 = { delay: 0.8, duration: 0.8, ease: [0.25, 1, 0.5, 1], type: "tween" } as const;
+const transition9 = { delay: 0.8, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation10 = {
   opacity: 1,
@@ -287,7 +288,7 @@ const query4 = () => ({
   ],
 });
 
-const transition10 = { delay: 0.9, duration: 0.8, ease: [0.25, 1, 0.5, 1], type: "tween" } as const;
+const transition10 = { delay: 0.9, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation11 = {
   opacity: 1,
@@ -316,7 +317,7 @@ const query5 = () => ({
   ],
 });
 
-const transition11 = { delay: 1, duration: 0.8, ease: [0.25, 1, 0.5, 1], type: "tween" } as const;
+const transition11 = { delay: 1, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation12 = {
   opacity: 1,
@@ -345,7 +346,7 @@ const query6 = () => ({
   ],
 });
 
-const transition12 = { delay: 1.1, duration: 0.8, ease: [0.25, 1, 0.5, 1], type: "tween" } as const;
+const transition12 = { delay: 1.1, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation13 = {
   opacity: 1,
@@ -374,7 +375,7 @@ const query7 = () => ({
   ],
 });
 
-const transition13 = { delay: 1.2, duration: 0.8, ease: [0.25, 1, 0.5, 1], type: "tween" } as const;
+const transition13 = { delay: 1.2, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation14 = {
   opacity: 1,
@@ -403,7 +404,7 @@ const query8 = () => ({
   ],
 });
 
-const transition14 = { delay: 1.3, duration: 0.8, ease: [0.25, 1, 0.5, 1], type: "tween" } as const;
+const transition14 = { delay: 1.3, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation15 = {
   opacity: 1,
@@ -432,7 +433,7 @@ const query9 = () => ({
   ],
 });
 
-const transition15 = { delay: 1.4, duration: 0.8, ease: [0.25, 1, 0.5, 1], type: "tween" } as const;
+const transition15 = { delay: 1.4, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation16 = {
   opacity: 1,
@@ -461,7 +462,7 @@ const query10 = () => ({
   ],
 });
 
-const transition16 = { delay: 1.5, duration: 0.8, ease: [0.25, 1, 0.5, 1], type: "tween" } as const;
+const transition16 = { delay: 1.5, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation17 = {
   opacity: 1,

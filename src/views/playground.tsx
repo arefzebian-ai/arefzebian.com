@@ -26,6 +26,7 @@ import * as React from "react";
 import PlaygroundContent2 from "@/components/playground-content-2";
 import * as body40 from "@/styles/text/body-40";
 
+import { polishedEase } from "@/lib/motion";
 const RichTextWithOptimizedAppearEffect = withOptimizedAppearEffect(RichText);
 
 const breakpoints = {
@@ -41,7 +42,7 @@ const hiddenClassNames = {
   Phone: "hidden-playground-phone",
 };
 
-const transition1 = { delay: 0.2, duration: 1.5, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition1 = { delay: 0.2, duration: 1, ease: polishedEase, type: "tween" } as const;
 
 const animation = {
   opacity: 1,

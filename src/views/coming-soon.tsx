@@ -23,7 +23,6 @@ import {
 } from "@/deframer";
 import { LayoutGroup, motion, MotionConfigContext } from "motion/react";
 import * as React from "react";
-import { revealHidden, revealRest, revealTransition } from "@/lib/motion/presets";
 import ContactButton from "@/components/contact-button";
 
 const breakpoints = {

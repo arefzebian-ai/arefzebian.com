@@ -45,7 +45,6 @@ import * as body13Uppercase from "@/styles/text/body-13-uppercase";
 import * as body40 from "@/styles/text/body-40";
 import * as body25 from "@/styles/text/body-25";
 import * as body13 from "@/styles/text/body-13";
-import { revealHidden, revealRest, revealTransition } from "@/lib/motion/presets";
 
 const RichTextWithOptimizedAppearEffect = withOptimizedAppearEffect(RichText);
 const MotionDivWithOptimizedAppearEffect = withOptimizedAppearEffect(motion.div);
@@ -63,64 +62,120 @@ const hiddenClassNames = {
   Tablet: "hidden-revimo-tablet",
 };
 
-const animation = { ...revealHidden, y: 8, scale: 1 };
+const animation = { opacity: 0.001, rotate: 0, scale: 1, skewX: 0, skewY: 0, x: 0, y: 50 };
 
-const transition1 = { ...revealTransition, delay: 0.05 } as const;
+const transition1 = { delay: 0.08, duration: 2, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const textEffect = {
   effect: animation,
   repeat: false,
-  startDelay: 0.1,
+  startDelay: 0.4,
   tokenization: "line",
   transition: transition1,
   trigger: "onMount",
   type: "appear",
 } as const;
 
-const transition2 = { ...revealTransition, delay: 0.05 } as const;
+const transition2 = { delay: 0.7, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation1 = {
-  ...revealRest,
+  opacity: 1,
+  rotate: 0,
+  rotateX: 0,
+  rotateY: 0,
+  scale: 1,
+  skewX: 0,
+  skewY: 0,
   transition: transition2,
+  x: 0,
+  y: 0,
 } as const;
 
 const animation2 = {
-  ...revealHidden,
+  opacity: 0.001,
+  rotate: 0,
+  rotateX: 0,
+  rotateY: 0,
+  scale: 1,
+  skewX: 0,
+  skewY: 0,
+  x: 0,
+  y: 20,
 };
 
-const transition3 = { ...revealTransition, delay: 0.1 } as const;
+const transition3 = { delay: 0.9, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation3 = {
-  ...revealRest,
+  opacity: 1,
+  rotate: 0,
+  rotateX: 0,
+  rotateY: 0,
+  scale: 1,
+  skewX: 0,
+  skewY: 0,
   transition: transition3,
+  x: 0,
+  y: 0,
 } as const;
 
-const transition4 = { ...revealTransition, delay: 0.15 } as const;
+const transition4 = { delay: 1.1, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation4 = {
-  ...revealRest,
+  opacity: 1,
+  rotate: 0,
+  rotateX: 0,
+  rotateY: 0,
+  scale: 1,
+  skewX: 0,
+  skewY: 0,
   transition: transition4,
+  x: 0,
+  y: 0,
 } as const;
 
-const transition5 = { ...revealTransition, delay: 0.18 } as const;
+const transition5 = { delay: 1.2, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation5 = {
-  ...revealRest,
+  opacity: 1,
+  rotate: 0,
+  rotateX: 0,
+  rotateY: 0,
+  scale: 1,
+  skewX: 0,
+  skewY: 0,
   transition: transition5,
+  x: 0,
+  y: 0,
 } as const;
 
-const transition6 = { ...revealTransition, delay: 0.22 } as const;
+const transition6 = { delay: 1.3, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation6 = {
-  ...revealRest,
+  opacity: 1,
+  rotate: 0,
+  rotateX: 0,
+  rotateY: 0,
+  scale: 1,
+  skewX: 0,
+  skewY: 0,
   transition: transition6,
+  x: 0,
+  y: 0,
 } as const;
 
-const transition7 = { ...revealTransition, delay: 0.25 } as const;
+const transition7 = { delay: 1.4, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation7 = {
-  ...revealRest,
+  opacity: 1,
+  rotate: 0,
+  rotateX: 0,
+  rotateY: 0,
+  scale: 1,
+  skewX: 0,
+  skewY: 0,
   transition: transition7,
+  x: 0,
+  y: 0,
 } as const;
 
 const transition8 = { bounce: 0.2, delay: 0, duration: 0.4, type: "spring" } as const;

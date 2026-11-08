@@ -38,7 +38,6 @@ import {
 } from "@/deframer";
 import { LayoutGroup, motion, MotionConfigContext } from "motion/react";
 import * as React from "react";
-import { revealHidden, revealRest, revealTransition } from "@/lib/motion/presets";
 import { Icon as Material } from "@/vendor/material";
 
 import TextLink from "@/components/text-link";
@@ -72,9 +71,9 @@ const hiddenClassNames = {
   Desktop: "hidden-desktop",
 };
 
-const animation = { opacity: 0.001, rotate: 0, scale: 1, skewX: 0, skewY: 0, x: 0, y: 8 };
+const animation = { opacity: 0.001, rotate: 0, scale: 1, skewX: 0, skewY: 0, x: 0, y: 50 };
 
-const transition1 = { ...revealTransition, delay: 0.08 } as const;
+const transition1 = { delay: 0.08, duration: 2, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const textEffect = {
   effect: animation,
@@ -86,7 +85,7 @@ const textEffect = {
   type: "appear",
 } as const;
 
-const transition2 = { ...revealTransition, delay: 0.25 } as const;
+const transition2 = { delay: 0.7, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation1 = {
   opacity: 1,
@@ -110,10 +109,10 @@ const animation2 = {
   skewX: 0,
   skewY: 0,
   x: 0,
-  y: 8,
+  y: 20,
 };
 
-const transition3 = { ...revealTransition, delay: 0.25 } as const;
+const transition3 = { delay: 0.9, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation3 = {
   opacity: 1,
@@ -128,7 +127,7 @@ const animation3 = {
   y: 0,
 } as const;
 
-const transition4 = { ...revealTransition, delay: 0.25 } as const;
+const transition4 = { delay: 1.1, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation4 = {
   opacity: 1,
@@ -143,7 +142,7 @@ const animation4 = {
   y: 0,
 } as const;
 
-const transition5 = { ...revealTransition, delay: 0.25 } as const;
+const transition5 = { delay: 1.2, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation5 = {
   opacity: 1,
@@ -158,7 +157,7 @@ const animation5 = {
   y: 0,
 } as const;
 
-const transition6 = { ...revealTransition, delay: 0.25 } as const;
+const transition6 = { delay: 1.3, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation6 = {
   opacity: 1,
@@ -173,7 +172,7 @@ const animation6 = {
   y: 0,
 } as const;
 
-const transition7 = { ...revealTransition, delay: 0.25 } as const;
+const transition7 = { delay: 1.4, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation7 = {
   opacity: 1,

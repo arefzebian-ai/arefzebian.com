@@ -23,7 +23,6 @@ import {
 } from "@/deframer";
 import { LayoutGroup, motion, MotionConfigContext } from "motion/react";
 import * as React from "react";
-import { revealHidden, revealRest, revealTransition } from "@/lib/motion/presets";
 import PlaygroundContent2 from "@/components/playground-content-2";
 import * as body40 from "@/styles/text/body-40";
 
@@ -66,7 +65,7 @@ const animation1 = {
   skewX: 0,
   skewY: 0,
   x: 0,
-  y: 8,
+  y: 50,
 };
 
 const getProps = ({ height, id, width, ...props }: any) => ({

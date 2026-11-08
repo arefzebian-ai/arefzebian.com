@@ -89,4 +89,4 @@ export const locales = [
 ];
 
 /** "user": honour prefers-reduced-motion (site setting); "never": always animate. */
-export const reducedMotion = "never";
+export const reducedMotion = "user";

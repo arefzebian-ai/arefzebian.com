@@ -25,6 +25,7 @@ import {
 } from "@/deframer";
 import { LayoutGroup, motion, MotionConfigContext } from "motion/react";
 import * as React from "react";
+import { revealHidden, revealRest, revealTransition } from "@/lib/motion/presets";
 import LinkOpacity from "@/components/link-opacity";
 import * as body13Uppercase from "@/styles/text/body-13-uppercase";
 import * as body40 from "@/styles/text/body-40";
@@ -69,7 +70,7 @@ const animation1 = {
   skewX: 0,
   skewY: 0,
   x: 0,
-  y: 50,
+  y: 8,
 };
 
 const transition2 = { delay: 0.4, duration: 1.5, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
@@ -96,7 +97,7 @@ const animation3 = {
   skewX: 0,
   skewY: 0,
   x: 0,
-  y: 20,
+  y: 8,
 };
 
 const transition3 = { delay: 0.6, duration: 1.5, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
@@ -337,7 +338,7 @@ const ContactPage = React.forwardRef<HTMLDivElement, Props>(function (props, ref
                             <LinkOpacity
                               height="100%"
                               newTab
-                              link="http://instagram.com/aref.zeb/"
+                              link="https://www.linkedin.com/in/aref-zebian-b0375a26b"
                               label="LinkedIn"
                               variant={matchVariant("Variant 3")}
                               width="100%"

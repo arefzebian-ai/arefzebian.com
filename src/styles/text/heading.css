@@ -1,0 +1,28 @@
+.text-heading-scope .text-heading:not(.rich-text-wrapper),
+.text-heading-scope .text-heading.rich-text-wrapper p {
+  --df-font-family: "Favorit Light", "Favorit Light Placeholder", sans-serif;
+  --df-font-family-bold: "Favorit Regular", "Favorit Regular Placeholder", sans-serif;
+  --df-font-open-type-features: normal;
+  --df-font-size: 24px;
+  --df-font-style: normal;
+  --df-font-style-bold: normal;
+  --df-font-variation-axes: normal;
+  --df-font-weight: 300;
+  --df-font-weight-bold: 400;
+  --df-letter-spacing: -0.02em;
+  --df-line-height: 115%;
+  --df-paragraph-spacing: 0px;
+  --df-text-alignment: start;
+  --df-text-color: #000000;
+  --df-text-decoration: none;
+  --df-text-stroke-color: initial;
+  --df-text-stroke-width: initial;
+  --df-text-transform: none;
+}
+
+@media (min-width: 1024px) {
+  .text-heading-scope .text-heading:not(.rich-text-wrapper),
+  .text-heading-scope .text-heading.rich-text-wrapper p {
+    --df-font-size: 28px;
+  }
+}

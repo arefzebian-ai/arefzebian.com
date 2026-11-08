@@ -38,6 +38,7 @@ import {
 } from "@/deframer";
 import { LayoutGroup, motion, MotionConfigContext } from "motion/react";
 import * as React from "react";
+import { revealHidden, revealRest, revealTransition } from "@/lib/motion/presets";
 import CTAButton from "@/components/cta-button";
 import TextLink from "@/components/text-link";
 import ScrollToViewMore from "@/components/scroll-to-view-more";
@@ -99,7 +100,7 @@ const animation1 = {
   skewX: 0,
   skewY: 0,
   x: 0,
-  y: 50,
+  y: 8,
 };
 
 const transition2 = { delay: 2.8, duration: 1.5, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
@@ -183,7 +184,7 @@ const animation7 = {
   skewX: 0,
   skewY: 0,
   x: 0,
-  y: 50,
+  y: 8,
 };
 
 const transition6 = { delay: 3.1, duration: 1.5, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;

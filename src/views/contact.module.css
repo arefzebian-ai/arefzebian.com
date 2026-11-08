@@ -11,7 +11,9 @@
   overflow: visible;
   padding: 0px;
   position: relative;
-  width: 1200px;
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
 }
 
 .page .main {
@@ -43,7 +45,7 @@
   height: min-content;
   justify-content: flex-start;
   overflow: visible;
-  padding: 0px 20px 40px 20px;
+  padding: 0 var(--gutter, 32px) var(--space-7, 48px);
   position: relative;
   width: 100%;
 }
@@ -284,7 +286,7 @@
 
 @media (min-width: 810px) and (max-width: 1199.98px) {
   .page.root {
-    width: 810px;
+    width: 100%;
   }
 
   .page .sectionContactFrame {
@@ -308,7 +310,7 @@
 
 @media (max-width: 809.98px) {
   .page.root {
-    width: 390px;
+    width: 100%;
   }
 
   .page .sectionContact {

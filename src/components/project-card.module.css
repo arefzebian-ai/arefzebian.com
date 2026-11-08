@@ -10,7 +10,8 @@
   overflow: hidden;
   padding: 0px;
   position: relative;
-  width: 364px;
+  width: 100%;
+  max-width: 100%;
 }
 
 .projectCard .container {
@@ -88,7 +89,9 @@
   justify-content: flex-start;
   left: 0px;
   overflow: hidden;
-  padding: 0px 20px 15px 20px;
+  opacity: 1;
+  padding: 0 var(--space-5, 24px) var(--space-4, 16px);
+  pointer-events: none;
   position: absolute;
   width: 100%;
   z-index: 3;

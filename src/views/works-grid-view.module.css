@@ -16,7 +16,9 @@
   overflow: visible;
   padding: 0px;
   position: relative;
-  width: 1200px;
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
 }
 
 .page .main {
@@ -110,28 +112,27 @@
   flex: none;
   flex-direction: column;
   flex-wrap: nowrap;
-  gap: 20px;
+  gap: var(--grid-gap, 20px);
   height: min-content;
   justify-content: center;
   overflow: visible;
-  padding: 0px 20px 40px 20px;
+  padding: 0 var(--gutter, 32px) var(--space-7, 48px);
   position: relative;
   width: 100%;
 }
 
 .page .projectsRow,
 .page .projectsRow2 {
-  align-content: flex-start;
-  align-items: flex-start;
-  display: flex;
+  align-content: start;
+  align-items: start;
+  display: grid;
   flex: none;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 20px;
+  gap: var(--grid-gap, 20px);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   height: min-content;
-  justify-content: flex-start;
+  justify-content: start;
   overflow: visible;
-  padding: 0px;
+  padding: 0;
   position: relative;
   width: 100%;
 }
@@ -145,15 +146,15 @@
   align-content: flex-start;
   align-items: flex-start;
   display: flex;
-  flex: 1 0 0px;
   flex-direction: row;
   flex-wrap: nowrap;
-  gap: 20px;
+  gap: 0;
   height: min-content;
   justify-content: flex-start;
-  padding: 0px;
+  min-width: 0;
+  padding: 0;
   position: relative;
-  width: 1px;
+  width: 100%;
 }
 
 .page .link,
@@ -165,16 +166,18 @@
   align-content: flex-start;
   align-items: flex-start;
   display: flex;
-  flex: 1 0 0px;
+  flex: 1 0 auto;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 0px;
+  gap: 0;
   height: min-content;
   justify-content: flex-start;
-  padding: 0px;
+  min-width: 0;
+  padding: 0;
   position: relative;
   text-decoration: none;
-  width: 1px;
+  width: 100%;
+  aspect-ratio: 0.8 / 1;
 }
 
 .page .projectCard,
@@ -183,54 +186,32 @@
 .page .projectCard4,
 .page .projectCard5,
 .page .projectCard6 {
-  flex: 1 0 0px;
-  height: auto;
+  flex: 1 0 auto;
+  height: 100%;
   position: relative;
-  width: 1px;
+  width: 100% !important;
+  max-width: 100%;
   will-change: var(--df-will-change-effect-override, transform);
 }
 
-@media (min-width: 810px) and (max-width: 1199.98px) {
-  .page.root {
-    width: 810px;
+.page .sectionHeader2 {
+  padding: 0 var(--gutter, 32px) var(--space-7, 48px);
+}
+
+@media (max-width: 1023.98px) and (min-width: 640px) {
+  .page .projectsRow,
+  .page .projectsRow2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-@media (max-width: 809.98px) {
-  .page.root {
-    width: 390px;
-  }
-
+@media (max-width: 639.98px) {
   .page .main {
-    padding: 150px 0px 0px 0px;
-  }
-
-  .page .sectionHeader2 {
-    padding: 0px 15px 40px 15px;
+    padding: 150px 0 0;
   }
 
   .page .projectsRow,
   .page .projectsRow2 {
-    flex-direction: column;
-  }
-
-  .page .frame,
-  .page .frame2,
-  .page .frame3,
-  .page .frame4,
-  .page .frame5,
-  .page .frame6 {
-    flex: none;
-    width: 100%;
-  }
-
-  .page .link,
-  .page .link3,
-  .page .link4,
-  .page .link5,
-  .page .link6,
-  .page .link7 {
-    aspect-ratio: 0.8 / 1;
-    height: auto;
+    grid-template-columns: minmax(0, 1fr);
   }
 }

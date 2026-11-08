@@ -35,6 +35,7 @@ import UnderlineButton from "@/components/underline-button";
 import ProjectCard from "@/components/project-card";
 import Works from "@/cms/works";
 import * as body40 from "@/styles/text/body-40";
+import { revealRest, revealHidden, revealTransition } from "@/lib/motion/presets";
 
 const ContainerWithOptimizedAppearEffect = withOptimizedAppearEffect(Container);
 
@@ -51,33 +52,17 @@ const hiddenClassNames = {
   Tablet: "hidden-works-grid-view-tablet",
 };
 
-const transition1 = { delay: 0.4, duration: 3, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition1 = { ...revealTransition, delay: 0.05 } as const;
 
 const animation = {
-  opacity: 1,
-  rotate: 0,
-  rotateX: 0,
-  rotateY: 0,
-  scale: 1,
-  skewX: 0,
-  skewY: 0,
+  ...revealRest,
   transformPerspective: 1200,
   transition: transition1,
-  x: 0,
-  y: 0,
 } as const;
 
 const animation1 = {
-  opacity: 0.001,
-  rotate: 0,
-  rotateX: 0,
-  rotateY: 0,
-  scale: 1,
-  skewX: 0,
-  skewY: 0,
+  ...revealHidden,
   transformPerspective: 1200,
-  x: 0,
-  y: 100,
 };
 
 const query = () => ({
@@ -99,20 +84,12 @@ const QueryData = ({ query, pageSize, children }: any) => {
   return children(data);
 };
 
-const transition2 = { delay: 0.5, duration: 3, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition2 = { ...revealTransition, delay: 0.1 } as const;
 
 const animation2 = {
-  opacity: 1,
-  rotate: 0,
-  rotateX: 0,
-  rotateY: 0,
-  scale: 1,
-  skewX: 0,
-  skewY: 0,
+  ...revealRest,
   transformPerspective: 1200,
   transition: transition2,
-  x: 0,
-  y: 0,
 } as const;
 
 const query1 = () => ({
@@ -129,20 +106,12 @@ const query1 = () => ({
   ],
 });
 
-const transition3 = { delay: 0.6, duration: 3, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition3 = { ...revealTransition, delay: 0.15 } as const;
 
 const animation3 = {
-  opacity: 1,
-  rotate: 0,
-  rotateX: 0,
-  rotateY: 0,
-  scale: 1,
-  skewX: 0,
-  skewY: 0,
+  ...revealRest,
   transformPerspective: 1200,
   transition: transition3,
-  x: 0,
-  y: 0,
 } as const;
 
 const query2 = () => ({
@@ -159,20 +128,12 @@ const query2 = () => ({
   ],
 });
 
-const transition4 = { delay: 0.7, duration: 3, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition4 = { ...revealTransition, delay: 0.2 } as const;
 
 const animation4 = {
-  opacity: 1,
-  rotate: 0,
-  rotateX: 0,
-  rotateY: 0,
-  scale: 1,
-  skewX: 0,
-  skewY: 0,
+  ...revealRest,
   transformPerspective: 1200,
   transition: transition4,
-  x: 0,
-  y: 0,
 } as const;
 
 const query3 = () => ({
@@ -189,20 +150,12 @@ const query3 = () => ({
   ],
 });
 
-const transition5 = { delay: 0.8, duration: 3, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition5 = { ...revealTransition, delay: 0.22 } as const;
 
 const animation5 = {
-  opacity: 1,
-  rotate: 0,
-  rotateX: 0,
-  rotateY: 0,
-  scale: 1,
-  skewX: 0,
-  skewY: 0,
+  ...revealRest,
   transformPerspective: 1200,
   transition: transition5,
-  x: 0,
-  y: 0,
 } as const;
 
 const query4 = () => ({
@@ -219,20 +172,12 @@ const query4 = () => ({
   ],
 });
 
-const transition6 = { delay: 0.9, duration: 3, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition6 = { ...revealTransition, delay: 0.25 } as const;
 
 const animation6 = {
-  opacity: 1,
-  rotate: 0,
-  rotateX: 0,
-  rotateY: 0,
-  scale: 1,
-  skewX: 0,
-  skewY: 0,
+  ...revealRest,
   transformPerspective: 1200,
   transition: transition6,
-  x: 0,
-  y: 0,
 } as const;
 
 const query5 = () => ({
@@ -532,7 +477,7 @@ const WorksGridViewPage = React.forwardRef<HTMLDivElement, Props>(function (prop
                                 return (
                                   <LayoutGroup id={`works51-${worksId2}`} key={worksId2}>
                                     <PathVariablesContext.Provider value={{ worksSlug: slug2 }}>
-                                      <Link href="/rivited" motionChild nodeId="link" openInNewTab={false}>
+                                      <Link href="/revimo" motionChild nodeId="link" openInNewTab={false}>
                                         <motion.a className={cx(styles.link4, styles.link2)}>
                                           <PropertyOverrides
                                             breakpoint={baseVariant}

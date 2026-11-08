@@ -1,0 +1,184 @@
+/* Shared design-system utilities. Imported from globals.css. */
+
+/* —— Typography roles (Favorit Light / Regular only) —— */
+
+.ds-display,
+.ds-display p {
+  font-family: var(--font-sans);
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--color-text);
+}
+
+.ds-heading,
+.ds-heading p {
+  font-family: var(--font-sans);
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+}
+
+.ds-body,
+.ds-body p {
+  font-family: var(--font-sans);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.45;
+  letter-spacing: -0.01em;
+  color: var(--color-text);
+}
+
+.ds-label,
+.ds-label p {
+  font-family: var(--font-sans);
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+
+@media (min-width: 1024px) {
+  .ds-display,
+  .ds-display p {
+    font-size: 48px;
+  }
+
+  .ds-heading,
+  .ds-heading p {
+    font-size: 28px;
+  }
+}
+
+/* Map high-traffic Deframer text classes toward the four roles */
+.text-body-40-scope .text-body-40:not(.rich-text-wrapper),
+.text-body-40-scope .text-body-40.rich-text-wrapper p {
+  --df-font-size: 32px;
+  --df-line-height: 110%;
+  --df-letter-spacing: -0.03em;
+}
+
+.text-body-30-scope .text-body-30:not(.rich-text-wrapper),
+.text-body-30-scope .text-body-30.rich-text-wrapper p {
+  --df-font-size: 24px;
+  --df-line-height: 115%;
+  --df-letter-spacing: -0.02em;
+}
+
+.text-body-17-scope .text-body-17:not(.rich-text-wrapper),
+.text-body-17-scope .text-body-17.rich-text-wrapper p,
+.text-body-20-scope .text-body-20:not(.rich-text-wrapper),
+.text-body-20-scope .text-body-20.rich-text-wrapper p {
+  --df-font-size: 16px;
+  --df-line-height: 145%;
+  --df-letter-spacing: -0.01em;
+}
+
+.text-body-14-scope .text-body-14:not(.rich-text-wrapper),
+.text-body-14-scope .text-body-14.rich-text-wrapper p,
+.text-body-13-uppercase-scope .text-body-13-uppercase:not(.rich-text-wrapper),
+.text-body-13-uppercase-scope .text-body-13-uppercase.rich-text-wrapper p,
+.text-body-15-uppercase-scope .text-body-15-uppercase:not(.rich-text-wrapper),
+.text-body-15-uppercase-scope .text-body-15-uppercase.rich-text-wrapper p,
+.text-body-11-uppercase-scope .text-body-11-uppercase:not(.rich-text-wrapper),
+.text-body-11-uppercase-scope .text-body-11-uppercase.rich-text-wrapper p {
+  --df-font-size: 14px;
+  --df-line-height: 120%;
+  --df-letter-spacing: 0.04em;
+  --df-text-transform: uppercase;
+}
+
+@media (min-width: 1024px) {
+  .text-body-40-scope .text-body-40:not(.rich-text-wrapper),
+  .text-body-40-scope .text-body-40.rich-text-wrapper p {
+    --df-font-size: 48px;
+  }
+
+  .text-body-30-scope .text-body-30:not(.rich-text-wrapper),
+  .text-body-30-scope .text-body-30.rich-text-wrapper p {
+    --df-font-size: 28px;
+  }
+}
+
+@media (max-width: 809.98px) {
+  .text-body-40-scope .text-body-40:not(.rich-text-wrapper),
+  .text-body-40-scope .text-body-40.rich-text-wrapper p {
+    --df-font-size: 32px;
+  }
+
+  .text-body-30-scope .text-body-30:not(.rich-text-wrapper),
+  .text-body-30-scope .text-body-30.rich-text-wrapper p {
+    --df-font-size: 24px;
+  }
+}
+
+/* —— Page shell —— */
+
+.ds-page {
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+.ds-gutter {
+  padding-inline: var(--gutter);
+}
+
+.ds-section {
+  padding-block: var(--section-gap);
+}
+
+.ds-measure {
+  max-width: 65ch;
+}
+
+.ds-stack-text > * + * {
+  margin-top: var(--text-gap);
+}
+
+/* —— Interaction timing —— */
+
+a,
+button,
+[data-highlight],
+.ds-interactive {
+  transition:
+    opacity var(--duration-interact) var(--ease-out),
+    color var(--duration-interact) var(--ease-out),
+    background-color var(--duration-interact) var(--ease-out),
+    transform var(--duration-interact) var(--ease-out);
+}
+
+/* —— Shared reveal (progressive enhancement) —— */
+
+.ds-reveal {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .ds-reveal {
+    opacity: 0.001;
+    transform: translate3d(0, var(--reveal-distance), 0);
+    transition:
+      opacity var(--duration-reveal) var(--ease-out),
+      transform var(--duration-reveal) var(--ease-out);
+    transition-delay: var(--reveal-delay, 0ms);
+  }
+
+  .ds-reveal.is-visible {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Touch targets for chrome controls */
+.ds-touch {
+  min-width: var(--touch-min);
+  min-height: var(--touch-min);
+}

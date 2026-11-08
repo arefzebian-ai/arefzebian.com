@@ -46,7 +46,7 @@ const transition3 = { damping: 60, delay: 0, mass: 1, stiffness: 350, type: "spr
 
 const transition4 = { duration: 0, type: "tween" } as const;
 
-const transition5 = { delay: 0.5, duration: 2, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition5 = { delay: 0.5, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation = {
   opacity: 1,
@@ -72,10 +72,10 @@ const animation1 = {
   skewY: 0,
   transformPerspective: 1200,
   x: 0,
-  y: 80,
+  y: 20,
 };
 
-const transition6 = { delay: 0.7, duration: 2, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition6 = { delay: 0.7, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation2 = {
   opacity: 1,
@@ -99,10 +99,10 @@ const animation3 = {
   skewX: 0,
   skewY: 0,
   x: 0,
-  y: 80,
+  y: 20,
 };
 
-const transition7 = { delay: 0.8, duration: 2, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition7 = { delay: 0.8, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation4 = {
   opacity: 1,
@@ -117,7 +117,7 @@ const animation4 = {
   y: 0,
 } as const;
 
-const transition8 = { delay: 0.9, duration: 2, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition8 = { delay: 0.9, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation5 = {
   opacity: 1,
@@ -132,7 +132,7 @@ const animation5 = {
   y: 0,
 } as const;
 
-const transition9 = { delay: 1, duration: 2, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition9 = { delay: 1, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation6 = {
   opacity: 1,
@@ -147,7 +147,7 @@ const animation6 = {
   y: 0,
 } as const;
 
-const transition10 = { delay: 1.1, duration: 2, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition10 = { delay: 1.1, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation7 = {
   opacity: 1,
@@ -162,7 +162,7 @@ const animation7 = {
   y: 0,
 } as const;
 
-const transition11 = { delay: 1.2, duration: 2, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition11 = { delay: 1.2, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation8 = {
   opacity: 1,
@@ -177,7 +177,7 @@ const animation8 = {
   y: 0,
 } as const;
 
-const transition12 = { delay: 1.3, duration: 2, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition12 = { delay: 1.3, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation9 = {
   opacity: 1,
@@ -192,7 +192,7 @@ const animation9 = {
   y: 0,
 } as const;
 
-const transition13 = { delay: 1.4, duration: 2, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition13 = { delay: 1.4, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation10 = {
   opacity: 1,
@@ -207,7 +207,7 @@ const animation10 = {
   y: 0,
 } as const;
 
-const transition14 = { delay: 1.5, duration: 2, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition14 = { delay: 1.5, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation11 = {
   opacity: 1,
@@ -222,7 +222,7 @@ const animation11 = {
   y: 0,
 } as const;
 
-const transition15 = { delay: 1.6, duration: 2, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition15 = { delay: 1.6, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation12 = {
   opacity: 1,
@@ -237,7 +237,7 @@ const animation12 = {
   y: 0,
 } as const;
 
-const transition16 = { delay: 1.7, duration: 2, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition16 = { delay: 1.7, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation13 = {
   opacity: 1,
@@ -252,7 +252,7 @@ const animation13 = {
   y: 0,
 } as const;
 
-const transition17 = { delay: 1.8, duration: 2, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition17 = { delay: 1.8, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation14 = {
   opacity: 1,
@@ -267,7 +267,7 @@ const animation14 = {
   y: 0,
 } as const;
 
-const transition18 = { delay: 1.9, duration: 2, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition18 = { delay: 1.9, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation15 = {
   opacity: 1,
@@ -282,7 +282,7 @@ const animation15 = {
   y: 0,
 } as const;
 
-const transition19 = { delay: 2, duration: 2, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition19 = { delay: 2, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation16 = {
   opacity: 1,
@@ -297,7 +297,7 @@ const animation16 = {
   y: 0,
 } as const;
 
-const transition20 = { delay: 2.1, duration: 2, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition20 = { delay: 2.1, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation17 = {
   opacity: 1,
@@ -312,7 +312,7 @@ const animation17 = {
   y: 0,
 } as const;
 
-const transition21 = { delay: 2.3, duration: 2, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition21 = { delay: 2.3, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation18 = {
   opacity: 1,
@@ -327,7 +327,7 @@ const animation18 = {
   y: 0,
 } as const;
 
-const transition22 = { delay: 2.4, duration: 2, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition22 = { delay: 2.4, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation19 = {
   opacity: 1,
@@ -342,7 +342,7 @@ const animation19 = {
   y: 0,
 } as const;
 
-const transition23 = { delay: 2.5, duration: 2, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition23 = { delay: 2.5, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation20 = {
   opacity: 1,
@@ -357,7 +357,7 @@ const animation20 = {
   y: 0,
 } as const;
 
-const transition24 = { delay: 2.6, duration: 2, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition24 = { delay: 2.6, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation21 = {
   opacity: 1,

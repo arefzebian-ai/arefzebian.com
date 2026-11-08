@@ -41,7 +41,7 @@ const hiddenClassNames = {
   Phone: "hidden-playground-phone",
 };
 
-const transition1 = { delay: 0.2, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
+const transition1 = { delay: 0.6, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation = {
   opacity: 1,
@@ -57,15 +57,15 @@ const animation = {
 } as const;
 
 const animation1 = {
-  opacity: 1,
-  rotate: -2,
+  opacity: 0.001,
+  rotate: 0,
   rotateX: 0,
   rotateY: 0,
   scale: 1,
   skewX: 0,
   skewY: 0,
   x: 0,
-  y: 50,
+  y: 20,
 };
 
 const getProps = ({ height, id, width, ...props }: any) => ({

@@ -25,7 +25,7 @@ const cycleOrder = ["Variant 1", "Variant 2"];
 
 const transition1 = { bounce: 0.2, delay: 0, duration: 0.4, type: "spring" } as const;
 
-const transition2 = { delay: 0.8, duration: 1.5, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition2 = { delay: 0.8, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation = {
   opacity: 1,
@@ -52,7 +52,7 @@ const animation1 = {
   y: 20,
 };
 
-const transition3 = { delay: 0.9, duration: 1.5, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition3 = { delay: 0.9, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation2 = {
   opacity: 1,

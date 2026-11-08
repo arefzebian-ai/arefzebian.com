@@ -51,7 +51,7 @@ const hiddenClassNames = {
   Desktop: "hidden-desktop",
 };
 
-const transition1 = { delay: 0.2, duration: 1.5, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition1 = { delay: 0.2, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation = {
   opacity: 1,
@@ -78,7 +78,7 @@ const animation1 = {
   y: 50,
 };
 
-const transition2 = { delay: 0.6, duration: 1.5, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition2 = { delay: 0.6, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation2 = {
   opacity: 1,
@@ -105,7 +105,7 @@ const animation3 = {
   y: 50,
 };
 
-const transition3 = { delay: 0.7, duration: 1.5, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition3 = { delay: 0.7, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation4 = {
   opacity: 1,

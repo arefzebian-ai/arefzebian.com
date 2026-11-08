@@ -21,7 +21,6 @@ import {
   VariantScope,
   withFonts,
   withFX,
-  withOptimizedAppearEffect,
 } from "@/deframer";
 import { motion } from "motion/react";
 import * as React from "react";
@@ -32,40 +31,11 @@ import * as captionStyle from "@/styles/text/caption";
 const Video = clientOnly(() => import("@/vendor/video-2").then((m) => m.Video));
 
 const VideoFonts = getFonts(Video);
-const MotionDivWithFXWithOptimizedAppearEffect = withOptimizedAppearEffect(withFX(motion.div));
+const MotionDivWithFX = withFX(motion.div);
 
 const cycleOrder = ["4x5", "4x3", "1x1"];
 
 const variantClassNames = { "1x1": styles.variant1x1, "4x3": styles.variant4x3 };
-
-const transition1 = { delay: 0.6, duration: 2, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
-
-const animation = {
-  opacity: 1,
-  rotate: 0,
-  rotateX: 0,
-  rotateY: 0,
-  scale: 1,
-  skewX: 0,
-  skewY: 0,
-  transformPerspective: 1200,
-  transition: transition1,
-  x: 0,
-  y: 0,
-} as const;
-
-const animation1 = {
-  opacity: 0.001,
-  rotate: 0,
-  rotateX: 0,
-  rotateY: 0,
-  scale: 1,
-  skewX: 0,
-  skewY: 0,
-  transformPerspective: 1200,
-  x: 0,
-  y: 80,
-};
 
 const transition2 = { damping: 70, delay: 0, mass: 1, stiffness: 400, type: "spring" } as const;
 
@@ -142,20 +112,16 @@ const Component = React.forwardRef<HTMLDivElement, Props>(function (props, ref) 
 
   return (
     <VariantScope layoutGroup={layoutId ?? defaultLayoutId} animate={variants} transition={transition2}>
-      <MotionDivWithFXWithOptimizedAppearEffect
+      <MotionDivWithFX
         {...restProps}
         {...gestureHandlers}
-        __fx_presenceAnimate={animation}
-        __fx_presenceInitial={animation1}
         __perspectiveFX={false}
         __smartComponentFX
         __targetOpacity={1}
         className={cx(scopingClassNames, styles.root, className, classNames)}
-        data-appear-id="1e07fo6"
         data-name={baseVariant}
         layoutDependency={layoutDependency}
         layoutId="4x5"
-        optimized
         ref={refBinding}
         style={{ ...style }}
       >
@@ -234,7 +200,7 @@ const Component = React.forwardRef<HTMLDivElement, Props>(function (props, ref) 
             </motion.p>
           </>
         </RichText>
-      </MotionDivWithFXWithOptimizedAppearEffect>
+      </MotionDivWithFX>
     </VariantScope>
   );
 });

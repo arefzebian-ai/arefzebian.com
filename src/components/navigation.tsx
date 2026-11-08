@@ -61,11 +61,11 @@ const variantClassNames = {
 
 const transition1 = { duration: 0, type: "tween" } as const;
 
-const transition2 = { delay: 0, duration: 1, ease: [0.25, 1, 0.5, 1], type: "tween" } as const;
+const transition2 = { delay: 0, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
-const transition3 = { delay: 0, duration: 0.7, ease: [0.25, 1, 0.5, 1], type: "tween" } as const;
+const transition3 = { delay: 0, duration: 0.7, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
-const transition4 = { delay: 0.1, duration: 1, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition4 = { delay: 0.1, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation = {
   opacity: 1,
@@ -92,7 +92,7 @@ const animation1 = {
   y: 44,
 };
 
-const transition5 = { delay: 0.2, duration: 1, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition5 = { delay: 0.2, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation2 = {
   opacity: 1,
@@ -107,7 +107,7 @@ const animation2 = {
   y: 0,
 } as const;
 
-const transition6 = { delay: 0.3, duration: 1, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition6 = { delay: 0.3, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation3 = {
   opacity: 1,
@@ -122,7 +122,7 @@ const animation3 = {
   y: 0,
 } as const;
 
-const transition7 = { delay: 0.5, duration: 1, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition7 = { delay: 0.5, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const animation4 = {
   opacity: 1,

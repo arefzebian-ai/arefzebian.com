@@ -18,7 +18,7 @@ const variantClassNames = { Close: styles.close };
 
 const transition1 = { damping: 60, delay: 0, mass: 1, stiffness: 500, type: "spring" } as const;
 
-const transition2 = { delay: 0, duration: 1, ease: [0.16, 1, 0.3, 1], type: "tween" } as const;
+const transition2 = { delay: 0, duration: 1, ease: [0.23, 0.98, 0.56, 1], type: "tween" } as const;
 
 const getProps = ({ background, height, id, width, ...props }: any) => ({
   ...props,

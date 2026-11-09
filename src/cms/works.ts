@@ -57,5 +57,7 @@ const Works = {
   id: "works",
 };
 export default Works;
+/** Number of projects in the Works CMS collection — keeps "All Projects (N)" in sync. */
+export const worksCount = records.length;
 const utils = slugUtils(Works, "worksSlug");
 registerCollectionUtils("works", utils);

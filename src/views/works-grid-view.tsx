@@ -33,7 +33,7 @@ import { LayoutGroup, motion, MotionConfigContext } from "motion/react";
 import * as React from "react";
 import UnderlineButton from "@/components/underline-button";
 import ProjectCard from "@/components/project-card";
-import Works from "@/cms/works";
+import Works, { worksCount } from "@/cms/works";
 import * as body40 from "@/styles/text/body-40";
 
 import { polishedEase } from "@/lib/motion";
@@ -321,7 +321,7 @@ const WorksGridViewPage = React.forwardRef<HTMLDivElement, Props>(function (prop
                   >
                     <>
                       <p className="text-body-40" dir="auto" style={{ "--df-text-color": "rgb(0, 0, 0)" }}>
-                        All Projects (6)
+                        All Projects ({worksCount})
                       </p>
                     </>
                   </RichText>

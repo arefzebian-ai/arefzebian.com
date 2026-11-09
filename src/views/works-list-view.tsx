@@ -33,7 +33,7 @@ import * as React from "react";
 import UnderlineButton from "@/components/underline-button";
 import ImageCursorListView from "@/components/image-cursor-list-view";
 import ProjectsListRow from "@/components/projects-list-row";
-import Works from "@/cms/works";
+import Works, { worksCount } from "@/cms/works";
 import * as body13Uppercase from "@/styles/text/body-13-uppercase";
 import * as body40 from "@/styles/text/body-40";
 
@@ -676,7 +676,7 @@ const WorksListViewPage = React.forwardRef<HTMLDivElement, Props>(function (prop
                   >
                     <>
                       <p className="text-body-40" style={{ "--df-text-color": "rgb(0, 0, 0)" }}>
-                        All Projects (12)
+                        All Projects ({worksCount})
                       </p>
                     </>
                   </RichText>

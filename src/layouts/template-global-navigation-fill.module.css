@@ -69,9 +69,3 @@
   }
 }
 
-@media (max-width: 809px) {
-  .layout .frame2 {
-    bottom: unset;
-    position: relative;
-  }
-}

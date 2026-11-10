@@ -34,7 +34,7 @@ import {
 import { LayoutGroup, motion, MotionConfigContext } from "motion/react";
 import * as React from "react";
 import TextLink from "@/components/text-link";
-import CTAButton from "@/components/cta-button";
+import StickyBackToProject from "@/components/sticky-back-to-project";
 import ProjectCard from "@/components/project-card";
 import Works from "@/cms/works";
 import { Icon as Material } from "@/vendor/material";
@@ -735,19 +735,7 @@ const PelagostoneCasestudyPage = React.forwardRef<HTMLDivElement, Props>(functio
                 />
               </div>
             </div>
-            <div className={styles.backToProject} data-name="Back to Project">
-              <ComponentViewportProvider height={37}>
-                <Container className={styles.ctaButton}>
-                  <CTAButton
-                    link="/pelagostone"
-                    height="100%"
-                    variant={matchVariant("Appear")}
-                    width="100%"
-                    label="Back to Project"
-                  />
-                </Container>
-              </ComponentViewportProvider>
-            </div>
+            <StickyBackToProject href="/pelagostone" />
             <div className={styles.sectionMoreProjects} data-name="Section more Projects">
               <div className={styles.heading} data-name="Heading">
                 <RichText
@@ -1022,7 +1010,7 @@ PelagostoneCasestudyPage.loader = {
         () => queryCacheEntry1.preload(),
         () => queryCacheEntry2.preload(),
         () => forwardLoader(TextLink, {}, context),
-        () => forwardLoader(CTAButton, {}, context),
+        () => forwardLoader(StickyBackToProject, {}, context),
         async () => {
           const parentData = (await runWithYield(() => queryCacheEntry.readMaybeAsync(), context)) ?? [];
           return runTasksWithYield(

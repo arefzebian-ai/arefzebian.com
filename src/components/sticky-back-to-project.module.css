@@ -1,0 +1,36 @@
+.sticky {
+  bottom: 20px;
+  display: flex;
+  left: 20px;
+  pointer-events: none;
+  position: fixed;
+  z-index: 40;
+}
+
+.sticky > * {
+  pointer-events: auto;
+}
+
+/* Hero CTA is white-on-glass for dark imagery; sticky sits over light + dark
+   sections, so force a dark frosted pill so it never washes out. */
+.sticky :global(a) {
+  background-color: rgba(12, 12, 12, 0.72) !important;
+  --border-color: rgba(255, 255, 255, 0.18) !important;
+}
+
+.sticky :global(a:hover) {
+  background-color: rgba(12, 12, 12, 0.88) !important;
+}
+
+@media (max-width: 809.98px) {
+  .sticky {
+    bottom: 16px;
+    left: 20px;
+    right: 20px;
+  }
+
+  .sticky :global(a) {
+    justify-content: center;
+    width: 100% !important;
+  }
+}

@@ -788,7 +788,7 @@ const WorksListViewPage = React.forwardRef<HTMLDivElement, Props>(function (prop
                                 return (
                                   <LayoutGroup id={`works58-${worksId}`} key={worksId}>
                                     <PathVariablesContext.Provider value={{ worksSlug: slug }}>
-                                      <Link href="/halv" motionChild nodeId="link" openInNewTab={false}>
+                                      <Link href={`/${slug}`} motionChild nodeId="link" openInNewTab={false}>
                                         <motion.a className={cx(styles.link, styles.link2)}>
                                           <ComponentViewportProvider
                                             height={27}
@@ -866,7 +866,7 @@ const WorksListViewPage = React.forwardRef<HTMLDivElement, Props>(function (prop
                                 return (
                                   <LayoutGroup id={`works59-${worksIdWorks}`} key={worksIdWorks}>
                                     <PathVariablesContext.Provider value={{ worksSlug: slugWorks }}>
-                                      <Link href="/aether" motionChild nodeId="link" openInNewTab={false}>
+                                      <Link href={`/${slugWorks}`} motionChild nodeId="link" openInNewTab={false}>
                                         <motion.a className={cx(styles.project2Link, styles.link2)}>
                                           <ComponentViewportProvider
                                             height={27}
@@ -944,7 +944,7 @@ const WorksListViewPage = React.forwardRef<HTMLDivElement, Props>(function (prop
                                 return (
                                   <LayoutGroup id={`works60-${worksId2}`} key={worksId2}>
                                     <PathVariablesContext.Provider value={{ worksSlug: slug2 }}>
-                                      <Link href="/revimo" motionChild nodeId="link" openInNewTab={false}>
+                                      <Link href={`/${slug2}`} motionChild nodeId="link" openInNewTab={false}>
                                         <motion.a className={cx(styles.project3Link, styles.link2)}>
                                           <ComponentViewportProvider
                                             height={27}
@@ -1022,7 +1022,7 @@ const WorksListViewPage = React.forwardRef<HTMLDivElement, Props>(function (prop
                                 return (
                                   <LayoutGroup id={`works61-${worksId3}`} key={worksId3}>
                                     <PathVariablesContext.Provider value={{ worksSlug: slug3 }}>
-                                      <Link href="/rivited" motionChild nodeId="link" openInNewTab={false}>
+                                      <Link href={`/${slug3}`} motionChild nodeId="link" openInNewTab={false}>
                                         <motion.a className={cx(styles.project4Link, styles.link2)}>
                                           <ComponentViewportProvider
                                             height={27}
@@ -1100,7 +1100,7 @@ const WorksListViewPage = React.forwardRef<HTMLDivElement, Props>(function (prop
                                 return (
                                   <LayoutGroup id={`works62-${worksId4}`} key={worksId4}>
                                     <PathVariablesContext.Provider value={{ worksSlug: slug4 }}>
-                                      <Link href="/creature" motionChild nodeId="link" openInNewTab={false}>
+                                      <Link href={`/${slug4}`} motionChild nodeId="link" openInNewTab={false}>
                                         <motion.a className={cx(styles.project5Link, styles.link2)}>
                                           <ComponentViewportProvider
                                             height={27}
@@ -1179,7 +1179,7 @@ const WorksListViewPage = React.forwardRef<HTMLDivElement, Props>(function (prop
                                   <LayoutGroup id={`works63-${worksId5}`} key={worksId5}>
                                     <PathVariablesContext.Provider value={{ worksSlug: slug5 }}>
                                       <Link
-                                        href="/pelagostone"
+                                        href={`/${slug5}`}
                                         motionChild
                                         nodeId="link"
                                         openInNewTab={false}

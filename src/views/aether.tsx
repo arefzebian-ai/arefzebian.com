@@ -606,7 +606,7 @@ const AetherPage = React.forwardRef<HTMLDivElement, Props>(function (props, ref)
                   </>
                 </RichText>
                 <div className={styles.sectionDetailsContainer} data-name="Container">
-                  <Link href="/aether-draft" motionChild nodeId="Case Study Card" openInNewTab={false}>
+                  <Link href="/aether-branding" motionChild nodeId="Case Study Card" openInNewTab={false}>
                     <motion.a
                       className={cx(styles.caseStudyCard, styles.caseStudyCard2)}
                       data-name="Case Study Card"

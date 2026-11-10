@@ -24,6 +24,7 @@ import { motion } from "motion/react";
 import * as React from "react";
 import LoaderImage from "@/components/loader-image";
 import { markHeroIntroStarted, resetHeroIntro } from "@/lib/hero-intro";
+import { heroLoaderTransition } from "@/lib/motion";
 
 const MotionDivWithFXWithOptimizedAppearEffect = withOptimizedAppearEffect(withFX(motion.div));
 
@@ -44,7 +45,7 @@ const variantClassNames = {
   "Mobile Step 2": styles.mobileStep2,
 };
 
-const transition1 = { delay: 0, duration: 1.5, ease: [0.2, 0.93, 0.37, 1.01], type: "tween" } as const;
+const transition1 = heroLoaderTransition;
 
 const animation = {
   opacity: 1,

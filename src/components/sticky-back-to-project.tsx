@@ -3,7 +3,7 @@
 import styles from "./sticky-back-to-project.module.css";
 import CTAButton from "@/components/cta-button";
 import { matchVariant } from "@/deframer";
-import { polishedEase } from "@/lib/motion";
+import { backButtonReveal, backButtonTransition } from "@/lib/motion";
 import { motion } from "motion/react";
 import * as React from "react";
 import { createPortal } from "react-dom";
@@ -13,18 +13,10 @@ type Props = {
   label?: string;
 };
 
-const maskReveal = {
-  initial: { y: "110%" },
-  animate: {
-    y: "0%",
-    transition: { delay: 0.35, duration: 0.9, ease: polishedEase, type: "tween" as const },
-  },
-};
-
 /**
  * Viewport-fixed back control. Portaled out of transformed page ancestors so
- * `position: fixed` stays glued to the screen while scrolling. Masks in
- * upward (overflow clip + translateY) — no opacity fade.
+ * `position: fixed` stays glued to the screen while scrolling. Masks upward
+ * with the same y-travel + ease as the homepage hero loader (no opacity fade).
  */
 export default function StickyBackToProject({ href, label = "Back to Project" }: Props) {
   const [host, setHost] = React.useState<Element | null>(null);
@@ -40,8 +32,11 @@ export default function StickyBackToProject({ href, label = "Back to Project" }:
       <div className={styles.mask}>
         <motion.div
           className={styles.reveal}
-          initial={maskReveal.initial}
-          animate={maskReveal.animate}
+          initial={backButtonReveal.initial}
+          animate={{
+            ...backButtonReveal.animate,
+            transition: backButtonTransition,
+          }}
         >
           <CTAButton
             height="100%"

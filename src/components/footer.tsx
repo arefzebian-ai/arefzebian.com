@@ -443,7 +443,7 @@ const Footer = React.forwardRef<HTMLDivElement, Props>(function (props, ref) {
                       height="100%"
                       newTab
                       layoutId="LinkOpacity 5"
-                      link="http://instagram.com/aref.zeb/"
+                      link="https://www.linkedin.com/in/aref-zebian-b0375a26b"
                       label="LinkedIn"
                       variant={matchVariant("Variant 1")}
                       width="100%"

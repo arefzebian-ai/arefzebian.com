@@ -338,7 +338,7 @@ const ContactPage = React.forwardRef<HTMLDivElement, Props>(function (props, ref
                             <LinkOpacity
                               height="100%"
                               newTab
-                              link="http://instagram.com/aref.zeb/"
+                              link="https://www.linkedin.com/in/aref-zebian-b0375a26b"
                               label="LinkedIn"
                               variant={matchVariant("Variant 3")}
                               width="100%"

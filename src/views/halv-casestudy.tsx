@@ -34,29 +34,14 @@ import {
 import { LayoutGroup, motion, MotionConfigContext } from "motion/react";
 import * as React from "react";
 import TextLink from "@/components/text-link";
+import CTAButton from "@/components/cta-button";
 import ProjectCard from "@/components/project-card";
 import Works from "@/cms/works";
 import { Icon as Material } from "@/vendor/material";
-import * as body13 from "@/styles/text/body-13";
-import * as body13Uppercase from "@/styles/text/body-13-uppercase";
 
-import { backButtonTransition, caseStudyImageSpring } from "@/lib/motion";
+import { caseStudyImageSpring } from "@/lib/motion";
 const Image1WithFX = withFX(Image1);
 
-const backCardHover = {
-  backgroundColor: "rgb(255, 255, 255)",
-  opacity: 1,
-  rotate: 0,
-  rotateX: 0,
-  rotateY: 0,
-  scale: 1,
-  skewX: 0,
-  skewY: 0,
-  transition: { bounce: 0.2, delay: 0, duration: 0.4, type: "spring" },
-} as const;
-
-const backCardInitial = { opacity: 0.001, rotate: 0, scale: 1, skewX: 0, skewY: 0, x: 0, y: 24 } as const;
-const backCardAnimate = { opacity: 1, rotate: 0, scale: 1, skewX: 0, skewY: 0, x: 0, y: 0, transition: backButtonTransition } as const;
 
 
 const breakpoints = {
@@ -187,7 +172,7 @@ const HalvCasestudyPage = React.forwardRef<HTMLDivElement, Props>(function (prop
         <HTMLStyle value="html body { background: rgb(0, 0, 0); }" />
         <motion.div
           {...restProps}
-          className={cx(styles.page, styles.root, body13Uppercase.className, body13.className, className)}
+          className={cx(styles.page, styles.root, className)}
           ref={refBinding}
           style={style}
         >
@@ -2300,134 +2285,18 @@ const HalvCasestudyPage = React.forwardRef<HTMLDivElement, Props>(function (prop
                 />
               </div>
             </div>
-                        <div className={styles.backToProject} data-name="Back to Project">
-              <Link href="/halv" motionChild nodeId="Case Study Card" openInNewTab={false}>
-                <motion.a
-                  className={cx(styles.caseStudyCard, styles.caseStudyCard2)}
-                  data-name="Case Study Card"
-                                  initial={backCardInitial}
-                  animate={backCardAnimate}
-                  whileHover={backCardHover}
-                >
-                  <div className={styles.thumbnailWrapper} data-name="Thumbnail Wrapper">
-                    <Image1
-                      background={{
-                        alt: "",
-                        fit: "fill",
-                        intrinsicHeight: 2160,
-                        intrinsicWidth: 3841,
-                        pixelHeight: 2160,
-                        pixelWidth: 3841,
-                        sizes: "160px",
-                        src: "https://framerusercontent.com/images/xX2ck2VAxImo3wrVemYFpsRfN24.png?width=3841&height=2160",
-                        srcSet:
-                          "https://framerusercontent.com/images/xX2ck2VAxImo3wrVemYFpsRfN24.png?scale-down-to=512&width=3841&height=2160 512w,https://framerusercontent.com/images/xX2ck2VAxImo3wrVemYFpsRfN24.png?scale-down-to=1024&width=3841&height=2160 1024w,https://framerusercontent.com/images/xX2ck2VAxImo3wrVemYFpsRfN24.png?scale-down-to=2048&width=3841&height=2160 2048w,https://framerusercontent.com/images/xX2ck2VAxImo3wrVemYFpsRfN24.png?width=3841&height=2160 3841w",
-                      }}
-                      className={styles.thumbnail}
-                      data-name="Thumbnail"
-                    />
-                  </div>
-                  <div className={styles.details} data-name="Details">
-                    <div className={styles.detailsTitle} data-name="Title">
-                      <RichText
-                        className={styles.relatedCaseStudy}
-                        data-name="Related Case study"
-                        fonts={["Inter"]}
-                        verticalAlignment="top"
-                        withExternalLayout
-                      >
-                        <>
-                          <p className="text-body-13-uppercase" dir="auto">
-                            Back to Project
-                          </p>
-                        </>
-                      </RichText>
-                    </div>
-                    <div className={styles.details2} data-name="Details">
-                      <RichText
-                        className={styles.arrival}
-                        data-name="Arrival"
-                        fonts={["Inter"]}
-                        verticalAlignment="top"
-                        withExternalLayout
-                      >
-                        <>
-                          <p className="text-body-13" dir="auto">
-                            Halv
-                          </p>
-                        </>
-                      </RichText>
-                      <RichText
-                        className={styles.artDirectionWebsite}
-                        data-name="Art Direction, Website"
-                        fonts={["Inter"]}
-                        verticalAlignment="top"
-                        withExternalLayout
-                      >
-                        <>
-                          <p className="text-body-13" dir="auto">
-                            Industrial Design
-                          </p>
-                        </>
-                      </RichText>
-                    </div>
-                  </div>
-                  <div className={styles.caseStudyFrame}>
-                    <ComponentViewportProvider>
-                      <Container
-                        className={styles.material}
-                        isAuthoredByUser
-                        isModuleExternal
-                        nodeId="Material"
-                        rendersWithMotion
-                        scopeId="HalvCasestudyPage"
-                        style={{ rotate: -45 }}
-                      >
-                        <Material
-                          color="rgb(0, 0, 0)"
-                          height="100%"
-                          iconSearch="Home"
-                          iconSelection="ArrowForward"
-                          iconStyle15="Filled"
-                          iconStyle2="Filled"
-                          iconStyle7="Filled"
-                          id="MaterialBack1"
-                          mirrored={false}
-                          selectByList
-                          style={{ height: "100%", width: "100%" }}
-                          width="100%"
-                        />
-                      </Container>
-                    </ComponentViewportProvider>
-                    <ComponentViewportProvider>
-                      <Container
-                        className={styles.material}
-                        isAuthoredByUser
-                        isModuleExternal
-                        nodeId="Material"
-                        rendersWithMotion
-                        scopeId="HalvCasestudyPage"
-                        style={{ rotate: -45 }}
-                      >
-                        <Material
-                          color="rgb(0, 0, 0)"
-                          height="100%"
-                          iconSearch="Home"
-                          iconSelection="ArrowForward"
-                          iconStyle15="Filled"
-                          iconStyle2="Filled"
-                          iconStyle7="Filled"
-                          id="MaterialBack2"
-                          mirrored={false}
-                          selectByList
-                          style={{ height: "100%", width: "100%" }}
-                          width="100%"
-                        />
-                      </Container>
-                    </ComponentViewportProvider>
-                  </div>
-                </motion.a>
-              </Link>
+            <div className={styles.backToProject} data-name="Back to Project">
+              <ComponentViewportProvider height={37}>
+                <Container className={styles.ctaButton}>
+                  <CTAButton
+                    link="/halv"
+                    height="100%"
+                    variant={matchVariant("Appear")}
+                    width="100%"
+                    label="Back to Project"
+                  />
+                </Container>
+              </ComponentViewportProvider>
             </div>
             <div className={styles.sectionMoreProjects} data-name="Section more Projects">
               <div className={styles.heading} data-name="Heading">
@@ -2715,6 +2584,7 @@ HalvCasestudyPage.loader = {
         () => queryCacheEntry1.preload(),
         () => queryCacheEntry2.preload(),
         () => forwardLoader(TextLink, {}, context),
+        () => forwardLoader(CTAButton, {}, context),
         async () => {
           const parentData = (await runWithYield(() => queryCacheEntry.readMaybeAsync(), context)) ?? [];
           return runTasksWithYield(

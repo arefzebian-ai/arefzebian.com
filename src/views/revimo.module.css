@@ -867,10 +867,26 @@
     width: 100%;
     height: auto;
     min-height: 100px;
+    align-items: stretch;
   }
 
   .page .thumbnailWrapper {
-    width: 210px;
+    flex: 0 0 52%;
+    width: 52%;
+    height: auto;
+    max-width: none;
+    aspect-ratio: 16 / 9;
+    align-self: stretch;
+  }
+
+  .page .details {
+    align-self: stretch;
+    flex: 1 1 0;
+    height: auto;
+    min-width: 0;
+    justify-content: space-between;
+    padding-top: 2px;
+    padding-bottom: 2px;
   }
 
   .page .sectionContent {

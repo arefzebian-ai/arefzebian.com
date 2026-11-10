@@ -721,7 +721,7 @@ const HomePage = React.forwardRef<HTMLDivElement, Props>(function (props, ref) {
                                 return (
                                   <LayoutGroup id={`works21-${worksId}`} key={worksId}>
                                     <PathVariablesContext.Provider value={{ worksSlug: slug }}>
-                                      <Link href="/halv" motionChild nodeId="link" openInNewTab={false}>
+                                      <Link href={`/${slug}`} motionChild nodeId="link" openInNewTab={false}>
                                         <motion.a className={cx(styles.link, styles.link2)}>
                                           <PropertyOverrides
                                             breakpoint={baseVariant}
@@ -813,7 +813,7 @@ const HomePage = React.forwardRef<HTMLDivElement, Props>(function (props, ref) {
                                 return (
                                   <LayoutGroup id={`works22-${worksIdWorks}`} key={worksIdWorks}>
                                     <PathVariablesContext.Provider value={{ worksSlug: slugWorks }}>
-                                      <Link href="/revimo" motionChild nodeId="link" openInNewTab={false}>
+                                      <Link href={`/${slugWorks}`} motionChild nodeId="link" openInNewTab={false}>
                                         <motion.a className={cx(styles.link3, styles.link2)}>
                                           <PropertyOverrides
                                             breakpoint={baseVariant}
@@ -909,7 +909,7 @@ const HomePage = React.forwardRef<HTMLDivElement, Props>(function (props, ref) {
                                 return (
                                   <LayoutGroup id={`works23-${worksId2}`} key={worksId2}>
                                     <PathVariablesContext.Provider value={{ worksSlug: slug2 }}>
-                                      <Link href="/rivited" motionChild nodeId="link" openInNewTab={false}>
+                                      <Link href={`/${slug2}`} motionChild nodeId="link" openInNewTab={false}>
                                         <motion.a className={cx(styles.link4, styles.link2)}>
                                           <PropertyOverrides
                                             breakpoint={baseVariant}
@@ -1001,7 +1001,7 @@ const HomePage = React.forwardRef<HTMLDivElement, Props>(function (props, ref) {
                                 return (
                                   <LayoutGroup id={`works24-${worksId3}`} key={worksId3}>
                                     <PathVariablesContext.Provider value={{ worksSlug: slug3 }}>
-                                      <Link href="/aether" motionChild nodeId="link" openInNewTab={false}>
+                                      <Link href={`/${slug3}`} motionChild nodeId="link" openInNewTab={false}>
                                         <motion.a className={cx(styles.link5, styles.link2)}>
                                           <PropertyOverrides
                                             breakpoint={baseVariant}

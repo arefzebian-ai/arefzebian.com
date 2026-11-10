@@ -377,7 +377,7 @@ const WorksGridViewPage = React.forwardRef<HTMLDivElement, Props>(function (prop
                                 return (
                                   <LayoutGroup id={`works49-${worksId}`} key={worksId}>
                                     <PathVariablesContext.Provider value={{ worksSlug: slug }}>
-                                      <Link href="/halv" motionChild nodeId="link" openInNewTab={false}>
+                                      <Link href={`/${slug}`} motionChild nodeId="link" openInNewTab={false}>
                                         <motion.a className={cx(styles.link, styles.link2)}>
                                           <PropertyOverrides
                                             breakpoint={baseVariant}
@@ -454,7 +454,7 @@ const WorksGridViewPage = React.forwardRef<HTMLDivElement, Props>(function (prop
                                 return (
                                   <LayoutGroup id={`works50-${worksIdWorks}`} key={worksIdWorks}>
                                     <PathVariablesContext.Provider value={{ worksSlug: slugWorks }}>
-                                      <Link href="/aether" motionChild nodeId="link" openInNewTab={false}>
+                                      <Link href={`/${slugWorks}`} motionChild nodeId="link" openInNewTab={false}>
                                         <motion.a className={cx(styles.link3, styles.link2)}>
                                           <PropertyOverrides
                                             breakpoint={baseVariant}
@@ -533,7 +533,7 @@ const WorksGridViewPage = React.forwardRef<HTMLDivElement, Props>(function (prop
                                 return (
                                   <LayoutGroup id={`works51-${worksId2}`} key={worksId2}>
                                     <PathVariablesContext.Provider value={{ worksSlug: slug2 }}>
-                                      <Link href="/rivited" motionChild nodeId="link" openInNewTab={false}>
+                                      <Link href={`/${slug2}`} motionChild nodeId="link" openInNewTab={false}>
                                         <motion.a className={cx(styles.link4, styles.link2)}>
                                           <PropertyOverrides
                                             breakpoint={baseVariant}
@@ -612,7 +612,7 @@ const WorksGridViewPage = React.forwardRef<HTMLDivElement, Props>(function (prop
                                 return (
                                   <LayoutGroup id={`works52-${worksId3}`} key={worksId3}>
                                     <PathVariablesContext.Provider value={{ worksSlug: slug3 }}>
-                                      <Link href="/rivited" motionChild nodeId="link" openInNewTab={false}>
+                                      <Link href={`/${slug3}`} motionChild nodeId="link" openInNewTab={false}>
                                         <motion.a className={cx(styles.link5, styles.link2)}>
                                           <PropertyOverrides
                                             breakpoint={baseVariant}
@@ -689,7 +689,7 @@ const WorksGridViewPage = React.forwardRef<HTMLDivElement, Props>(function (prop
                                 return (
                                   <LayoutGroup id={`works53-${worksId4}`} key={worksId4}>
                                     <PathVariablesContext.Provider value={{ worksSlug: slug4 }}>
-                                      <Link href="/creature" motionChild nodeId="link" openInNewTab={false}>
+                                      <Link href={`/${slug4}`} motionChild nodeId="link" openInNewTab={false}>
                                         <motion.a className={cx(styles.link6, styles.link2)}>
                                           <PropertyOverrides
                                             breakpoint={baseVariant}
@@ -767,7 +767,7 @@ const WorksGridViewPage = React.forwardRef<HTMLDivElement, Props>(function (prop
                                   <LayoutGroup id={`works54-${worksId5}`} key={worksId5}>
                                     <PathVariablesContext.Provider value={{ worksSlug: slug5 }}>
                                       <Link
-                                        href="/pelagostone"
+                                        href={`/${slug5}`}
                                         motionChild
                                         nodeId="link"
                                         openInNewTab={false}

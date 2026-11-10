@@ -26,7 +26,7 @@
   height: min-content;
   justify-content: flex-start;
   overflow: visible;
-  padding: 200px 0px 0px 0px;
+  padding: 200px 0px 180px 0px;
   position: relative;
   width: 100%;
   z-index: 2;
@@ -140,10 +140,10 @@
 .page .container {
   display: grid;
   flex: none;
-  gap: 10px 10px;
-  grid-auto-rows: minmax(0, 1fr);
+  gap: 72px 40px;
+  grid-auto-rows: auto;
   grid-template-columns: repeat(1, minmax(50px, 1fr));
-  grid-template-rows: repeat(2, minmax(0, 1fr));
+  grid-template-rows: none;
   height: min-content;
   justify-content: center;
   overflow: visible;
@@ -160,7 +160,7 @@
   flex: none;
   flex-direction: column;
   flex-wrap: nowrap;
-  gap: 20px;
+  gap: 28px;
   grid-column: 1 / -1;
   height: min-content;
   justify-content: center;
@@ -279,7 +279,7 @@
   flex: none;
   flex-direction: column;
   flex-wrap: nowrap;
-  gap: 20px;
+  gap: 28px;
   grid-column: 1 / -1;
   height: min-content;
   justify-content: center;
@@ -299,7 +299,7 @@
   flex: none;
   flex-direction: column;
   flex-wrap: nowrap;
-  gap: 20px;
+  gap: 28px;
   height: min-content;
   justify-content: center;
   justify-self: start;
@@ -372,7 +372,11 @@
   }
 
   .page .container {
-    gap: 30px 30px;
+    gap: 48px 40px;
+  }
+
+  .page .main {
+    padding: 200px 0px 140px 0px;
   }
 }
 

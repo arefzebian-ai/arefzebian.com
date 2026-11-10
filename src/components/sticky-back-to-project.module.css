@@ -7,8 +7,16 @@
   z-index: 40;
 }
 
-.sticky > * {
+.mask {
+  display: flex;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.reveal {
+  display: flex;
   pointer-events: auto;
+  will-change: transform;
 }
 
 /* Hero CTA is white-on-glass for dark imagery; sticky sits over light + dark
@@ -27,6 +35,11 @@
     bottom: 16px;
     left: 20px;
     right: 20px;
+  }
+
+  .mask,
+  .reveal {
+    width: 100%;
   }
 
   .sticky :global(a) {

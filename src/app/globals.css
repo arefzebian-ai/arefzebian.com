@@ -1,5 +1,11 @@
 /* Base styles come from the kit (src/lib/deframer/base.css), design tokens from src/styles/tokens.ts. */
 
+/* Prevent iOS Safari from randomly inflating small type on mobile. */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
 /* Keep body copy wrapping between words — never mid-word (e.g. "v-isualization"). */
 p,
 li,

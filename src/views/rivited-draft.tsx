@@ -957,7 +957,7 @@ const RivitedDraftPage = React.forwardRef<HTMLDivElement, Props>(function (props
                                   <LayoutGroup id={`works43-${worksId}`} key={worksId}>
                                     <PathVariablesContext.Provider value={{ worksSlug: slug }}>
                                       <Link
-                                        href={{ pathVariables: { worksSlug: slug }, webPageId: "SnqHkHzUy" }}
+                                        href={`/${slug}`}
                                         motionChild
                                         nodeId="link"
                                       >
@@ -1027,10 +1027,7 @@ const RivitedDraftPage = React.forwardRef<HTMLDivElement, Props>(function (props
                                   <LayoutGroup id={`works44-${worksIdWorks}`} key={worksIdWorks}>
                                     <PathVariablesContext.Provider value={{ worksSlug: slugWorks }}>
                                       <Link
-                                        href={{
-                                          pathVariables: { worksSlug: slugWorks },
-                                          webPageId: "SnqHkHzUy",
-                                        }}
+                                        href={`/${slugWorks}`}
                                         motionChild
                                         nodeId="link"
                                       >
@@ -1102,7 +1099,7 @@ const RivitedDraftPage = React.forwardRef<HTMLDivElement, Props>(function (props
                                   <LayoutGroup id={`works45-${worksId2}`} key={worksId2}>
                                     <PathVariablesContext.Provider value={{ worksSlug: slug2 }}>
                                       <Link
-                                        href={{ pathVariables: { worksSlug: slug2 }, webPageId: "SnqHkHzUy" }}
+                                        href={`/${slug2}`}
                                         motionChild
                                         nodeId="link"
                                       >

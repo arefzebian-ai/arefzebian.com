@@ -1,6 +1,7 @@
 "use client";
 
 import "@/styles/fonts/favorit-light.css";
+import "@/styles/fonts/inter.css";
 import styles from "./revimo-casestudy.module.css";
 import {
   asPage,
@@ -35,6 +36,8 @@ import * as React from "react";
 import TextLink from "@/components/text-link";
 import ProjectCard from "@/components/project-card";
 import Works from "@/cms/works";
+import * as body13 from "@/styles/text/body-13";
+import * as body13Uppercase from "@/styles/text/body-13-uppercase";
 
 import { caseStudyImageSpring } from "@/lib/motion";
 const Image1WithFX = withFX(Image1);
@@ -167,7 +170,7 @@ const RevimoCasestudyPage = React.forwardRef<HTMLDivElement, Props>(function (pr
         <HTMLStyle value="html body { background: rgb(0, 0, 0); }" />
         <motion.div
           {...restProps}
-          className={cx(styles.page, styles.root, className)}
+          className={cx(styles.page, styles.root, body13Uppercase.className, body13.className, className)}
           ref={refBinding}
           style={style}
         >
@@ -529,6 +532,78 @@ const RevimoCasestudyPage = React.forwardRef<HTMLDivElement, Props>(function (pr
                   style={{ transformPerspective: 1200 }}
                 />
               </div>
+            </div>
+                        <div className={styles.backToProject} data-name="Back to Project">
+              <Link href="/revimo" motionChild nodeId="Case Study Card" openInNewTab={false}>
+                <motion.a
+                  className={cx(styles.caseStudyCard, styles.caseStudyCard2)}
+                  data-name="Case Study Card"
+                >
+                  <div className={styles.thumbnailWrapper} data-name="Thumbnail Wrapper">
+                    <Image1
+                      background={{
+                        alt: "",
+                        fit: "fill",
+                        intrinsicHeight: 1080,
+                        intrinsicWidth: 1920,
+                        pixelHeight: 1080,
+                        pixelWidth: 1920,
+                        sizes: "160px",
+                        src: "https://framerusercontent.com/images/MXmfvBG2NO0TI5xzHi53x3toVQ.png?width=1920&height=1080",
+                        srcSet:
+                          "https://framerusercontent.com/images/MXmfvBG2NO0TI5xzHi53x3toVQ.png?scale-down-to=512&width=1920&height=1080 512w,https://framerusercontent.com/images/MXmfvBG2NO0TI5xzHi53x3toVQ.png?scale-down-to=1024&width=1920&height=1080 1024w,https://framerusercontent.com/images/MXmfvBG2NO0TI5xzHi53x3toVQ.png?width=1920&height=1080 1920w",
+                      }}
+                      className={styles.thumbnail}
+                      data-name="Thumbnail"
+                    />
+                  </div>
+                  <div className={styles.details} data-name="Details">
+                    <div className={styles.detailsTitle} data-name="Title">
+                      <RichText
+                        className={styles.relatedCaseStudy}
+                        data-name="Related Case study"
+                        fonts={["Inter"]}
+                        verticalAlignment="top"
+                        withExternalLayout
+                      >
+                        <>
+                          <p className="text-body-13-uppercase" dir="auto">
+                            Back to Project
+                          </p>
+                        </>
+                      </RichText>
+                    </div>
+                    <div className={styles.details2} data-name="Details">
+                      <RichText
+                        className={styles.arrival}
+                        data-name="Arrival"
+                        fonts={["Inter"]}
+                        verticalAlignment="top"
+                        withExternalLayout
+                      >
+                        <>
+                          <p className="text-body-13" dir="auto">
+                            Revimo
+                          </p>
+                        </>
+                      </RichText>
+                      <RichText
+                        className={styles.artDirectionWebsite}
+                        data-name="Art Direction, Website"
+                        fonts={["Inter"]}
+                        verticalAlignment="top"
+                        withExternalLayout
+                      >
+                        <>
+                          <p className="text-body-13" dir="auto">
+                            ID + Branding
+                          </p>
+                        </>
+                      </RichText>
+                    </div>
+                  </div>
+                </motion.a>
+              </Link>
             </div>
             <div className={styles.sectionMoreProjects} data-name="Section more Projects">
               <div className={styles.heading} data-name="Heading">

@@ -75,6 +75,8 @@ export const pageIds: Record<string, string> = {
   esDIozgKL: "/pelagostone-draft",
   zuV8HAtvu: "/aether-draft",
   wF3X1bcuu: "/revimo-draft",
+  // Legacy Framer CMS item links used on some case study / draft "More Projects" cards.
+  SnqHkHzUy: "/works/grid-view/:worksSlug",
 };
 
 /** The site's locales (site settings → Localization): the default first, without a URL prefix; `fallback`: the locale (by code) missing translations come from. */

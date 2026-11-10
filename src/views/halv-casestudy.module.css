@@ -1,3 +1,132 @@
+
+.page.caseStudyCard2,
+.page .caseStudyCard2 {
+  display: block;
+}
+
+.page .backToProject {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  padding: 40px 0 20px 0;
+  position: relative;
+  width: 100%;
+}
+
+.page .caseStudyCard {
+  align-content: center;
+  align-items: center;
+  background-color: rgba(242, 242, 242, 0.9);
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 12px;
+  height: 100px;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 5px;
+  position: relative;
+  text-decoration: none;
+  width: 322px;
+  will-change: var(--df-will-change-effect-override, transform);
+  z-index: 1;
+}
+
+.page .thumbnailWrapper {
+  align-content: center;
+  align-items: center;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: auto;
+  justify-content: center;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  width: 160px;
+}
+
+.page .thumbnail {
+  flex: 1 0 0px;
+  height: 100%;
+  position: relative;
+  width: 1px;
+}
+
+.page .details {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: 1 0 0px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100%;
+  justify-content: space-between;
+  overflow: visible;
+  padding: 0px 0px 2px 0px;
+  position: relative;
+  width: 1px;
+}
+
+.page .detailsTitle {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: 15px;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.page .relatedCaseStudy {
+  --df-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  position: relative;
+  white-space: pre;
+  width: auto;
+}
+
+.page .details2 {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.page .arrival,
+.page .artDirectionWebsite {
+  --df-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  position: relative;
+  white-space: pre;
+  width: auto;
+}
+
 .page.link2,
 .page .link2 {
   display: block;
@@ -324,6 +453,21 @@
 }
 
 @media (max-width: 809.98px) {
+
+  .page .backToProject {
+    padding: 24px 0 12px 0;
+  }
+
+  .page .caseStudyCard {
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+  }
+
+  .page .thumbnailWrapper {
+    width: 210px;
+  }
+
   .page.root {
     padding: 80px 0px 0px 0px;
     width: 390px;

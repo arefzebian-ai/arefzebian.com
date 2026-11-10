@@ -1,6 +1,7 @@
 "use client";
 
 import "@/styles/fonts/favorit-light.css";
+import "@/styles/fonts/inter.css";
 import styles from "./pelagostone-casestudy.module.css";
 import {
   asPage,
@@ -35,6 +36,8 @@ import * as React from "react";
 import TextLink from "@/components/text-link";
 import ProjectCard from "@/components/project-card";
 import Works from "@/cms/works";
+import * as body13 from "@/styles/text/body-13";
+import * as body13Uppercase from "@/styles/text/body-13-uppercase";
 
 import { caseStudyImageSpring } from "@/lib/motion";
 const Image1WithFX = withFX(Image1);
@@ -167,7 +170,7 @@ const PelagostoneCasestudyPage = React.forwardRef<HTMLDivElement, Props>(functio
         <HTMLStyle value="html body { background: rgb(0, 0, 0); }" />
         <motion.div
           {...restProps}
-          className={cx(styles.page, styles.root, className)}
+          className={cx(styles.page, styles.root, body13Uppercase.className, body13.className, className)}
           ref={refBinding}
           style={style}
         >
@@ -729,6 +732,78 @@ const PelagostoneCasestudyPage = React.forwardRef<HTMLDivElement, Props>(functio
                   style={{ transformPerspective: 1200 }}
                 />
               </div>
+            </div>
+                        <div className={styles.backToProject} data-name="Back to Project">
+              <Link href="/pelagostone" motionChild nodeId="Case Study Card" openInNewTab={false}>
+                <motion.a
+                  className={cx(styles.caseStudyCard, styles.caseStudyCard2)}
+                  data-name="Case Study Card"
+                >
+                  <div className={styles.thumbnailWrapper} data-name="Thumbnail Wrapper">
+                    <Image1
+                      background={{
+                        alt: "",
+                        fit: "fill",
+                        intrinsicHeight: 2160,
+                        intrinsicWidth: 3840,
+                        pixelHeight: 2160,
+                        pixelWidth: 3840,
+                        sizes: "160px",
+                        src: "https://framerusercontent.com/images/buP2mfPRNKQ6jINSis4Zb8LxEsM.png?width=3840&height=2160",
+                        srcSet:
+                          "https://framerusercontent.com/images/buP2mfPRNKQ6jINSis4Zb8LxEsM.png?scale-down-to=512&width=3840&height=2160 512w,https://framerusercontent.com/images/buP2mfPRNKQ6jINSis4Zb8LxEsM.png?scale-down-to=1024&width=3840&height=2160 1024w,https://framerusercontent.com/images/buP2mfPRNKQ6jINSis4Zb8LxEsM.png?scale-down-to=2048&width=3840&height=2160 2048w,https://framerusercontent.com/images/buP2mfPRNKQ6jINSis4Zb8LxEsM.png?width=3840&height=2160 3840w",
+                      }}
+                      className={styles.thumbnail}
+                      data-name="Thumbnail"
+                    />
+                  </div>
+                  <div className={styles.details} data-name="Details">
+                    <div className={styles.detailsTitle} data-name="Title">
+                      <RichText
+                        className={styles.relatedCaseStudy}
+                        data-name="Related Case study"
+                        fonts={["Inter"]}
+                        verticalAlignment="top"
+                        withExternalLayout
+                      >
+                        <>
+                          <p className="text-body-13-uppercase" dir="auto">
+                            Back to Project
+                          </p>
+                        </>
+                      </RichText>
+                    </div>
+                    <div className={styles.details2} data-name="Details">
+                      <RichText
+                        className={styles.arrival}
+                        data-name="Arrival"
+                        fonts={["Inter"]}
+                        verticalAlignment="top"
+                        withExternalLayout
+                      >
+                        <>
+                          <p className="text-body-13" dir="auto">
+                            Pelagostone
+                          </p>
+                        </>
+                      </RichText>
+                      <RichText
+                        className={styles.artDirectionWebsite}
+                        data-name="Art Direction, Website"
+                        fonts={["Inter"]}
+                        verticalAlignment="top"
+                        withExternalLayout
+                      >
+                        <>
+                          <p className="text-body-13" dir="auto">
+                            Industrial Design
+                          </p>
+                        </>
+                      </RichText>
+                    </div>
+                  </div>
+                </motion.a>
+              </Link>
             </div>
             <div className={styles.sectionMoreProjects} data-name="Section more Projects">
               <div className={styles.heading} data-name="Heading">

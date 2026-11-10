@@ -7,20 +7,23 @@
 .page .backToProject {
   align-content: center;
   align-items: center;
+  bottom: 24px;
   display: flex;
   flex: none;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: flex-start;
-  padding: 40px 0 20px 0;
-  position: relative;
-  width: 100%;
+  left: max(20px, calc((100vw - min(100vw, 1200px)) / 2 + 20px));
+  padding: 0;
+  position: fixed;
+  width: auto;
+  z-index: 25;
 }
 
 .page .caseStudyCard {
   align-content: center;
   align-items: center;
-  background-color: rgba(242, 242, 242, 0.9);
+  background-color: rgba(242, 242, 242, 0.95);
   display: flex;
   flex: none;
   flex-direction: row;
@@ -373,6 +376,11 @@
     width: 810px;
   }
 
+  .page .backToProject {
+    left: max(20px, calc((100vw - min(100vw, 810px)) / 2 + 20px));
+  }
+
+
   .page .main {
     z-index: 2;
   }
@@ -385,7 +393,11 @@
 @media (max-width: 809.98px) {
 
   .page .backToProject {
-    padding: 24px 0 12px 0;
+    bottom: 16px;
+    left: 20px;
+    padding: 0;
+    right: 20px;
+    width: auto;
   }
 
   .page .caseStudyCard {

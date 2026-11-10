@@ -1,6 +1,7 @@
 "use client";
 
 import "@/styles/fonts/favorit-light.css";
+import "@/styles/fonts/inter.css";
 import styles from "./aether-branding.module.css";
 import {
   asPage,
@@ -33,11 +34,15 @@ import {
 import { LayoutGroup, motion, MotionConfigContext } from "motion/react";
 import * as React from "react";
 import TextLink from "@/components/text-link";
+import StickyBackToProject from "@/components/sticky-back-to-project";
 import ProjectCard from "@/components/project-card";
 import Works from "@/cms/works";
+import { Icon as Material } from "@/vendor/material";
 
 import { caseStudyImageSpring } from "@/lib/motion";
 const Image1WithFX = withFX(Image1);
+
+
 
 const breakpoints = {
   Tablet: "(min-width: 810px) and (max-width: 1199.98px)",
@@ -1630,6 +1635,7 @@ const AetherBrandingPage = React.forwardRef<HTMLDivElement, Props>(function (pro
                 />
               </div>
             </div>
+            <StickyBackToProject href="/aether" />
             <div className={styles.sectionMoreProjects} data-name="Section more Projects">
               <div className={styles.heading} data-name="Heading">
                 <RichText
@@ -1904,6 +1910,7 @@ AetherBrandingPage.loader = {
         () => queryCacheEntry1.preload(),
         () => queryCacheEntry2.preload(),
         () => forwardLoader(TextLink, {}, context),
+        () => forwardLoader(StickyBackToProject, {}, context),
         async () => {
           const parentData = (await runWithYield(() => queryCacheEntry.readMaybeAsync(), context)) ?? [];
           return runTasksWithYield(

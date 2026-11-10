@@ -1,6 +1,7 @@
 "use client";
 
 import "@/styles/fonts/favorit-light.css";
+import "@/styles/fonts/inter.css";
 import styles from "./halv-casestudy.module.css";
 import {
   asPage,
@@ -33,11 +34,15 @@ import {
 import { LayoutGroup, motion, MotionConfigContext } from "motion/react";
 import * as React from "react";
 import TextLink from "@/components/text-link";
+import StickyBackToProject from "@/components/sticky-back-to-project";
 import ProjectCard from "@/components/project-card";
 import Works from "@/cms/works";
+import { Icon as Material } from "@/vendor/material";
 
 import { caseStudyImageSpring } from "@/lib/motion";
 const Image1WithFX = withFX(Image1);
+
+
 
 const breakpoints = {
   Phone: "(max-width: 809.98px)",
@@ -2280,6 +2285,7 @@ const HalvCasestudyPage = React.forwardRef<HTMLDivElement, Props>(function (prop
                 />
               </div>
             </div>
+            <StickyBackToProject href="/halv" />
             <div className={styles.sectionMoreProjects} data-name="Section more Projects">
               <div className={styles.heading} data-name="Heading">
                 <RichText
@@ -2352,7 +2358,7 @@ const HalvCasestudyPage = React.forwardRef<HTMLDivElement, Props>(function (prop
                                   <LayoutGroup id={`works11-${worksId}`} key={worksId}>
                                     <PathVariablesContext.Provider value={{ worksSlug: slug }}>
                                       <Link
-                                        href={{ pathVariables: { worksSlug: slug }, webPageId: "SnqHkHzUy" }}
+                                        href={`/${slug}`}
                                         motionChild
                                         nodeId="link"
                                       >
@@ -2422,10 +2428,7 @@ const HalvCasestudyPage = React.forwardRef<HTMLDivElement, Props>(function (prop
                                   <LayoutGroup id={`works12-${worksIdWorks}`} key={worksIdWorks}>
                                     <PathVariablesContext.Provider value={{ worksSlug: slugWorks }}>
                                       <Link
-                                        href={{
-                                          pathVariables: { worksSlug: slugWorks },
-                                          webPageId: "SnqHkHzUy",
-                                        }}
+                                        href={`/${slugWorks}`}
                                         motionChild
                                         nodeId="link"
                                       >
@@ -2497,7 +2500,7 @@ const HalvCasestudyPage = React.forwardRef<HTMLDivElement, Props>(function (prop
                                   <LayoutGroup id={`works13-${worksId2}`} key={worksId2}>
                                     <PathVariablesContext.Provider value={{ worksSlug: slug2 }}>
                                       <Link
-                                        href={{ pathVariables: { worksSlug: slug2 }, webPageId: "SnqHkHzUy" }}
+                                        href={`/${slug2}`}
                                         motionChild
                                         nodeId="link"
                                       >
@@ -2569,6 +2572,7 @@ HalvCasestudyPage.loader = {
         () => queryCacheEntry1.preload(),
         () => queryCacheEntry2.preload(),
         () => forwardLoader(TextLink, {}, context),
+        () => forwardLoader(StickyBackToProject, {}, context),
         async () => {
           const parentData = (await runWithYield(() => queryCacheEntry.readMaybeAsync(), context)) ?? [];
           return runTasksWithYield(

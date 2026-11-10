@@ -1,3 +1,8 @@
+.page.caseStudyCard2,
+.page .caseStudyCard2 {
+  display: block;
+}
+
 .page.link2,
 .page .link2 {
   display: block;
@@ -741,6 +746,16 @@
     flex-direction: column;
     gap: 40px;
     padding: 25px 0px 0px 0px;
+  }
+
+  .page .caseStudyCard {
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+  }
+
+  .page .thumbnailWrapper {
+    width: 210px;
   }
 
   .page .sectionContent {

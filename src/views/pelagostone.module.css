@@ -892,6 +892,16 @@
     padding: 25px 0px 0px 0px;
   }
 
+  .page .caseStudyCard {
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+  }
+
+  .page .thumbnailWrapper {
+    width: 210px;
+  }
+
   .page .sectionContent {
     gap: 15px;
     padding: 0px 20px 80px 20px;

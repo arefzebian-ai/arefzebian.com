@@ -584,8 +584,9 @@ const HalvDraftPage = React.forwardRef<HTMLDivElement, Props>(function (props, r
                   </>
                 </RichText>
                 <div className={styles.sectionDetailsContainer} data-name="Container">
-                  <motion.div
-                    className={styles.caseStudyCard}
+                  <Link href="/halv-casestudy" motionChild nodeId="Case Study Card" openInNewTab={false}>
+                    <motion.a
+                      className={cx(styles.caseStudyCard, styles.caseStudyCard2)}
                     data-name="Case Study Card"
                     whileHover={animation4}
                   >
@@ -652,7 +653,8 @@ const HalvDraftPage = React.forwardRef<HTMLDivElement, Props>(function (props, r
                         </RichText>
                       </div>
                     </div>
-                  </motion.div>
+                  </motion.a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -1126,7 +1128,7 @@ const HalvDraftPage = React.forwardRef<HTMLDivElement, Props>(function (props, r
                                   <LayoutGroup id={`works14-${worksId}`} key={worksId}>
                                     <PathVariablesContext.Provider value={{ worksSlug: slug }}>
                                       <Link
-                                        href={{ pathVariables: { worksSlug: slug }, webPageId: "SnqHkHzUy" }}
+                                        href={`/${slug}`}
                                         motionChild
                                         nodeId="link"
                                       >
@@ -1196,10 +1198,7 @@ const HalvDraftPage = React.forwardRef<HTMLDivElement, Props>(function (props, r
                                   <LayoutGroup id={`works15-${worksIdWorks}`} key={worksIdWorks}>
                                     <PathVariablesContext.Provider value={{ worksSlug: slugWorks }}>
                                       <Link
-                                        href={{
-                                          pathVariables: { worksSlug: slugWorks },
-                                          webPageId: "SnqHkHzUy",
-                                        }}
+                                        href={`/${slugWorks}`}
                                         motionChild
                                         nodeId="link"
                                       >
@@ -1271,7 +1270,7 @@ const HalvDraftPage = React.forwardRef<HTMLDivElement, Props>(function (props, r
                                   <LayoutGroup id={`works16-${worksId2}`} key={worksId2}>
                                     <PathVariablesContext.Provider value={{ worksSlug: slug2 }}>
                                       <Link
-                                        href={{ pathVariables: { worksSlug: slug2 }, webPageId: "SnqHkHzUy" }}
+                                        href={`/${slug2}`}
                                         motionChild
                                         nodeId="link"
                                       >

@@ -7,23 +7,30 @@
 .page .backToProject {
   align-content: center;
   align-items: center;
-  bottom: 24px;
+  bottom: 20px;
   display: flex;
   flex: none;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: flex-start;
-  left: max(20px, calc((100vw - min(100vw, 1200px)) / 2 + 20px));
+  left: 20px;
   padding: 0;
+  pointer-events: none;
   position: fixed;
   width: auto;
   z-index: 25;
 }
 
+.page .backToProject > * {
+  pointer-events: auto;
+}
+
 .page .caseStudyCard {
   align-content: center;
   align-items: center;
-  background-color: rgba(242, 242, 242, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  background-color: rgba(242, 242, 242, 0.88);
   display: flex;
   flex: none;
   flex-direction: row;
@@ -37,6 +44,35 @@
   text-decoration: none;
   width: 322px;
   will-change: var(--df-will-change-effect-override, transform);
+  z-index: 1;
+}
+
+.page .caseStudyFrame {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: 15px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0px;
+  position: absolute;
+  right: 6px;
+  top: 8px;
+  width: 16px;
+  z-index: 1;
+}
+
+.page .material {
+  bottom: -13px;
+  flex: none;
+  height: 14px;
+  left: -12px;
+  position: absolute;
+  width: 14px;
   z-index: 1;
 }
 
@@ -120,11 +156,20 @@
   width: 100%;
 }
 
-.page .arrival,
+.page .arrival {
+  --df-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  position: relative;
+  white-space: pre;
+  width: auto;
+}
+
 .page .artDirectionWebsite {
   --df-paragraph-spacing: 0px;
   flex: none;
   height: auto;
+  opacity: 0.4;
   position: relative;
   white-space: pre;
   width: auto;
@@ -377,7 +422,11 @@
   }
 
   .page .backToProject {
-    left: max(20px, calc((100vw - min(100vw, 810px)) / 2 + 20px));
+    bottom: 16px;
+    left: 20px;
+    padding: 0;
+    right: 20px;
+    width: auto;
   }
 
 

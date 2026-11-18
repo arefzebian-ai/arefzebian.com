@@ -1,0 +1,112 @@
+[
+  {
+    "id": "halv-process-1",
+    "src": "/halv/process/halv-process-01.webp",
+    "alt": "Halv process 1",
+    "width": 1600,
+    "height": 1200,
+    "kb": 245,
+    "from": "106_1954.JPG",
+    "crop": 1
+  },
+  {
+    "id": "halv-process-2",
+    "src": "/halv/process/halv-process-02.webp",
+    "alt": "Halv process 2",
+    "width": 1600,
+    "height": 1420,
+    "kb": 96,
+    "from": "DSC_0212.jpg",
+    "crop": 1
+  },
+  {
+    "id": "halv-process-3",
+    "src": "/halv/process/halv-process-03.webp",
+    "alt": "Halv process 3",
+    "width": 1241,
+    "height": 1357,
+    "kb": 27,
+    "from": "HALV PROCESS.57 2.jpg",
+    "crop": 0.62
+  },
+  {
+    "id": "halv-process-4",
+    "src": "/halv/process/halv-process-04.webp",
+    "alt": "Halv process 4",
+    "width": 1600,
+    "height": 900,
+    "kb": 62,
+    "from": "Fabric TV 1.41.JPG",
+    "crop": 1
+  },
+  {
+    "id": "halv-process-5",
+    "src": "/halv/process/halv-process-05.webp",
+    "alt": "Halv process 5",
+    "width": 1540,
+    "height": 1600,
+    "kb": 369,
+    "from": "IMG_2233 2.jpg",
+    "crop": 1
+  },
+  {
+    "id": "halv-process-6",
+    "src": "/halv/process/halv-process-06.webp",
+    "alt": "Halv process 6",
+    "width": 1600,
+    "height": 1301,
+    "kb": 257,
+    "from": "IMG_2735.jpg",
+    "crop": 1
+  },
+  {
+    "id": "halv-process-7",
+    "src": "/halv/process/halv-process-07.webp",
+    "alt": "Halv process 7",
+    "width": 1550,
+    "height": 1600,
+    "kb": 378,
+    "from": "IMG_2840 9.jpg",
+    "crop": 1
+  },
+  {
+    "id": "halv-process-8",
+    "src": "/halv/process/halv-process-08.webp",
+    "alt": "Halv process 8",
+    "width": 1540,
+    "height": 1600,
+    "kb": 338,
+    "from": "IMG_2840 10.jpg",
+    "crop": 1
+  },
+  {
+    "id": "halv-process-9",
+    "src": "/halv/process/halv-process-09.webp",
+    "alt": "Halv process 9",
+    "width": 1540,
+    "height": 1600,
+    "kb": 211,
+    "from": "IMG_2840 11.jpg",
+    "crop": 1
+  },
+  {
+    "id": "halv-process-10",
+    "src": "/halv/process/halv-process-10.webp",
+    "alt": "Halv process 10",
+    "width": 1200,
+    "height": 1600,
+    "kb": 179,
+    "from": "IMG_2844.jpeg",
+    "crop": 1
+  },
+  {
+    "id": "halv-process-11",
+    "src": "/halv/process/halv-process-11.webp",
+    "alt": "Halv process 11",
+    "width": 1540,
+    "height": 1600,
+    "kb": 258,
+    "from": "IMG_7379 6.jpg",
+    "crop": 1
+  }
+]

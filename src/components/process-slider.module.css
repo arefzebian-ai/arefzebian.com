@@ -1,0 +1,204 @@
+.root {
+  align-content: flex-start;
+  align-items: flex-start;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 30px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 120px 0 60px;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+
+.header {
+  align-content: center;
+  align-items: baseline;
+  box-sizing: border-box;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 16px;
+  height: min-content;
+  justify-content: space-between;
+  overflow: visible;
+  padding: 0 var(--process-gutter, 20px);
+  position: relative;
+  width: 100%;
+}
+
+.title {
+  color: #000000;
+  flex: 1 0 0;
+  font-family: "Favorit Light", "Favorit Light Placeholder", sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  letter-spacing: -0.03em;
+  line-height: 120%;
+  margin: 0;
+  min-width: 0;
+}
+
+.counter {
+  color: #000000;
+  flex: none;
+  font-family: "Favorit Light", "Favorit Light Placeholder", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  line-height: 117%;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.stage {
+  /* Same 20px page gutters / gaps as Halv sectionContent + mediaPortraits */
+  --process-gutter: 20px;
+  --process-gap: 20px;
+  --process-columns: 4;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+}
+
+.track {
+  box-sizing: border-box;
+  display: grid;
+  gap: var(--process-gap);
+  /*
+    padding-inline creates the page gutters.
+    100% in grid-auto-columns is the content box (already inside those gutters),
+    so only subtract the inter-column gaps — never the gutters again.
+  */
+  grid-auto-columns: calc(
+    (100% - (var(--process-gap) * (var(--process-columns) - 1))) / var(--process-columns)
+  );
+  grid-auto-flow: column;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  padding-inline: var(--process-gutter);
+  scroll-behavior: smooth;
+  scroll-padding-inline: var(--process-gutter);
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+.track::-webkit-scrollbar {
+  display: none;
+}
+
+.slide {
+  box-sizing: border-box;
+  height: auto;
+  list-style: none;
+  margin: 0;
+  min-width: 0;
+  overflow: hidden;
+  padding: 0;
+  scroll-snap-align: start;
+  width: 100%;
+}
+
+.media,
+.placeholder {
+  aspect-ratio: 1 / 1;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  display: block;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* Matches hero CTA liquid glass: blur(15px) + translucent white + soft border */
+.arrow {
+  align-items: center;
+  appearance: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  color: #000000;
+  cursor: pointer;
+  display: inline-flex;
+  flex: none;
+  height: 44px;
+  justify-content: center;
+  margin: 0;
+  opacity: 1;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition:
+    background-color 0.2s ease,
+    opacity 0.2s ease;
+  width: 44px;
+  z-index: 2;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+}
+
+.arrowPrev {
+  left: calc(var(--process-gutter) + 12px);
+}
+
+.arrowNext {
+  right: calc(var(--process-gutter) + 12px);
+}
+
+.arrow:hover:not(:disabled) {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.arrow:disabled {
+  cursor: default;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.arrow svg {
+  display: block;
+  height: 16px;
+  width: 16px;
+}
+
+@media (max-width: 1199.98px) and (min-width: 810px) {
+  .stage {
+    --process-columns: 3;
+  }
+}
+
+@media (max-width: 809.98px) {
+  .root {
+    gap: 20px;
+    padding: 80px 0 40px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .stage {
+    /* Matches Halv phone mediaPortraits: 20px gutters, 15px gap, 3-up */
+    --process-gap: 15px;
+    --process-columns: 3;
+  }
+
+  .arrow {
+    display: none;
+  }
+}

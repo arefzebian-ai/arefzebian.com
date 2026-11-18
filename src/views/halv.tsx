@@ -36,6 +36,7 @@ import { LayoutGroup, motion, MotionConfigContext } from "motion/react";
 import * as React from "react";
 import TextLink from "@/components/text-link";
 import ProjectCard from "@/components/project-card";
+import ProcessSlider from "@/components/process-slider";
 import Works from "@/cms/works";
 import * as body20 from "@/styles/text/body-20";
 import * as body14 from "@/styles/text/body-14";
@@ -48,6 +49,20 @@ import * as body13 from "@/styles/text/body-13";
 import { polishedEase } from "@/lib/motion";
 const RichTextWithOptimizedAppearEffect = withOptimizedAppearEffect(RichText);
 const MotionDivWithOptimizedAppearEffect = withOptimizedAppearEffect(motion.div);
+
+const halvProcessItems = [
+  { id: "halv-process-1", alt: "Halv process — fabrication", src: "/halv/process/halv-process-01.webp" },
+  { id: "halv-process-2", alt: "Halv process — detailing", src: "/halv/process/halv-process-02.webp" },
+  { id: "halv-process-3", alt: "Halv process — CAD form studies", src: "/halv/process/halv-process-03.webp" },
+  { id: "halv-process-4", alt: "Halv process — fabric TV study", src: "/halv/process/halv-process-04.webp" },
+  { id: "halv-process-5", alt: "Halv process — assembly", src: "/halv/process/halv-process-05.webp" },
+  { id: "halv-process-6", alt: "Halv process — workshop", src: "/halv/process/halv-process-06.webp" },
+  { id: "halv-process-7", alt: "Halv process — finish work", src: "/halv/process/halv-process-07.webp" },
+  { id: "halv-process-8", alt: "Halv process — fitting", src: "/halv/process/halv-process-08.webp" },
+  { id: "halv-process-9", alt: "Halv process — prototype", src: "/halv/process/halv-process-09.webp" },
+  { id: "halv-process-10", alt: "Halv process — build detail", src: "/halv/process/halv-process-10.webp" },
+  { id: "halv-process-11", alt: "Halv process — build", src: "/halv/process/halv-process-11.webp" },
+];
 
 const breakpoints = {
   Desktop: "(min-width: 1200px)",
@@ -1062,6 +1077,7 @@ const HalvPage = React.forwardRef<HTMLDivElement, Props>(function (props, ref) {
                 </div>
               </div>
             </div>
+            <ProcessSlider title="Process" items={halvProcessItems} />
             <div className={styles.sectionMoreProjects} data-name="Section more Projects">
               <div className={styles.heading} data-name="Heading">
                 <RichText

@@ -22,6 +22,7 @@ import {
   withFX,
   withOptimizedAppearEffect,
 } from "@/deframer";
+import { usePathname } from "next/navigation";
 import { motion } from "motion/react";
 import * as React from "react";
 import StopScroll from "@/vendor/stop-scroll-prod";
@@ -159,6 +160,20 @@ interface Props extends React.HTMLAttributes<HTMLDivElement> {
   [changeHandler: `on${string}Change`]: ((value: any) => void) | undefined;
 }
 
+const mobileVariants = [
+  "Navigation Mobile",
+  "Navigation Mobile Open",
+  "Navigation Mobile Fill",
+  "Navigation Mobile Open Fill",
+] as const;
+
+const fillVariants = [
+  "Navigation Mobile Fill",
+  "Navigation Mobile Open Fill",
+  "Navigation Desktop Fill",
+  "Navigation Tablet Fill",
+] as const;
+
 const NavigationNEW = React.forwardRef<HTMLDivElement, Props>(function (props, ref) {
   const refBinding = useFallbackRef(ref);
 
@@ -167,14 +182,33 @@ const NavigationNEW = React.forwardRef<HTMLDivElement, Props>(function (props, r
   const componentViewport = useComponentViewport();
   const viewportHeight = componentViewport?.height || 200;
   const viewportY = componentViewport?.y || 0;
+  const pathname = usePathname();
 
   const { style, className, layoutId, variant, ...restProps } = getProps(props);
 
-  const { baseVariant, classNames, gestureHandlers, gestureVariant, setVariant, variants } = useVariantState({
+  // Keep the open overlay sticky: scroll-driven variant props (Transparent template)
+  // must not collapse the menu mid-tap, which made every item feel like it went to
+  // the current page (e.g. About).
+  const [menuOpen, setMenuOpen] = React.useState(false);
+
+  React.useEffect(() => {
+    setMenuOpen(false);
+  }, [pathname]);
+
+  const propIsMobile = (mobileVariants as readonly string[]).includes(variant ?? "");
+  const propUsesFill = (fillVariants as readonly string[]).includes(variant ?? "");
+  const effectiveVariant =
+    menuOpen && propIsMobile
+      ? propUsesFill
+        ? "Navigation Mobile Open Fill"
+        : "Navigation Mobile Open"
+      : variant;
+
+  const { baseVariant, classNames, gestureHandlers, gestureVariant, variants } = useVariantState({
     cycleOrder,
     defaultVariant: "Navigation Desktop",
     ref: refBinding,
-    variant,
+    variant: effectiveVariant,
     variantClassNames,
   });
 
@@ -188,51 +222,31 @@ const NavigationNEW = React.forwardRef<HTMLDivElement, Props>(function (props, r
   );
 
   const isDisplayed = () => {
-    if (
-      (
-        [
-          "Navigation Mobile",
-          "Navigation Mobile Open",
-          "Navigation Mobile Fill",
-          "Navigation Mobile Open Fill",
-        ] as readonly unknown[]
-      ).includes(baseVariant)
-    )
-      return false;
+    if ((mobileVariants as readonly unknown[]).includes(baseVariant)) return false;
     return true;
   };
 
   const isDisplayed1 = () => {
-    if (
-      (
-        [
-          "Navigation Mobile",
-          "Navigation Mobile Open",
-          "Navigation Mobile Fill",
-          "Navigation Mobile Open Fill",
-        ] as readonly unknown[]
-      ).includes(baseVariant)
-    )
-      return true;
+    if ((mobileVariants as readonly unknown[]).includes(baseVariant)) return true;
     return false;
   };
 
   const { activeVariantCallback } = useActiveVariantCallback(baseVariant);
 
   const onTap = activeVariantCallback(async () => {
-    setVariant("Navigation Mobile Open");
+    setMenuOpen(true);
   });
 
   const onTapNavigationMobileOpen = activeVariantCallback(async () => {
-    setVariant("Navigation Mobile");
+    setMenuOpen(false);
   });
 
   const onTapNavigationMobileFill = activeVariantCallback(async () => {
-    setVariant("Navigation Mobile Open Fill");
+    setMenuOpen(true);
   });
 
   const onTapNavigationMobileOpenFill = activeVariantCallback(async () => {
-    setVariant("Navigation Mobile Fill");
+    setMenuOpen(false);
   });
 
   const isDisplayed2 = () => {
@@ -639,7 +653,7 @@ const NavigationNEW = React.forwardRef<HTMLDivElement, Props>(function (props, r
                     layoutDependency={layoutDependency}
                     layoutId="Link Group 2"
                   >
-                    <Link href="/works/grid-view" motionChild nodeId="link">
+                    <Link href="/works/grid-view" motionChild nodeId="mobile-work">
                       <motion.a
                         className={cx(styles.link, styles.logo2)}
                         layoutDependency={layoutDependency}
@@ -709,7 +723,7 @@ const NavigationNEW = React.forwardRef<HTMLDivElement, Props>(function (props, r
                         />
                       </motion.a>
                     </Link>
-                    <Link href="/about" motionChild nodeId="link">
+                    <Link href="/about" motionChild nodeId="mobile-about">
                       <motion.a
                         className={cx(styles.link2, styles.logo2)}
                         layoutDependency={layoutDependency}
@@ -779,7 +793,7 @@ const NavigationNEW = React.forwardRef<HTMLDivElement, Props>(function (props, r
                         />
                       </motion.a>
                     </Link>
-                    <Link href="/playground" motionChild nodeId="link">
+                    <Link href="/playground" motionChild nodeId="mobile-playground">
                       <motion.a
                         className={cx(styles.link3, styles.logo2)}
                         layoutDependency={layoutDependency}

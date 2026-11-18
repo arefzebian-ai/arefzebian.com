@@ -97,7 +97,7 @@ const TextLink = React.forwardRef<HTMLDivElement, Props>(function (props, ref) {
           data-name={baseVariant}
           data-highlight
           layoutDependency={layoutDependency}
-          layoutId="Default"
+          layoutId={layoutId ? `${layoutId}-anchor` : "Default"}
           onMouseEnter={onMouseEnterDefaultValue}
           ref={refBinding}
           style={style}

@@ -183,9 +183,10 @@
 }
 
 @media (max-width: 809.98px) {
+  /* sectionContent already has 80px bottom after media; More Projects only has 15px top */
   .root {
-    gap: 20px;
-    padding: 80px 0 40px;
+    gap: 16px;
+    padding: 16px 0 80px;
   }
 
   .title {

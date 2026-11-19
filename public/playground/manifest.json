@@ -1,0 +1,42 @@
+[
+  {
+    "id": "rivited-01",
+    "kind": "image",
+    "caption": "RIVITED_01.JPG",
+    "src": "/playground/rivited-01.webp",
+    "width": 480,
+    "height": 640,
+    "variant": "4x5",
+    "kb": 35
+  },
+  {
+    "id": "rivited-02",
+    "kind": "video",
+    "caption": "RIVITED_02.MP4",
+    "src": "/playground/rivited-02.mp4",
+    "poster": "/playground/rivited-02-poster.webp",
+    "sourceWidth": 1080,
+    "sourceHeight": 1920,
+    "durationSec": 9.935,
+    "variant": "4x5",
+    "kb": 299,
+    "width": 608,
+    "height": 1080,
+    "posterKb": 21
+  },
+  {
+    "id": "rivited-03",
+    "kind": "video",
+    "caption": "RIVITED_03.MP4",
+    "src": "/playground/rivited-03.mp4",
+    "poster": "/playground/rivited-03-poster.webp",
+    "sourceWidth": 960,
+    "sourceHeight": 508,
+    "durationSec": 13.033792,
+    "variant": "4x3",
+    "kb": 303,
+    "width": 960,
+    "height": 508,
+    "posterKb": 9
+  }
+]

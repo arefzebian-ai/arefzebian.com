@@ -32,7 +32,8 @@ const RATIOS = {
 const files = [
   { from: "106_1954.JPG", webp: "halv-process-01.webp", alt: "Halv process — fabrication" },
   { from: "DSC_0212.jpg", webp: "halv-process-02.webp", alt: "Halv process — detailing", position: "left" },
-  { from: "HALV PROCESS.57 2.jpg", webp: "halv-process-03.webp", alt: "Halv process — CAD form studies", zoom: 0.62 },
+  // Wide CAD sheet: lock 4x3 so empty top/bottom falls away (1x1 left too much void).
+  { from: "HALV PROCESS.57 2.jpg", webp: "halv-process-03.webp", alt: "Halv process — CAD form studies", zoom: 0.62, ratio: "4x3", position: "centre" },
   { from: "Fabric TV 1.41.JPG", webp: "halv-process-04.webp", alt: "Halv process — fabric TV study", position: "attention" },
   { from: "IMG_2233 2.jpg", webp: "halv-process-05.webp", alt: "Halv process — assembly" },
   { from: "IMG_2735.jpg", webp: "halv-process-06.webp", alt: "Halv process — workshop" },

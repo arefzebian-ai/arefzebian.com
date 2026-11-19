@@ -26,11 +26,68 @@ function clamp(value: number, min: number, max: number) {
   return Math.min(max, Math.max(min, value));
 }
 
+/**
+ * SSR + first client paint always assume phone 3-up so the counter text
+ * matches (`3/11`). useEffect remeasures for tablet/desktop right after mount.
+ */
+function initialEndIndex(total: number) {
+  if (total <= 0) return 0;
+  return Math.min(3, total) - 1;
+}
+
 const ratioClassNames: Record<ProcessSliderRatio, string> = {
   "4x5": styles.ratio4x5,
   "4x3": styles.ratio4x3,
   "1x1": styles.ratio1x1,
 };
+
+type VisibleRange = { start: number; end: number };
+
+function trackPads(track: HTMLElement) {
+  const style = getComputedStyle(track);
+  return {
+    left: parseFloat(style.paddingInlineStart || style.paddingLeft) || 0,
+    right: parseFloat(style.paddingInlineEnd || style.paddingRight) || 0,
+  };
+}
+
+function measureVisibleRange(track: HTMLDivElement): VisibleRange | null {
+  const slides = track.querySelectorAll<HTMLElement>(`[data-slide]`);
+  if (!slides.length) return null;
+
+  const trackRect = track.getBoundingClientRect();
+  const pad = trackPads(track);
+  const viewLeft = trackRect.left + pad.left;
+  const viewRight = trackRect.right - pad.right;
+
+  let start = -1;
+  let end = -1;
+
+  slides.forEach((slide, i) => {
+    const rect = slide.getBoundingClientRect();
+    const overlap = Math.min(rect.right, viewRight) - Math.max(rect.left, viewLeft);
+    // Majority of the slide inside the content gutter.
+    if (overlap > rect.width * 0.5) {
+      if (start < 0) start = i;
+      end = i;
+    }
+  });
+
+  if (start < 0 || end < 0) {
+    let closest = 0;
+    let closestDistance = Number.POSITIVE_INFINITY;
+    slides.forEach((slide, i) => {
+      const distance = Math.abs(slide.getBoundingClientRect().left - viewLeft);
+      if (distance < closestDistance) {
+        closestDistance = distance;
+        closest = i;
+      }
+    });
+    return { start: closest, end: closest };
+  }
+
+  return { start, end };
+}
 
 export default function ProcessSlider({
   title = "Process",
@@ -38,65 +95,74 @@ export default function ProcessSlider({
   className,
 }: ProcessSliderProps) {
   const trackRef = React.useRef<HTMLDivElement>(null);
-  const [index, setIndex] = React.useState(0);
   const total = items.length;
-  const canPrev = index > 0;
-  const canNext = index < Math.max(total - 1, 0);
+  const [range, setRange] = React.useState<VisibleRange>(() => ({
+    start: 0,
+    end: initialEndIndex(total),
+  }));
 
-  const updateIndexFromScroll = React.useCallback(() => {
+  const canPrev = range.start > 0;
+  const canNext = range.end < Math.max(total - 1, 0);
+  const counterLabel = `${range.end + 1}/${total}`;
+
+  const updateFromScroll = React.useCallback(() => {
     const track = trackRef.current;
     if (!track || total === 0) return;
-
-    const slides = track.querySelectorAll<HTMLElement>(`[data-slide]`);
-    if (!slides.length) return;
-
-    const trackLeft = track.scrollLeft;
-    let closest = 0;
-    let closestDistance = Number.POSITIVE_INFINITY;
-
-    slides.forEach((slide, i) => {
-      const distance = Math.abs(slide.offsetLeft - trackLeft);
-      if (distance < closestDistance) {
-        closestDistance = distance;
-        closest = i;
-      }
-    });
-
-    setIndex(closest);
+    const next = measureVisibleRange(track);
+    if (!next) return;
+    setRange((prev) => (prev.start === next.start && prev.end === next.end ? prev : next));
   }, [total]);
 
   React.useEffect(() => {
     const track = trackRef.current;
     if (!track) return;
 
-    updateIndexFromScroll();
+    updateFromScroll();
 
-    const onScroll = () => updateIndexFromScroll();
+    const onScroll = () => updateFromScroll();
     track.addEventListener("scroll", onScroll, { passive: true });
 
-    const resizeObserver = new ResizeObserver(() => updateIndexFromScroll());
+    const resizeObserver = new ResizeObserver(() => updateFromScroll());
     resizeObserver.observe(track);
+    window.addEventListener("resize", updateFromScroll);
+
+    const raf = window.requestAnimationFrame(() => updateFromScroll());
+    const t = window.setTimeout(updateFromScroll, 100);
 
     return () => {
       track.removeEventListener("scroll", onScroll);
       resizeObserver.disconnect();
+      window.removeEventListener("resize", updateFromScroll);
+      window.cancelAnimationFrame(raf);
+      window.clearTimeout(t);
     };
-  }, [updateIndexFromScroll]);
+  }, [updateFromScroll]);
 
-  const scrollToIndex = React.useCallback((nextIndex: number) => {
-    const track = trackRef.current;
-    if (!track) return;
+  const scrollToIndex = React.useCallback(
+    (nextIndex: number) => {
+      const track = trackRef.current;
+      if (!track) return;
 
-    const slides = track.querySelectorAll<HTMLElement>(`[data-slide]`);
-    const target = slides[clamp(nextIndex, 0, slides.length - 1)];
-    if (!target) return;
+      const slides = track.querySelectorAll<HTMLElement>(`[data-slide]`);
+      const target = slides[clamp(nextIndex, 0, slides.length - 1)];
+      if (!target) return;
 
-    track.scrollTo({ left: target.offsetLeft, behavior: "smooth" });
-    setIndex(clamp(nextIndex, 0, slides.length - 1));
-  }, []);
+      const pad = trackPads(track);
+      const trackRect = track.getBoundingClientRect();
+      const delta = target.getBoundingClientRect().left - (trackRect.left + pad.left);
+      track.scrollTo({ left: track.scrollLeft + delta, behavior: "smooth" });
 
-  const goPrev = () => scrollToIndex(index - 1);
-  const goNext = () => scrollToIndex(index + 1);
+      // Optimistic update; scroll handler confirms once motion settles.
+      const columns = Math.max(1, range.end - range.start + 1);
+      const start = clamp(nextIndex, 0, Math.max(total - 1, 0));
+      const end = clamp(start + columns - 1, 0, Math.max(total - 1, 0));
+      setRange({ start, end });
+    },
+    [range.end, range.start, total],
+  );
+
+  const goPrev = () => scrollToIndex(range.start - 1);
+  const goNext = () => scrollToIndex(range.start + 1);
 
   if (total === 0) return null;
 
@@ -105,7 +171,7 @@ export default function ProcessSlider({
       <div className={styles.header}>
         <h2 className={styles.title}>{title}</h2>
         <p className={styles.counter} aria-live="polite">
-          {index + 1}/{total}
+          {counterLabel}
         </p>
       </div>
 

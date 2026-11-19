@@ -30,13 +30,13 @@
     "src": "/halv/process/halv-process-03.webp",
     "alt": "Halv process — CAD form studies",
     "width": 1600,
-    "height": 1200,
-    "kb": 33,
-    "from": "halv-process-03.webp (centered 4x3)",
-    "ratio": "4x3",
+    "height": 1600,
+    "kb": 26,
+    "from": "user-ref CAD full frame → gentle 1x1",
+    "ratio": "1x1",
     "sourceRatio": 0.915,
     "position": "centre",
-    "zoom": 0.62
+    "zoom": 1
   },
   {
     "id": "halv-process-4",

@@ -110,26 +110,7 @@
   width: 100%;
 }
 
-.playgroundContent2 .playgroundItem,
-.playgroundContent2 .playgroundItem2,
-.playgroundContent2 .playgroundItem3,
-.playgroundContent2 .playgroundItem4,
-.playgroundContent2 .playgroundItem5,
-.playgroundContent2 .playgroundItem6,
-.playgroundContent2 .playgroundItem7,
-.playgroundContent2 .playgroundItem8,
-.playgroundContent2 .playgroundItem9,
-.playgroundContent2 .playgroundItem10,
-.playgroundContent2 .playgroundItem11,
-.playgroundContent2 .playgroundItem12,
-.playgroundContent2 .playgroundItem13,
-.playgroundContent2 .playgroundItem14,
-.playgroundContent2 .playgroundItem15,
-.playgroundContent2 .playgroundItem16,
-.playgroundContent2 .playgroundItem17,
-.playgroundContent2 .playgroundItem18,
-.playgroundContent2 .playgroundItem19,
-.playgroundContent2 .playgroundItem20 {
+.playgroundContent2 .playgroundItem {
   align-self: start;
   flex: none;
   height: auto;

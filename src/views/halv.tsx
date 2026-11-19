@@ -50,18 +50,19 @@ import { polishedEase } from "@/lib/motion";
 const RichTextWithOptimizedAppearEffect = withOptimizedAppearEffect(RichText);
 const MotionDivWithOptimizedAppearEffect = withOptimizedAppearEffect(motion.div);
 
+/** Ratios match PlaygroundItem (4x5 / 4x3 / 1x1), picked from each base image. */
 const halvProcessItems = [
-  { id: "halv-process-1", alt: "Halv process — fabrication", src: "/halv/process/halv-process-01.webp" },
-  { id: "halv-process-2", alt: "Halv process — detailing", src: "/halv/process/halv-process-02.webp" },
-  { id: "halv-process-3", alt: "Halv process — CAD form studies", src: "/halv/process/halv-process-03.webp" },
-  { id: "halv-process-4", alt: "Halv process — fabric TV study", src: "/halv/process/halv-process-04.webp" },
-  { id: "halv-process-5", alt: "Halv process — assembly", src: "/halv/process/halv-process-05.webp" },
-  { id: "halv-process-6", alt: "Halv process — workshop", src: "/halv/process/halv-process-06.webp" },
-  { id: "halv-process-7", alt: "Halv process — finish work", src: "/halv/process/halv-process-07.webp" },
-  { id: "halv-process-8", alt: "Halv process — fitting", src: "/halv/process/halv-process-08.webp" },
-  { id: "halv-process-9", alt: "Halv process — prototype", src: "/halv/process/halv-process-09.webp" },
-  { id: "halv-process-10", alt: "Halv process — build detail", src: "/halv/process/halv-process-10.webp" },
-  { id: "halv-process-11", alt: "Halv process — build", src: "/halv/process/halv-process-11.webp" },
+  { id: "halv-process-1", alt: "Halv process — fabrication", src: "/halv/process/halv-process-01.webp", ratio: "4x3" as const, width: 1600, height: 1200 },
+  { id: "halv-process-2", alt: "Halv process — detailing", src: "/halv/process/halv-process-02.webp", ratio: "1x1" as const, width: 1420, height: 1420 },
+  { id: "halv-process-3", alt: "Halv process — CAD form studies", src: "/halv/process/halv-process-03.webp", ratio: "1x1" as const, width: 1241, height: 1241 },
+  { id: "halv-process-4", alt: "Halv process — fabric TV study", src: "/halv/process/halv-process-04.webp", ratio: "4x3" as const, width: 1200, height: 900 },
+  { id: "halv-process-5", alt: "Halv process — assembly", src: "/halv/process/halv-process-05.webp", ratio: "1x1" as const, width: 1540, height: 1540 },
+  { id: "halv-process-6", alt: "Halv process — workshop", src: "/halv/process/halv-process-06.webp", ratio: "4x3" as const, width: 1600, height: 1200 },
+  { id: "halv-process-7", alt: "Halv process — finish work", src: "/halv/process/halv-process-07.webp", ratio: "1x1" as const, width: 1550, height: 1550 },
+  { id: "halv-process-8", alt: "Halv process — fitting", src: "/halv/process/halv-process-08.webp", ratio: "1x1" as const, width: 1540, height: 1540 },
+  { id: "halv-process-9", alt: "Halv process — prototype", src: "/halv/process/halv-process-09.webp", ratio: "1x1" as const, width: 1540, height: 1540 },
+  { id: "halv-process-10", alt: "Halv process — build detail", src: "/halv/process/halv-process-10.webp", ratio: "4x5" as const, width: 1200, height: 1500 },
+  { id: "halv-process-11", alt: "Halv process — build", src: "/halv/process/halv-process-11.webp", ratio: "1x1" as const, width: 1540, height: 1540 },
 ];
 
 const breakpoints = {

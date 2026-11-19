@@ -4,10 +4,16 @@ import "@/styles/fonts/favorit-light.css";
 import styles from "./process-slider.module.css";
 import * as React from "react";
 
+/** Same three ratios as PlaygroundItem (`4x5` / `4x3` / `1x1`). */
+export type ProcessSliderRatio = "4x5" | "4x3" | "1x1";
+
 export type ProcessSliderItem = {
   id: string;
   alt: string;
   src?: string;
+  ratio?: ProcessSliderRatio;
+  width?: number;
+  height?: number;
 };
 
 type ProcessSliderProps = {
@@ -19,6 +25,12 @@ type ProcessSliderProps = {
 function clamp(value: number, min: number, max: number) {
   return Math.min(max, Math.max(min, value));
 }
+
+const ratioClassNames: Record<ProcessSliderRatio, string> = {
+  "4x5": styles.ratio4x5,
+  "4x3": styles.ratio4x3,
+  "1x1": styles.ratio1x1,
+};
 
 export default function ProcessSlider({
   title = "Process",
@@ -117,23 +129,32 @@ export default function ProcessSlider({
         </button>
 
         <div className={styles.track} ref={trackRef} role="list">
-          {items.map((item) => (
-            <div key={item.id} className={styles.slide} data-slide role="listitem">
-            {item.src ? (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
-                className={styles.media}
-                src={item.src}
-                alt={item.alt}
-                draggable={false}
-                loading="lazy"
-                decoding="async"
-              />
-            ) : (
-              <div className={styles.placeholder} aria-label={item.alt} role="img" />
-            )}
-            </div>
-          ))}
+          {items.map((item) => {
+            const ratio = item.ratio ?? "1x1";
+            return (
+              <div key={item.id} className={styles.slide} data-slide data-ratio={ratio} role="listitem">
+                {item.src ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    className={`${styles.media} ${ratioClassNames[ratio]}`}
+                    src={item.src}
+                    alt={item.alt}
+                    width={item.width}
+                    height={item.height}
+                    draggable={false}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                ) : (
+                  <div
+                    className={`${styles.placeholder} ${ratioClassNames[ratio]}`}
+                    aria-label={item.alt}
+                    role="img"
+                  />
+                )}
+              </div>
+            );
+          })}
         </div>
 
         <button

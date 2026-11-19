@@ -69,6 +69,7 @@
 }
 
 .track {
+  align-items: start;
   box-sizing: border-box;
   display: grid;
   gap: var(--process-gap);
@@ -111,6 +112,7 @@
 
 .media,
 .placeholder {
+  /* Default matches Playground 1x1; overridden per slide via ratio classes */
   aspect-ratio: 1 / 1;
   background-color: #f2f2f2;
   box-sizing: border-box;
@@ -121,6 +123,19 @@
   overflow: hidden;
   position: relative;
   width: 100%;
+}
+
+/* PlaygroundItem ratios: 281/351 ≈ 4/5, 281/212 ≈ 4/3, 1/1 */
+.ratio4x5 {
+  aspect-ratio: 4 / 5;
+}
+
+.ratio4x3 {
+  aspect-ratio: 4 / 3;
+}
+
+.ratio1x1 {
+  aspect-ratio: 1 / 1;
 }
 
 /* Matches hero CTA liquid glass: blur(15px) + translucent white + soft border */

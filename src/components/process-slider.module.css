@@ -192,6 +192,16 @@
 }
 
 @media (max-width: 1199.98px) and (min-width: 810px) {
+  /*
+    Tablet: sectionContent already has 80px bottom after media;
+    More Projects only has 20px top. Desktop 120/60 stacked on that
+    left a huge top gap and uneven bottom spacing.
+  */
+  .root {
+    gap: 20px;
+    padding: 20px 0 20px;
+  }
+
   .stage {
     --process-columns: 3;
   }
